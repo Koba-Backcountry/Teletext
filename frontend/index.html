@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Teletext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<!-- AUTH -->
+<div id="auth">
+
+    <div id="title">
+        <h1>Georgian Teletext</h1>
+        <h2>Powered by Koba Skhulukhia</h2>
+    </div>
+
+    <input id="u" placeholder="username">
+    <input id="p" placeholder="password" type="password">
+
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+
+    <div id="msg"></div>
+</div>
+
+<!-- TELETEXT -->
+<div id="container" style="display:none;"></div>
+<div id="admin" style="display:none; padding:10px; color:white;">
+    <button onclick="logout()">Logout</button>
+
+    <div style="margin-top:20px;">
+        <h3>Admin Settings</h3>
+        <input id="newUser" placeholder="new username">
+        <input id="newPass" placeholder="new password" type="password">
+        <button onclick="updateAdmin()">Save</button>
+        <div id="admin-msg"></div>
+    </div>
+
+    <div id="admin-content" style="margin-top:30px;"></div>
+</div>
+
+<script>
+let direction = 1;
+let position = 0;
+
+window.onload = function() {
+    // არაფერი არ უნდა ჩაიტვირთოს ავტომატურად
+    document.getElementById("auth").style.display = "block";
+    document.getElementById("container").style.display = "none";
+    document.getElementById("admin").style.display = "none";
+
+    localStorage.removeItem("logged");
+}
+
+async function login() {
+    const res = await fetch("http://localhost:8000/login", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            username: u.value,
+            password: p.value
+        })
+    });
+
+    const data = await res.json();
+    document.body.className = "teletext-page";
+
+    if (data.status === "ok") {
+
+        localStorage.setItem("logged", "1");
+        document.getElementById("auth").style.display = "none";
+
+        if (data.is_admin === 1) {
+            document.getElementById("container").style.display = "none";
+            document.getElementById("admin").style.display = "block";
+            loadPendingUsers();
+        } else {
+            document.getElementById("admin").style.display = "none";
+            document.getElementById("container").style.display = "block";
+             loadMatches();
+             scrollLoop();
+        }
+
+    } else {
+        msg.innerText = data.status;
+    }
+}
+
+async function register() {
+    const res = await fetch("http://localhost:8000/register", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            username: u.value,
+            password: p.value
+        })
+    });
+
+    const data = await res.json();
+
+    msg.innerText = data.status;
+}
+
+async function loadPendingUsers() {
+    const res = await fetch("http://localhost:8000/pending-users");
+    const data = await res.json();
+
+    const admin = document.getElementById("admin-content");
+    admin.innerHTML = "<h3>Pending Users</h3>";
+
+    data.forEach(u => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${u.username}
+            <button onclick="approveUser(${u.id})">Approve</button>
+        `;
+        admin.appendChild(div);
+    });
+}
+
+function logout() {
+    localStorage.removeItem("logged");
+
+    document.body.className = "login-page";
+    document.getElementById("auth").style.display = "block";
+    document.getElementById("container").style.display = "none";
+    document.getElementById("admin").style.display = "none";
+}
+
+async function approveUser(id) {
+    await fetch("http://localhost:8000/approve/" + id, {
+        method: "POST"
+    });
+
+    loadPendingUsers();
+}
+
+async function loadMatches() {
+    const res = await fetch("http://localhost:8000/matches");
+    const data = await res.json();
+
+    const container = document.getElementById("container");
+    container.innerHTML = "";
+
+    let lastLeague = null;
+
+    data.forEach(m => {
+
+        if (m.league !== lastLeague) {
+            lastLeague = m.league;
+
+            const header = document.createElement("div");
+            header.className = "row";
+            header.style.background = "#000000";
+
+            header.innerHTML = `
+                <div style="display:flex; align-items:center; gap:10px;">
+                    ${m.flag ? `<img class="flag" src="Flags/${m.flag}">` : ""}
+                    <div class="league">
+                        ${m.country ? m.country + " - " : ""}${m.league}
+                    </div>
+                </div>
+
+                <div style="margin-left:auto;">
+                    ${m.sport_icon ? `<img class="icon" src="SportIcons/${m.sport_icon}">` : ""}
+                </div>
+            `;
+
+            container.appendChild(header);
+        }
+
+        const row = document.createElement("div");
+        row.className = "row";
+
+        row.innerHTML = `
+            <div class="minute">
+                ${m.source === "betcity"
+                    ? `<img src="SportIcons/flash.gif" style="height:24px;">`
+                    : m.minute}
+            </div>
+            <div class="team1">${m.team1}</div>
+            <div class="score">${m.score}</div>
+            <div class="team2">${m.team2}</div>
+        `;
+
+        container.appendChild(row);
+    });
+}
+
+async function updateAdmin() {
+    const res = await fetch("http://localhost:8000/admin/update", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({
+            username: newUser.value,
+            password: newPass.value
+        })
+    });
+
+    const data = await res.json();
+    document.getElementById("admin-msg").innerText = data.status;
+}
+
+function scrollLoop() {
+    const container = document.getElementById("container");
+
+    position += direction * 0.5;
+    container.style.top = -position + "px";
+
+    const maxScroll = container.offsetHeight - window.innerHeight;
+
+    if (position >= maxScroll) direction = -1;
+    if (position <= 0) direction = 1;
+
+    requestAnimationFrame(scrollLoop);
+}
+
+loadMatches();
+setInterval(loadMatches, 90000);
+scrollLoop();
+</script>
+
+</body>
+</html>

@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: teletext-backend
+    restart: always
+    ports:
+      - "8000:8000"
+
+  frontend:
+    image: python:3.11-slim
+    container_name: teletext-frontend
+    working_dir: /app
+    volumes:
+      - ./frontend:/app
+    command: python3 -m http.server 80
+    ports:
+      - "80:80"
+    depends_on:
+      - backend

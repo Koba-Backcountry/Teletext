@@ -1,0 +1,137 @@
+@font-face {
+    font-family: 'Grotesk';
+    src: url('GROTESK.TTF');
+}
+
+.login-page {
+    background: linear-gradient(135deg, #001f3f, #003366, #000080);
+}
+
+.teletext-page {
+    background: #000080;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #000080;
+    color: white;
+    font-family: Arial;
+}
+
+#auth {
+    background: rgba(0,0,0,0.75);
+    padding: 40px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 0 20px rgba(0,0,0,0.5);
+}
+
+#auth input {
+    width: 250px;
+    margin: 10px auto;
+    padding: 10px;
+    font-size: 16px;
+    display: block;
+    border: none;
+    border-radius: 8px;
+    text-align: center;
+    outline: none;
+}
+
+#auth button {
+    margin: 10px 5px;
+    padding: 12px 25px;
+    font-size: 16px;
+    cursor: pointer;
+    border: none;
+    border-radius: 25px;
+    background: linear-gradient(45deg, #00FFFF, #00cccc);
+    color: black;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+#auth button:hover {
+    transform: scale(1.05);
+}
+
+#container {
+    position: absolute;
+    width: 100%;
+}
+
+#admin {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+#title {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#title h1 {
+    margin: 0;
+    font-size: 28px;
+}
+
+#title h2 {
+    margin: 0;
+    font-size: 16px;
+    color: #aaa;
+}
+
+#msg {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #ff6666;
+}
+
+.row {
+    display: flex;
+    align-items: center;
+    height: 34px;
+    padding: 0 10px;
+    border-bottom: 1px solid #333;
+}
+
+.minute {
+    width: 5%;
+    text-align: left;
+    font-size: 24px;
+}
+
+.team1 {
+    width: 40%;
+    text-align: right;
+    padding-right: 10px;
+    font-family: 'Grotesk';
+    font-size: 42px;
+}
+
+.score {
+    width: 15%;
+    text-align: center;
+    font-family: 'Grotesk';
+    font-size: 42px;
+}
+
+.team2 {
+    width: 40%;
+    text-align: left;
+    padding-left: 10px;
+    font-family: 'Grotesk';
+    font-size: 42px;
+}
+
+.league {
+    font-size: 22px;
+    font-weight: bold;
+    text-decoration: underline;
+    color: #00FFFF;
+}
