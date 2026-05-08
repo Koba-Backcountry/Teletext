@@ -8,7 +8,7 @@ def load_translations():
     db = SessionLocal()
 
     # Livescore
-    with open("../Bases/gundebi.txt", encoding="utf-8") as f:
+    with open("/Bases/gundebi.txt", encoding="utf-8") as f:
         for line in f:
             eng = line[:49].strip().lower()
             geo = line[49:].strip()
@@ -21,7 +21,7 @@ def load_translations():
                 ))
 
     # Betcity
-    with open("../Bases/soccerBC.txt", encoding="utf-8") as f:
+    with open("/Bases/soccerBC.txt", encoding="utf-8") as f:
         for line in f:
             ru = line[:42].strip().lower()
             geo = line[42:].strip()
@@ -41,7 +41,7 @@ def load_flags():
     global livescore_flags, betcity_flags
 
     # Livescore flags
-    with open("../Flags LiveScore.txt", encoding="utf-8") as f:
+    with open("/Flags LiveScore.txt", encoding="utf-8") as f:
         for line in f:
             if "'" in line:
                 parts = line.split("'")
@@ -51,7 +51,7 @@ def load_flags():
                     livescore_flags[name] = flag
 
     # Betcity flags
-    with open("../Flags BetCity.txt", encoding="utf-8") as f:
+    with open("/Flags BetCity.txt", encoding="utf-8") as f:
         for line in f:
             if "'" in line:
                 parts = line.split("'")
