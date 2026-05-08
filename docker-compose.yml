@@ -8,7 +8,7 @@ services:
     ports:
       - "8000:8000"
     volumes:
-      - ./backend:/app
+      - ./backend/teletext.db:/app/teletext.db
       - ./Bases:/Bases
       - ./Flags LiveScore.txt:/Flags LiveScore.txt
       - ./Flags BetCity.txt:/Flags BetCity.txt
