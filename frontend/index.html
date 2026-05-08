@@ -103,20 +103,55 @@ async function register() {
     msg.innerText = data.status;
 }
 
+async function setPending(id) {
+    await fetch("http://" + window.location.hostname + ":8000/set-pending/" + id, {
+        method: "POST"
+    });
+
+    loadPendingUsers();
+}
+
 async function loadPendingUsers() {
-    const res = await fetch("http://" + window.location.hostname + ":8000/pending-users");
-    const data = await res.json();
+    const pendingRes = await fetch("http://" + window.location.hostname + ":8000/pending-users");
+    const pendingData = await pendingRes.json();
+
+    const approvedRes = await fetch("http://" + window.location.hostname + ":8000/approved-users");
+    const approvedData = await approvedRes.json();
 
     const admin = document.getElementById("admin-content");
-    admin.innerHTML = "<h3>Pending Users</h3>";
 
-    data.forEach(u => {
+    admin.innerHTML = `
+        <div style="display:flex; gap:50px;">
+            <div>
+                <h3>Pending Users</h3>
+                <div id="pendingList"></div>
+            </div>
+            <div>
+                <h3>Approved Users</h3>
+                <div id="approvedList"></div>
+            </div>
+        </div>
+    `;
+
+    const pendingList = document.getElementById("pendingList");
+    const approvedList = document.getElementById("approvedList");
+
+    pendingData.forEach(u => {
         const div = document.createElement("div");
         div.innerHTML = `
             ${u.username}
             <button onclick="approveUser(${u.id})">Approve</button>
         `;
-        admin.appendChild(div);
+        pendingList.appendChild(div);
+    });
+
+    approvedData.forEach(u => {
+        const div = document.createElement("div");
+        div.innerHTML = `
+            ${u.username}
+            <button onclick="setPending(${u.id})">Pending</button>
+        `;
+        approvedList.appendChild(div);
     });
 }
 

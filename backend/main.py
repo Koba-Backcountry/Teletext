@@ -137,3 +137,27 @@ def update_admin(data: AdminUpdate):
     db.close()
 
     return {"status": "ok"}
+
+@app.get("/approved-users")
+def approved_users():
+    db = SessionLocal()
+    users = db.query(User).filter(User.is_approved == 1, User.is_admin == 0).all()
+    result = [{"id": u.id, "username": u.username} for u in users]
+    db.close()
+    return result
+
+
+@app.post("/set-pending/{user_id}")
+def set_pending(user_id: int):
+    db = SessionLocal()
+
+    u = db.query(User).filter(User.id == user_id).first()
+    if not u:
+        db.close()
+        return {"status": "not_found"}
+
+    u.is_approved = 0
+    db.commit()
+    db.close()
+
+    return {"status": "ok"}
