@@ -7,6 +7,10 @@ services:
     restart: always
     ports:
       - "8000:8000"
+    volumes:
+      - ./Bases:/Bases
+      - ./Flags LiveScore.txt:/Flags LiveScore.txt
+      - ./Flags BetCity.txt:/Flags BetCity.txt
 
   frontend:
     image: python:3.11-slim
