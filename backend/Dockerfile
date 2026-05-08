@@ -3,9 +3,6 @@ FROM python:3.11-slim
 WORKDIR /app
 
 COPY . .
-COPY ../Bases /Bases
-COPY ../Flags\ LiveScore.txt /Flags LiveScore.txt
-COPY ../Flags\ BetCity.txt /Flags BetCity.txt
 
 RUN pip install --no-cache-dir fastapi uvicorn requests sqlalchemy apscheduler
 
