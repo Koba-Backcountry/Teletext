@@ -55,7 +55,7 @@ window.onload = function() {
 }
 
 async function login() {
-    const res = await fetch("http://localhost:8000/login", {
+    const res = await fetch("http://"+window.location.hostname+":8000/login", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -89,7 +89,7 @@ async function login() {
 }
 
 async function register() {
-    const res = await fetch("http://localhost:8000/register", {
+    const res = await fetch("http://"+window.location.hostname+":8000/register", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -104,7 +104,7 @@ async function register() {
 }
 
 async function loadPendingUsers() {
-    const res = await fetch("http://localhost:8000/pending-users");
+    const res = await fetch("http://"+window.location.hostname+":8000/pending-users");
     const data = await res.json();
 
     const admin = document.getElementById("admin-content");
@@ -130,7 +130,7 @@ function logout() {
 }
 
 async function approveUser(id) {
-    await fetch("http://localhost:8000/approve/" + id, {
+    await fetch("http://"+window.location.hostname+":8000/approve/" + id, {
         method: "POST"
     });
 
@@ -138,7 +138,7 @@ async function approveUser(id) {
 }
 
 async function loadMatches() {
-    const res = await fetch("http://localhost:8000/matches");
+    const res = await fetch("http://"+window.location.hostname+":8000/matches");
     const data = await res.json();
 
     const container = document.getElementById("container");
@@ -190,7 +190,7 @@ async function loadMatches() {
 }
 
 async function updateAdmin() {
-    const res = await fetch("http://localhost:8000/admin/update", {
+    const res = await fetch("http://"+window.location.hostname+":8000/admin/update", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
