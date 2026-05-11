@@ -17,16 +17,21 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
+from sqlalchemy import inspect
+
 @app.on_event("startup")
 def startup():
     Base.metadata.create_all(bind=engine)
-    load_translations()
-    load_flags()
-    scheduler.start()
-    update_matches()
+
     db = SessionLocal()
-    exists = db.query(User).filter(User.username == "admin").first()
-    if not exists:
+
+    inspector = inspect(engine)
+    if "users" in inspector.get_table_names():
+        users_count = db.query(User).count()
+    else:
+        users_count = 0
+
+    if users_count == 0:
         db.add(User(
             username="admin",
             password="admin",
@@ -34,7 +39,14 @@ def startup():
             is_admin=1
         ))
         db.commit()
+
     db.close()
+
+    load_translations()
+    load_flags()
+    scheduler.start()
+    update_matches()
+
 
 @app.get("/matches")
 def matches():
