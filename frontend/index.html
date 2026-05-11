@@ -45,6 +45,8 @@
 let direction = 1;
 let position = 0;
 
+const API = "http://" + window.location.hostname + ":8000";
+
 window.onload = function() {
     // არაფერი არ უნდა ჩაიტვირთოს ავტომატურად
     document.getElementById("auth").style.display = "block";
@@ -55,7 +57,7 @@ window.onload = function() {
 }
 
 async function login() {
-    const res = await fetch("http://" + window.location.hostname + ":8000/login", {
+    const res = await fetch(API  + "/login", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -89,7 +91,7 @@ async function login() {
 }
 
 async function register() {
-    const res = await fetch("http://" + window.location.hostname + ":8000/register", {
+    const res = await fetch(API + "/register", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -104,7 +106,7 @@ async function register() {
 }
 
 async function setPending(id) {
-    await fetch("http://" + window.location.hostname + ":8000/set-pending/" + id, {
+    await fetch(API + "/set-pending/" + id, {
         method: "POST"
     });
 
@@ -112,10 +114,10 @@ async function setPending(id) {
 }
 
 async function loadPendingUsers() {
-    const pendingRes = await fetch("http://" + window.location.hostname + ":8000/pending-users");
+    const pendingRes = await fetch(API + "/pending-users");
     const pendingData = await pendingRes.json();
 
-    const approvedRes = await fetch("http://" + window.location.hostname + ":8000/approved-users");
+    const approvedRes = await fetch(API + "/approved-users");
     const approvedData = await approvedRes.json();
 
     const admin = document.getElementById("admin-content");
@@ -165,7 +167,7 @@ function logout() {
 }
 
 async function approveUser(id) {
-    await fetch("http://" + window.location.hostname + ":8000/approve/" + id, {
+    await fetch(API + "/approve/" + id, {
         method: "POST"
     });
 
@@ -173,7 +175,7 @@ async function approveUser(id) {
 }
 
 async function loadMatches() {
-    const res = await fetch("http://" + window.location.hostname + ":8000/matches");
+    const res = await fetch(API + "/matches");
     const data = await res.json();
 
     const container = document.getElementById("container");
@@ -225,7 +227,7 @@ async function loadMatches() {
 }
 
 async function updateAdmin() {
-    const res = await fetch("http://" + window.location.hostname + ":8000/admin/update", {
+    const res = await fetch(API + "/admin/update", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({
@@ -252,9 +254,6 @@ function scrollLoop() {
     requestAnimationFrame(scrollLoop);
 }
 
-loadMatches();
-setInterval(loadMatches, 90000);
-scrollLoop();
 </script>
 
 </body>
