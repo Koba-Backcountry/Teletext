@@ -6,6 +6,7 @@ from loader import load_translations, load_flags
 from scheduler import scheduler
 from services import get_all_matches, update_matches
 from models import User, Translation
+from sqlalchemy import inspect
 
 app = FastAPI()
 
