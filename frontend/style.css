@@ -138,3 +138,28 @@ body {
     text-decoration: underline;
     color: #00FFFF;
 }
+
+.user-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    width: 320px;
+
+    padding: 10px 15px;
+    margin-bottom: 10px;
+
+    background: rgba(255,255,255,0.08);
+
+    border: 1px solid #00FFFF;
+    border-radius: 10px;
+}
+
+.user-card button {
+    background: #00FFFF;
+    border: none;
+    padding: 6px 14px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
