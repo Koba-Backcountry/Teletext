@@ -80,11 +80,6 @@ def normalize_team_name(name):
 def get_today():
     return datetime.now().strftime("%Y%m%d")
 
-
-def clean_text(text):
-    return text.strip().lower()
-
-
 def translate(name, source):
     db = SessionLocal()
 
