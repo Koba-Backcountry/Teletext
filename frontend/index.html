@@ -28,17 +28,19 @@
 <!-- TELETEXT -->
 <div id="container" style="display:none;"></div>
 <div id="admin" style="display:none;">
-    <button onclick="logout()">Logout</button>
+    <div id="admin-wrapper">
+        <button onclick="logout()">Logout</button>
 
-    <div style="margin-top:20px;">
-        <h3>Admin Settings</h3>
-        <input id="newUser" placeholder="new username">
-        <input id="newPass" placeholder="new password" type="password">
-        <button onclick="updateAdmin()">Save</button>
-        <div id="admin-msg"></div>
+        <div style="margin-top:20px;">
+            <h3>Admin Settings</h3>
+            <input id="newUser" placeholder="new username">
+            <input id="newPass" placeholder="new password" type="password">
+            <button onclick="updateAdmin()">Save</button>
+            <div id="admin-msg"></div>
+        </div>
+
+        <div id="admin-content" style="margin-top:30px;"></div>
     </div>
-
-    <div id="admin-content" style="margin-top:30px;"></div>
 </div>
 
 <script>

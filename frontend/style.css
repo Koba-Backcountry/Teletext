@@ -163,3 +163,9 @@ body {
     cursor: pointer;
     font-weight: bold;
 }
+
+#admin-wrapper {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+}
