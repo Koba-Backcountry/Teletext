@@ -20,7 +20,7 @@ body {
     background: #000080;
     color: white;
     font-family: Arial;
-    overflow: hidden;
+    overflow: auto;
 }
 
 #auth {

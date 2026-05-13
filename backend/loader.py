@@ -20,6 +20,19 @@ def load_translations():
                     source="livescore"
                 ))
 
+    # Hockey (Livescore)
+    with open("/Bases/hockey.txt", encoding="utf-8") as f:
+        for line in f:
+            eng = line[:42].strip().lower()
+            geo = line[42:].strip()
+            if eng:
+                db.add(Translation(
+                    source_name=eng,
+                    georgian_name=geo,
+                    source="hockey"
+                ))
+
+
     # Betcity
     with open("/Bases/soccerBC.txt", encoding="utf-8") as f:
         for line in f:
@@ -31,6 +44,18 @@ def load_translations():
                     source_name=ru,
                     georgian_name=geo,
                     source="betcity"
+                ))
+
+    # Hockey (Betcity)
+    with open("/Bases/hockeyBC.txt", encoding="utf-8") as f:
+        for line in f:
+            ru = line[:42].strip().lower()
+            geo = line[42:].strip()
+            if ru:
+                db.add(Translation(
+                    source_name=ru,
+                    georgian_name=geo,
+                    source="hockeyBC"
                 ))
 
     db.commit()

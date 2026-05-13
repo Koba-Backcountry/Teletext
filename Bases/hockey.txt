@@ -1,0 +1,1275 @@
+Columbus Blue Jackets                     kolumbus blu jaketsi
+New Jersey Devils                         niu jersi devilsi
+Atlanta Thrashers                         atlanta treSersi
+Boston Bruins                             boston bruinsi
+St. Louis Blues                           st. luis bluzi
+New York Islanders                        niu iork ailendersi
+Washington Capitals                       vaSington kapitalsi
+Florida Panthers                          florida pantersi
+Buffalo Sabres                            bufalo seibrzi
+Tampa Bay Lightning                       tampa bei laiTningi
+Dallas Stars                              dalas starsi
+Toronto Maple Leafs                       toronto meipl lifsi
+Carolina Hurricanes                       karolina hurikansi
+Chicago Blackhawks                        Cikago bleqhouqsi
+Minnesota Wild                            minesota uaildi
+Nashville Predators                       naSvil predatorsi
+Linkoping                                 linCepingi
+Farjestad                                 feriestadi
+HV 71                                     hv 71
+Lulea                                     luleo
+Amur Khabarovsk                           amur xabarovski
+Lada Togliatti                            lada toliati
+Metallurg Novokuznetsk                    metalurg novokuznecki
+Ak Bars Kazan                             ak bars kazani
+Sibir Novosibirsk                         sibir novosibirski
+Neftehimik Niznekamsk                     neftximik niJnekamski
+Metallurg Magnitogorsk                    metalurg magnitogorski
+SKA St. Petersburg                        ska peterburgi
+Salavat Ulaev UFA                         salavat iuliaev ufa
+Salavat Yulaev Ufa                        salavat iuliaev ufa
+Severstal Cherepovec                      severstali
+Severstal Cherepovets                     severstali
+Atlant                                    atlanti
+Barys Astana                              baris astana
+Dynamo Moscow                             dinamo moskovi
+Vityaz                                    vitiazi
+Spartak Moscow                            moskovis spartaki
+Dinamo Minsk                              dinamo minski
+CSKA Moscow                               cska moskovi
+Khimik Voskresensk                        ximik voskresenski
+Dinamo Riga                               dinamo riga
+Lokomotiv Yaroslavl                       lokomotiv iaroslavli
+Montreal Canadiens                        monreal kanadiensi
+New York Rangers                          niu iork reinjersi
+Anaheim Ducks                             anahaim daqsi
+Ottawa Senators                           otava senatorsi
+Pittsburgh Penguins                       pitsburg pingvinzi
+Los Angeles Kings                         los anjeles kingsi
+Edmonton Oilers                           edmonton oilersi
+Phoenix Coyotes                           feniqs koiotsi
+Detroit Red Wings                         detroit red vingzi
+San Jose Sharks                           san xose Sarksi
+Vancouver Canucks                         vankuver kenaksi
+V.Frolunda                                v.frolunda
+Sodertalje                                sodertali
+HIFK                                      hifk
+Pelicans                                  pelikansi
+HPK                                       hpk
+Ilves                                     ilvesi
+Karpat                                    kerpeti
+Lukko                                     luko
+SaiPa                                     saipa
+KalPa                                     kalpa
+Tappara                                   tapara
+Blues                                     bluzi
+TPS                                       tps
+JYP                                       jip
+Sparta                                    sparta
+Karlovy Vary                              karlovi vari
+Torpedo                                   torpedo
+Avangard Omsk                             avangard omski
+Hamburg Freezers                          hamburg frizersi
+Grizzly Adams Wolfsburg                   volfsburgi
+Grizzlys Wolfsburg                        grizli volfsburgi
+Hannover Scorpions                        hanover skorpionsi
+ERC Ingolstadt                            ingolStadti
+Kassel Huskies                            kaseli
+Dusseldorfer EG                           diuseldorferi
+Eisbaren Berlin                           eisbaren berlini
+Eisbaeren Berlin                          eisbaren berlini
+Davos                                     davosi
+Rapperswil-Jona Lakers                    repersvil-jona leikersi
+Servette                                  serveti
+Lugano                                    lugano
+Acroni Jesenice                           akroni iesenice
+Alba Volan FeVita                         alba volan fevita
+Liwest Linz                               livec linci
+Klagenfurter AC                           klagenfurteri
+Pasut VSV                                 pasuti
+ZM Olimpija                               zm olimpia
+Olimpija                                  olimpia
+Salzburg                                  zalcburgi
+Innsbruck                                 insbruki
+Vienna Capitals                           vena
+Graz 99ers                                grac 99ers
+Furuset                                   furuseti
+Sparta Sarpsborg                          sparta sarpsborgi
+Herning Blue Fox                          herning blu foqsi
+Odense Bulldogs                           odense buldogsi
+AaB Ishockey                              aab aishokei
+Herlev Hornets                            herlev hornetsi
+EfB Ishockey                              efb aishokei
+Frederikshavn White Hawks                 frederikshavn vaiT houqsi
+Ritten                                    riteni
+Val Pusteria                              val pusteria
+Asiago                                    aziago
+Cortina                                   kortina
+Alleghe                                   alege
+Pontebba                                  ponteba
+Janow                                     ianovi
+Podhale                                   podhale
+MMKS Podhale Nowy Targ                    mmks podhale novi targi
+Stoczniowiec                              energia
+Stoczniowiec 2014                         energia 2014
+Tychy                                     tixi
+GKS Tychy                                 gks tixi
+Cracovia                                  krakovia
+Vasteras                                  vesterosi
+Boras                                     borasi
+Dresdner Eislowen                         drezdner aisloveni
+Ajoie                                     aJua
+Chaux-de-Fonds                            So-de-foni
+Basel                                     bazeli
+Lausanne                                  lozana
+Olten                                     olteni
+Sierre-Anniviers                          sier-aniviersi
+Langenthal                                langentali
+Thurgau                                   Turgau
+GCK Lions                                 gck laionsi
+Salzburg II                               zalcburgi 2
+Zell am See                               zel am si
+Philadelphia Flyers                       filadelfia flaiersi
+Colorado Avalanche                        kolorado avalanCi
+Calgary Flames                            kalgari fleimsi
+Fassa                                     fasa
+Bolzano                                   bolcano
+Bjorkloven                                biorkloveni
+Bjoerkloeven                              biorkloveni
+Leksands                                  leksandsi
+Huddinge                                  hadingi
+AIK                                       aik
+Mariestad                                 maristadi
+Nybro                                     nibro
+Mora                                      mora
+Malmo                                     malmo
+Sundsvall                                 sundsvali
+Almtuna                                   almtuna
+Troja/Ljungby                             troia/liungbi
+Bofors                                    boforsi
+Vaxjo                                     vaqsio
+Oskarshamn                                oskarSamni
+HeKi                                      heki
+Sport                                     sporti
+Hokki                                     hoki
+KooKoo                                    kooko
+K-Vantaa                                  k-vanta
+D Team                                    d Timi
+LeKi                                      leki
+SaPKo                                     sapko
+Titaanit                                  titaaniti
+Jokipojat                                 iokipoiati
+Bregenzerwald                             bregencervaldi
+Lustenau                                  lustenau
+Dornbirn                                  dornbirni
+Supergau Feldkirch                        supergau feldkirxi
+Hasle/Loren                               hasle/loreni
+Hasle/Loeren                              hasle/loreni
+Manglerud/Star                            manglerud/stari
+Kongsvinger                               kongsvingeri
+Sparta Sarpsborg 2                        sparta sarpsborg 2
+Frisk-Asker 2                             frisk-asker 2
+Stjernen 2                                sternen 2
+Gruner                                    gruneri
+Gruener                                   gruneri
+Storhamar 2                               storhamar 2
+Valerenga 2                               valerenga 2
+Vaalerenga                                valerenga
+Skellefteaa                               Selefteo
+MoDo                                      modo
+Rogle                                     rogle
+Brynas                                    briunesi
+Brynaes                                   briunesi
+Assat                                     eseti
+Jokerit                                   iokeriti
+Vitkovice                                 vitkovice
+Slavia                                    slavia
+Straubing Tigers                          Straubing Taigersi
+Comet                                     kometi
+Stavanger                                 stavangeri
+Frisk-Asker                               frisk-askeri
+Storhamar                                 storhamari
+Lillehammer                               lilehameri
+Stjernen                                  stierneni
+Liberec                                   libereci
+Zlin                                      zlini
+Trinec                                    trSineci
+Pardubice                                 pardubice
+Dynamo Pardubice                          dinamo pardubice
+Plzen                                     plzeni
+Znojmo                                    znoimo
+Kladno                                    kladno
+Mountfield                                mauntfildi
+Litvinov                                  litvinovi
+Mlada Boleslav                            mlada boleslavi
+L. Mikulas                                liptovski mikulasi
+Liptovsky Mikulas                         liptovski mikulasi
+Poprad                                    popradi
+Trencin                                   trenCini
+Dukla Trencin                             trenCini
+Skalica                                   skalica
+Nitra                                     nitra
+Zilina                                    Jilina
+Slovan                                    slovani
+Augsburger Panther                        ausburger panTersi
+Adler Mannheim                            adler manhaimi
+Iserlohn Roosters                         iserlon rustersi
+Krefeld Pinguine                          krefeld pinguini
+Bern                                      berni
+Zug                                       cugi
+Kloten Flyers                             kloten flaersi
+SC Riessersee                             riserze
+Landshut Cannibals                        landshut kanibalsi
+Wolfe Freiburg                            volf fraiburgi
+Bremerhaven                               bremeraveni
+Heilbronner Falken                        hailbroner falkeni
+Bietigheim Steelers                       bitighaim stilerzi
+EV Ravensburg                             ravensburgi
+ETC Crimmitschau                          krimitSau
+Visp                                      vispi
+Bergen                                    bergeni
+Rosenborg                                 rusenborgi
+Lausitzer Fuchse                          lauzicer fiuxse
+Ban. Bystrica                             ban. bistrica
+B. Bystrica                               b. bistrica
+Zvolen                                    zvoleni
+Kosice                                    koSice
+Kolner Haie                               kolner haie
+Rouen                                     ruani
+Tours                                     turi
+Amiens                                    amieni
+Briancon                                  briansoni
+Epinal                                    epinali
+Chamonix                                  Samoni
+Mont Blanc                                mon blani
+Neuilly/Marne                             noili/marne
+Morzine Avoriaz                           morzin avoriazi
+Grenoble                                  grenobli
+Strasbourg                                strasburgi
+Angers                                    anJe
+Villard                                   vilari
+Dijon                                     diJoni
+ZSC Lions                                 zsc laionsi
+Traktor                                   traqtori
+Jukurit                                   iukuriti
+TuTo                                      tuto
+Lillehammer 2                             lilehamer 2
+Skelleftea                                skelefta
+Martin                                    martini
+Biel                                      bili
+SCL Tigers                                scl Taigersi
+Fr. Gotteron                              fr. goteroni
+Ambri                                     ambri
+Slovenia                                  slovenia
+Austria                                   avstria
+Germany                                   germania
+Japan                                     iaponia
+Czech Republic                            CexeTi
+Finland                                   fineTi
+Russia                                    ruseTi
+Sweden                                    SvedeTi
+Slovakia                                  slovakia
+Slovakia B                                slovakia b
+Belarus                                   belorusia
+Belarus B                                 belorusia b
+Switzerland                               Sveicaria
+Schwenninger Wild Wings                   Sveninger uaild vingzi
+Hungary                                   ungreTi
+Ukraine                                   ukraina
+Latvia                                    latvia
+Italy                                     italia
+Kazakhstan                                yazaxeTi
+France                                    safrangeTi
+Norway                                    norvegia
+Norway B                                  norvegia b
+Denmark                                   dania
+TMH Polonia Bytom                         tmh polonia bitomi
+La Chaux-de-Fonds                         la So-de-foni
+Timra                                     timre
+Chomutov                                  xomutovi
+Pirati Chomutov                           xomutovi
+Kometa                                    kometa
+Hradec Kralove                            hradek kralove
+Nova Ves                                  nova vesi
+Presov 07                                 preSov 07
+Piestany                                  pistani
+Medvescak                                 medveJaki
+Molot Perm                                molot permi
+Molot-Prikamye Perm                       molot-prikamie
+Kaztsink-Torpedo Ust-Kamenogorsk          kazcink-torpedo kamenogorski
+Kazzinc-Torpedo                           kazcink-torpedo
+Lipetsk                                   lipecki
+Ryazan                                    riazani
+Sputnik Nyzhnui Tahil                     sputnik niJnii tahili
+Sputnik Nizhny Tagil                      sputnik nt
+Aryada-Akpars Volzhsk                     ariada-akpars volJski
+Dyzel Penza                               dizel penza
+Dizel Penza                               dizeli
+Mechel Chelyabinsk                        meCel Celiabinski
+Avtomobilist Ekaterinburg                 avtomobilist ekaterinburgi
+Yuzhnyi Ural Orsk                         iuJni ural orski
+Yuzhny Ural Orsk                          iuJni ural orski
+Izhstal Izhevsk                           iJstal iJevski
+Toross Neftekamsk                         toros neftekamski
+Neftyanik Almetyevsk                      neftianik almetievski
+Krylya Sovetov                            krilia sovetovi
+Croatia                                   xorvatia
+Australia                                 avstralia
+Lithuania                                 litva
+Great Britain                             didi britaneTi
+Romania                                   rumineTi
+Romania B                                 rumineTi b
+Netherlands                               holandia
+Poland                                    poloneTi
+USA                                       aSS
+Canada                                    kanada
+IC Gentofte                               gentofte
+Rungsted Cobras                           ringstedi
+Hvidovre Ligahockey                       vidovre ligahokei
+ESV Kaufbeuren                            esv kaufboireni
+Hannover Indians                          hanover indiansi
+Olomouc                                   olomouci
+Vrchlabi                                  vrxlabi
+Rebel                                     rebeli
+Kadan                                     kadani
+Berounsti medvidi                         berounsti medvidi
+Dukla Jihlava                             dukla jihlava
+Jihlava                                   jihlava
+Horacka Slavia                            horaka slavia
+Salith Sumperk                            salit sumperki
+Chrudim                                   Crudimi
+Benatky nad Jizerou                       benatki nad izerou
+Tabor                                     tabori
+Havirov                                   havirovi
+Sarov                                     sarovi
+THK Tver                                  tveri
+MHC Krylya Sovetov                        mhk krilia sovetovi
+VMF St Petersburg                         vmf st. peterburgi
+Kristall Saratov                          kristal saratovi
+Glazov                                    glazovi
+Orenburg                                  orenburgi
+VVS Samara                                vvs samara
+Zauralye Kurhan                           zauralie
+Zauralie Kurgan                           zauralie
+Zauralye Kurgan                           zauralie
+Ermat Angarsk                             ermat angarski
+Ermak Angarsk                             ermak angarski
+Bardejov                                  bardeJovi
+Detva                                     detva
+Topolcany                                 topolCani
+Brezno                                    brezno
+Michalovce                                mixalovce
+Pov. Bystrica                             pov. bistrica
+Prievidza                                 prieviZa
+VTJ Trebisov                              trebiSovi
+Trnava                                    trnava
+Belgorod                                  belgorodi
+Titan Klin                                titan klini
+RoKi                                      roki
+Orebro                                    orebro
+Maribor mladi                             maribor mladi
+Toja Olimpija                             toia olimpia
+MK Bled                                   mk bledi
+Partizan                                  partizani
+Mladost                                   mladosti
+mladi Jesenice                            mladi iesenice
+Slavija Ljubljana                         slavia liubliana
+Triglav Kranj                             triglav krani
+Jutul                                     jutuli
+Toensberg og Omegn                        tonsberg og omegni
+Tonsberg og Omegn                         tonsberg og omegni
+Manglerud/Star 2                          manglerud/star 2
+Stavanger 2                               stavanger 2
+Senica                                    senica
+Ciarko Sanok                              sanoki
+Ciarko PBS Bank STS Sanok                 sanoki
+Ciarko PBS Bank KH Sanok                  sanoki
+Nesta Torun                               nesta toruni
+Jastrzebie                                jastrzebie
+JKH GKS Jastrzebie                        gks jastrzebie
+Zaglebie Sosnowiec                        zaglebie sosnovieci
+Aksam Unia                                aksam unia
+Aksam Unia Oswiecim                       aksam unia osvencimi
+GAP                                       gap
+Valpellice                                valpelice
+Canada Selects                            kanada seleqTsi
+Krynica                                   krinica
+Valpellice Arce                           valpelice arse
+Stavbar Maribor                           stavbar maribori
+Troja-Ljungby                             troia-liungbi
+Leksand                                   leksandi
+China                                     CineTi
+Avtomobilist Yekaterinburg                avtomobilist ekaterinburgi
+Thomas Sabo Ice Tigers                    tomas sabo ais Taigersi
+South Korea                               samxreT korea
+Korea                                     korea
+Stadion Litomerice                        stadion litomerice
+IK Aarhus                                 orhusi
+UHC Dynamo                                dinamo
+Orange 20                                 oranj 20
+Basel Sharks                              bazel Sarqsi
+Rubin Tyumen                              tiumenis rubini
+Gomel                                     gomeli
+Liepajas Metallurgs                       metalurgsi
+Khimik-SKA Novopolotsk                    ximik-ska novopolocki
+Neman Grodno                              neman grodno
+Khimvolokno Mogliev                       ximvolokno mogiliovi
+Metallurg Zhlobin                         metalurg Jlobini
+Shakhtar Soligorsk                        Saxtar soligorski
+Shinnik Bobruisk                          Sinik bobruiski
+Vitebsk                                   vitebski
+Brest                                     bresti
+Sokil Kiev                                sokol kievi
+Yunost Minsk                              iunost minski
+Tingsryds                                 tingsridsi
+K-Laser                                   k-laseri
+IHC KOMTERM Pisek                         komterm piseki
+Team Zagreb                               Tim zagrebi
+HDD Bled                                  hdd bledi
+Dynamo Tver                               dinamo tveri
+ATSE Graz                                 atse graci
+Graz 99ers Junior                         grac 99 juniori
+Starbulls Rosenheim                       starbuls rosenhaimi
+Ringerike                                 ringerike
+Rosenborg 2                               rosenborg 2
+Caen                                      kani
+St Louis Blues                            st luis bluzi
+Medvescak Zagreb                          medveJak zagrebi
+EV Ravensburg Tower Stars                 ravensburg tauer starsi
+Fischtown Pinguins Bremerhaven            fiSTaun pingvins bremerhaveni
+Djurgarden                                iurgordeni
+Djurgaarden                               iurgordeni
+IHC KOMTERM PA&shy;sek                    komterm pa-seki
+VrchlabA&shy;                             vrClaba
+Yugra Khanty Mansyisk                     iugra xanti mansiiski
+Spartak Moskva                            moskovis spartaki
+Sparta Praha                              sparta praRa
+Sparta Prague                             sparta praRa
+Lorenskog                                 lorenskogi
+Lorenskog 2                               lorenskog 2
+Valerenga                                 valerenga
+Mountfield Martin                         maunTfild martini
+EHC Munchen                               ehc miunxeni
+SonderjyskE                               senderiske
+Rodovre Mighty Bulls                      rodovre maiTi bulzi
+Spain                                     espaneTi
+Karlskrona                                karlskrona
+United Kingdom                            didi britaneTi
+Estonia                                   estoneTi
+Lida                                      lida
+Copenhagen Hockey                         kopenhagen hokei
+Puchov                                    puxovi
+Lev Poprad                                lev popradi
+Donbass Donetsk                           donbas donecki
+Donbass                                   donbasi
+Peliitat                                  pelitati
+Most                                      mosti
+Sokol Krasnoyarsk                         sokol krasnoiarski
+Vienna Capitals II                        vena kapitalsi II
+Dab. Docler Dunaujvaros                   dab. dokler dunaivaroSi
+Klagenfurter AC II                        klagenfurteri II
+Liwest Linz II                            livest linci II
+Herlev Eagles                             herlev iglzi
+Vipiteno                                  vipiteno
+Ece Kapfenberg Bulls                      kapfenberg bulsi
+Winnipeg Jets                             uinipeg jeTsi
+Russia B                                  ruseTi b
+Kloten                                    kloteni
+SAPA Fehervar                             sapa fehervari
+Fehervar                                  fehervari
+Red Orange Pustertal                      val pusteria
+Broncos Vipiteno                          vipiteno
+Ritten Sport                              renoni
+Kallinge/Ronneby                          kalinge/ronebiu
+Berounsti Medvedi                         berounsti medvedi
+Hodonin                                   hodonini
+Klasterec Nad Ohri                        klaSterec nad ogrJi
+Lev Praha                                 levi
+Katowice GKS                              katovice
+GKS Katowice                              gks katovice
+Amager Ishockey                           amager aishokei
+Dynamo Balashikha                         dinamo balaSixa
+Saryarka Karaganda                        sariarka karaganda
+Kuban Krasnodar                           yubani
+Chelmet Chelyabinsk                       Celmeti
+JYP-Akatemia                              iup-akademia
+Keski-Uusimaa                             uusimaa
+Slovan U.                                 slovani u.
+Pisek                                     piseki
+Lokomotiv Yaroslavl 2                     lokomotivi 2
+Djurgardens                               iurgordeni
+Djurgaardens                              iurgordeni
+Buran Voronezh                            buran voroneJi
+Aalborg Pirates                           olborgi
+Red Ice                                   red aisi
+Mulhouse Scorpions                        miuluzi
+Morzine-Avoriaz                           morzin-avoriazi
+Asploven                                  aspleveni
+Nes                                       nesi
+Skien                                     Sieni
+Hockey Milano Rossoblu                    hokei milano
+Villard Lans                              vilari
+Viking                                    vikingi
+Narvik                                    narviki
+Mulhouse                                  mulhausi
+Fribourg                                  friburgi
+Salavat Ufa                               salavat ufa
+Korea Republic                            samx. korea
+Pitea                                     piteo
+Vita Hasten                               vita hasteni
+Admiral Vladivostok                       admirali
+Esbjerg Elite Icehockey                   esbierg elit aishokei
+Rungsted Ishockey                         ringsted aishokei
+Ciarko PBS Bank                           Carko pbs banki
+Comarch Cracovia                          komarx krakovia
+KTH Krynica                               kth krinica
+CB Hokej 2013                             cb hokei 2013
+BIK Karlskoga                             bik karlskuga
+Vaesteraas                                vasterosi
+EC Bad Nauheim                            noihaimi
+EVL Landshut                              landshuti
+Brest Albatros                            brest albatrosi
+Krakene                                   krakeni
+Celje                                     cele
+Eppan Pirates                             epan piratesi
+Neumarkt Egna                             noimarkt egna
+Merano                                    merano
+SV Kaltern                                kalterni
+Gherdeina                                 gerdina
+Milano Hockey                             milani
+Bipolo                                    bipolo
+Tallinn Viiking Sport                     talin viking sporti
+Partizan Beograd                          partizan beogradi
+CSKA Sofia                                cska sofia
+Juniors Riga                              juniors riga
+Nottingham Panthers                       notingem panterzi
+HYS The Hague                             his haaga
+Miercurea Ciuc                            merkuria Cuki
+Slavija                                   slavia
+Dunaujvaros                               dunaivaroSi
+Toros Neftekamsk                          torosi
+Irtysh Pavlodar                           irtiSi
+Stavanger Oilers                          stavangeri
+SoenderjyskE                              sonderiiske
+Ambri-Piotta                              ambri-piota
+Fribourg-Gotteron                         friburgi
+Motor CB                                  motori
+AZ Havirov 2010                           havirov 2010
+Slovan Ustecti Lvi                        slovani u
+Slovan Bratislava                         slovan bratislava
+Slavia Prague                             slavia pr
+SHK 37 Piestany                           37 piestani
+Molodaya Gvardia                          molodaia gvardia
+Energie Karlovy Vary                      energia
+Snezhnye Barsy                            sneJnie barsi
+Ladya Togliatti Juniors                   ladia juniorsi
+MVD Juniors                               mvd juniorsi
+Krasnaya Armiya                           krasnaia armia
+Dinamo Shinnik                            dinamo Siniki
+Loko                                      loko
+Dynamo St. Petersburg Juniors             dinamo spb juniorsi
+MHC Spartak                               mxk spartaki
+MHC Khimik                                mxk ximiki
+Russkie Vityazi                           ruskie vitiazi
+SKA-1946                                  ska-1946
+Almaz                                     almazi
+Atlanty                                   atlanti
+Yunost                                    iunosti
+Riga                                      riga
+Kristall Berdsk                           kristal bdk
+Kuznetskie Medvedi                        kuzneckie medvedi
+Omskie Yastreby                           omskie iastrebi
+Molot-Prikamye Perm Juniors               molot juniorsi
+Belye Medvedi                             belie medvedi
+Tolpar                                    tolpari
+Avto Yekaterinburg                        avto
+Reaktor                                   reaqtori
+Sibirskie Snaipery                        sibirskie snaiperi
+Bars Kazan                                barsi
+Olimpiya Kirovo-Chepetsk                  olimpia
+Chaika                                    Caika
+Stalnye Lisy                              stalnie lisi
+Mamonty Yugry                             mamonti iugri
+Luleaa                                    luleo
+Kapitan Stupino                           kapitan stupino
+Serebryanye Lvy                           serebrianie lvi
+Amurskie Tigry                            amurskie tigri
+Belye Tigry                               belie tigri
+Junior Kurgan                             iunior kurgani
+Sakhalinskie Akuly                        saxalinskie akuli
+Berkuty Kubani                            berkuti
+Chelny Juniors                            Celni juniorsi
+Tyumensky Legion                          tiumenski legioni
+Irbis Kazan                               irbis kazani
+Gentofte Stars                            gentofte starzi
+Roedovre Mighty Bulls                     rodovre maiTi bulzi
+Sochi                                     soCi
+Dinamo Molodechno                         dinamo molodeCno
+Jestrabi Prostejov                        prosteiovi
+KeuPa HT                                  keupa
+Loerenskog                                lorenskogi
+SKA-Kareliya                              ska-karelia
+Asploeven                                 aspleveni
+EHC Muenchen                              miunxeni
+Timraa                                    timre
+Dresdner Eisloewen                        drezden eisleueni
+Lausitzer Fuechse                         lositcer fiuSi
+Lyon                                      lioni
+Naprzod Janow                             ianovi
+EC Die Adler Kitzbuehel                   kitcbiuheli
+Kapfenberg Steelers                       kapfenbergi
+KSV Kapfenberg                            ksv kapfenbergi
+MUKS Orlik Opole                          orlik opole
+Froelunda                                 frelunda
+Koelner Haie                              kiolner haie
+Duesseldorfer EG                          diuseldorferi
+Esbjerg Energy                            esbierg enerji
+Beostar                                   beostari
+Izmir BJBSK                               izmiri
+Puigcerda CG                              puCserda
+Malmoe                                    malmio
+Roegle                                    riogle
+Loewen Frankfurt                          louen frankfurti
+Arizona Coyotes                           arizona koiotsi
+Oerebro                                   erebru
+Vaexjoe                                   veskSio
+Faerjestad                                feriestadi
+Linkoeping                                linCepingi
+Soedertaelje                              sodertelie
+Tilburg Trappers                          trapers tilburgi
+Belfast Giants                            belfast jaianTsi
+Fischtown Pinguins                        fiSTaun pingvinzi
+Corona Brasov                             braSovi
+Riga Prizma                               riga prizma
+Team Foligno                              folinio
+Team Toews                                toevsi
+HDD Olimpija                              olimpia liubliana
+Banska Bystrica                           banska bistrica
+TH Unia Oswiecim                          osvencimi
+Oswiecim                                  osvencimi
+Kraakene                                  krakeni
+EC VSV                                    filaxi
+Vita Haesten                              vita hesteni
+Kaerpaet                                  kiarpiati
+Aessaet                                   esseti
+HD Jesenice                               esenice iun.
+VEU Feldkirch                             feldkirxi
+Yermak Angarsk                            ermat angarski
+Pantern IK                                panterni
+Vasterviks IK                             vesterviki
+Sheffield Steelers                        Sefild stilersi
+Braehead Clan                             brehed kleni
+Hvidovre                                  vidovre
+Neftekhimik Nizhnekamsk                   neftximik niJnekamski
+Ugra Khanty-Mansiysk                      iugra
+Sarmaty                                   sarmati
+Dinamo-Raubichi                           dinamo-raubiCi
+Dinamo U20 Bobruisk                       dinamo bobruiski (20)
+Dinamo Bobruisk (U20)                     dinamo bobruiski (20)
+SMS U20 Sosnowiec                         sms sosnoveci (20)
+Ariada Volzhsk                            ariada
+THC Tver                                  tgk tveri
+SKA-Neva                                  sak-neva
+Zvezda-VDV                                zvezda vdv
+Slovan Usti nad Labem                     usti nad labemi
+Zubr Prerov                               prSerovi
+Horacka Slavia Trebic                     trSebiCi
+Povazska Bystrica                         povaJska bistrica
+Nove Zamky                                nove zamki
+Nove Zamky B                              nove zamki b
+MHK Humenne                               humene
+Zvezda Chekhov                            zvezda Cexovi
+Tingsryd                                  tingsriudi
+Pantern                                   panterni
+EHC Freiburg                              fraiburgi
+EHC Winterthur                            vinterturi
+Motor Ceske Budejovice                    Ceske budeiovice
+Hermes                                    hermesi
+Bordeaux                                  bordo
+Dunarea Galati                            dunarea galati
+Coventry Blaze                            qovenTri bleizi
+Miskolci JJSE                             dvtk
+CH Jaca                                   haka
+Jesenice                                  iesenice
+Kremenchuk                                kremenCugi
+Mogilev                                   mogiliovi
+IF Sundsvall                              sundsvali
+Borlange                                  burlenge
+JHT                                       iht
+Kettera                                   ketera
+Nice                                      nica
+Red Deer Rebels                           red dir rebelsi
+Regina Pats                               rejina petsi
+Seattle Thunderbirds                      sietl Tanderberdsi
+Everett Silvertips                        everet silvertipsi
+Kingston Frontenacs                       kingston frontenaksi
+Niagara IceDogs                           niagara aisdogsi
+Barrie Colts                              bari koltsi
+North Bay Battalion                       brempton batalioni
+Saint John Sea Dogs                       sent-joni
+Cape Breton Screaming Eagles              keip breton sqriming iglzi
+Shawinigan Cataractes                     Savinigan kataraktesi
+Charlottetown Islanders                   SarlotTaun ailendersi
+Victoria Royals                           viqtoria roialsi
+Kelowna Rockets                           kelovna roketsi
+Sault Ste. Marie Greyhounds               greihaundzi
+Erie Otters                               iri otersi
+London Knights                            london naiTsi
+Kitchener Rangers                         qitCener reinjersi
+Gatineau Olympiques                       gatino olimpiksi
+Moncton Wildcats                          monkton uaildqaTsi
+Rouyn-Noranda Huskies                     roiun-noranda haskisi
+Blainville-Boisbriand Armada              bleinvil-buazbriand armada
+Brandon Wheat Kings                       brendon uiT kingsi
+Moose Jaw Warriors                        mus jo uoriorsi
+Halifax Mooseheads                        halifaqs musehedsi
+Sherbrooke Phoenix                        Serbruk feniqsi
+Victoriaville Tigres                      viqtoriavil tigresi
+Drummondville Voltigeurs                  dramondvil voltigersi
+Quebec Remparts                           kvebek rempartsi
+Baie-Comeau                               baie-komo
+Chicoutimi Sagueneens                     Sikutimi sajeninsi
+Rimouski Oceanic                          rimuski oSeaniki
+Acadie-Bathurst Titan                     akadi-baturst titani
+Val-D'Or Foreurs                          val-d'or foriorsi
+Swift Current Broncos                     svift qerent bronkosi
+Red Star Kunlun                           kunluni
+Portland Winterhawks                      portlend uinterhoksi
+Tri-City Americans                        Trai-siTi ameriqansi
+Saskatoon Blades                          saskatun bleidsi
+Spokane Chiefs                            spokan Cifsi
+Kamloops Blazers                          kamlups bleizersi
+Edmonton Oil Kings                        edmonton oil kingsi
+Medicine Hat Tigers                       medisin haT Taigersi
+Lethbridge Hurricanes                     leTbrij urikeinsi
+Prince Albert Raiders                     princ albert reidersi
+Vancouver Giants                          vankuver jaienTsi
+Prince George Cougars                     princ jorj kugarsi
+Calgary Hitmen                            kalgari hitmeni
+Sputnik Almetyevsk                        sputnik almetievski
+Altay Ust-Kamenogorsk                     altai
+Tayfun                                    taifuni
+Frydek Mistek                             fridek misteki
+Geneve-Servette                           Jeneva-serveti
+Kootenay Ice                              kutinei aisi
+Ticino Rockets                            tiCino roketsi
+EVZ Academy Zug                           akademi cugi
+Ottawa 67's                               otava 67's
+Dynamo St. Petersburg                     dinamo sankt-peterburgi
+Chamonix Morzine                          Samoni morzini
+IPK                                       ipk
+Espoo United                              espoo iunaitedi
+MHC Martin B                              martini b
+Vaesterviks IK                            vasterviki
+EHC Bayreuth - Die Tigers                 bairoiti
+Europe                                    evropa
+North America                             CrdiloeT amerika
+Soligorsk                                 soligorski
+Gjoevik                                   gioviki
+Flint Firebirds                           flint fairberdsi
+Saginaw Spirit                            sajinou spiriti
+Sarnia Sting                              sarnia stingi
+Peterborough Petes                        peterboro pitsi
+Windsor Spitfires                         vindzor spitfairzi
+Nidaros                                   nidarosi
+Guelph Storm                              gelf Stormi
+Hamilton Bulldogs                         hemilton buldogsi
+Sudbury Wolves                            sadberi vulvsi
+Oshawa Generals                           oSava jeneralzi
+Owen Sound Attack                         ouen saund ataki
+Mississauga Steelheads                    misisoga stilhedsi
+Csikszereda                               Ciksereda
+ASC Corona Brasov                         korona braSovi
+Ujpesti TE                                uipeSti
+MAC Budapest                              mak budapeSti
+Fehervar AV19 II                          fehervari II
+Debreceni                                 debreceni
+Ferencvaros                               ferencvaroSi
+Beograd                                   belgradi
+Dunaujvarosi Acelbikak                    dab dokleri
+DVTK Jegesmedvek                          dvtk
+Partizan Belgrade                         partizani
+Bat Yam                                   bat-iami
+Zeytinburnu Istanbul                      zeitinburnu stambuli
+Irbis Skate SK Sofia                      irbis sofia
+HKL HK Liepaja                            liepaia
+JACA                                      xaka
+Ducs d'Angers                             anJe
+Beibarys Atyrau                           beibarisi
+MH Automatyka Gdansk                      gdanski
+Pacific                                   pasifiki
+Central                                   sentrali
+Atlantic                                  atlantiki
+Metropolitan                              metropoliteni
+Kristianstads                             kristianstadi
+Visby/Roma                                visbi/roma
+Novopolotsk                               novopolocki
+Crvena Zvezda                             crvena zvezda
+Molodechno                                molodeCno
+Zhlobin                                   Jlobini
+Cardiff Devils                            kardif devilzi
+Red Star Kunlun Juniors                   kunlun rs juniorsi
+Vsetin                                    vsetini
+Tseng Tou                                 czen tu
+Heilongjiang                              heiluncziani
+Gornyak Uchaly                            gorniak uCali
+Dubnica                                   dubnica
+Bratislava                                bratislava
+Toelzer Loewen                            tolcer leveni
+Vegas Golden Knights                      vegas golden naiTsi
+Manchester Storm                          manCesteri
+Guildford Flames                          gildford fleimzi
+Fife Flyers                               faiv flaiersi
+Edinburgh Capitals                        edinburg qepitalsi
+Dundee Stars                              dandi starsi
+Milton Keynes Lightning                   milton kinsi
+Esja Reykjavik                            eSa reikiaviki
+Narva PSK                                 narva
+Kurbads                                   kurbadsi
+Urdin                                     urdini
+Nomad Astana                              nomadi
+Ketterae                                  ketera
+Atlantic All-Stars                        atlantik ol-starsi
+Metropolitan All-Stars                    metropolitan ol-starsi
+Olympic Athletes from Russia              oar
+Koovee                                    koove
+Serbia                                    serbia
+Yertis Pavlodar                           irtiS pavlodari
+Gornyak Rudny                             gorniak rudni
+SKA-Varyagi                               ska-variagi
+Poruba                                    poruba
+Arlan Kokshetau                           arlan kokSetau
+Moskitos Essen                            eseni
+Khimik Novopolotsk                        ximik novopolocki
+Lokomotiv Orsha                           lokomotiv orSa
+Shakhtyor Soligorsk                       Saxtior soligorski
+Klatovy                                   klatovi
+Zdar nad Sazavou                          Jdiar nad sazavou
+Tverichi                                  tveriCi
+Tambov                                    tambovi
+Arystan Temirtau                          temirtau
+Almaty                                    almati
+Dynamo Kharkiv                            dinamo xarkovi
+Kalix UHC                                 kaliqsi
+Eisbaeren Regensburg                      regensburgi
+Junior (MHL)                              juniori (mhl)
+Sakhalin                                  saxalini
+Sokolov                                   sokolovi
+Rossosh                                   rosoSi
+Rostov                                    rostovi
+Zvezda Chebarkul                          zvezda Cebarkuli
+MHC Dynamo                                mhk dinamo
+Altay Barnaul (VHL)                       altai barnauli
+Mordovia Saransk                          mordovia
+Havlickuv Brod                            gavliCkuv brodi
+Slezan Opava                              opava
+Orlova                                    orlova
+Deggendorfer SC                           degendorferi
+Indians Kaarina                           indians kaarina
+Forssan Palloseura                        forsan paloseura
+Crocodiles Hamburg                        krokodailz hamburgi
+Dizelist                                  dizelisti
+1. EV Weiden                              vaideni
+Herner                                    herneri
+Altay Barnaul                             altai barnauli
+Borlaenge                                 borlange
+Cergy Pontoise                            serJi pontua
+Anglet                                    angle
+Fuechse Duisburg                          fiuxse duisburgi
+Krefelder                                 krefelderi
+Cheboksary                                Ceboksari
+EHF Passau                                pasau
+Nymburk                                   nimburki
+Kolin                                     kolini
+Bodens                                    bodeni
+KMH Budapest                              hokiklubi
+ECDC Memmingen                            memingeni
+EHC Erfurt                                erfurti
+Saale Bulls Halle                         hale
+Vasas SC                                  vaSaSi
+Gyergyoi                                  giorgei
+Pinsk Hawks                               pinsk hoqsi
+Baranavichy                               baranoviCi
+Selber Woelfe                             selberi
+EHC Timmendorfer                          timendorferi
+Schweinfurt                               Svainfiurti
+Glasgow Clan                              glazgo
+Pegnitz                                   pegnici
+Skautafelag Akureyrar                     skautafelag akureirari
+Chamonix Mont-Blanc                       Samoni mon-blani
+DEAC                                      debreceni
+MAC Ujbuda                                mak budapeSti
+Kadra PZHL                                pJl katovice (23)
+Belarus U25                               belorusia
+Hvidovre Fighters                         vidovre
+Latvia B                                  latvia b
+Bressanone                                bresanone
+Fiemme                                    fieme
+Auer Ora                                  auer ora
+Varese                                    vareze
+Como                                      komo
+Pergine                                   perjine
+Bilyi Bars                                beli barsi
+Bobruisk                                  bobruiski
+Pinskiye Yastreby                         pinskie iastrebi
+Charlotte Checkers                        Sarlot Cekersi
+Syracuse Crunch                           sirakiuz kranCi
+Hershey Bears                             herSi bearsi
+Wilkes-Barre/Scranton Penguins            uilks-beri/skrenton pingvinzi
+Manitoba Moose                            manitoba musi
+San Diego Gulls                           san-diego galzi
+San Antonio Rampage                       san-antonio rempeiji
+Grand Rapids Griffins                     grand-rapids grifinsi
+Tucson Roadrunners                        tuson roudranersi
+Iowa Wild                                 aiova uaildi
+Utica Comets                              iutika kometsi
+Laval Rocket                              laval roketi
+Providence Bruins                         providens briuinzi
+Belleville Senators                       belvil senatorzi
+Rochester Americans                       roCester amerikansi
+Cleveland Monsters                        klivlend monsterzi
+Springfield Thunderbirds                  springfild Tanderbiordzi
+Binghamton Devils                         bingempton devilzi
+Lehigh Valley Phantoms                    lihai ueli fantomsi
+Milwaukee Admirals                        miluoki edmiralsi
+Rockford IceHogs                          rokford aishogsi
+Texas Stars                               texas starzi
+Chicago Wolves                            Cikago vulvzi
+Colorado Eagles                           kolorado iglzi
+Ontario Reign                             ontario reini
+Bakersfield Condors                       beikersfild kondorsi
+Stockton Heat                             stokton hiti
+Tranaas AIF                               tranesi
+Kristianstad IK                           kristianStandsi
+Hudiksvalls                               hudiksvali
+Bridgeport Sound Tigers                   brijport saund taigersi
+Toronto Marlies                           toronto marlisi
+Dnipro Kherson                            dnepr xersoni
+Hartford Wolf Pack                        hartford vulf feqi
+San Jose Barracuda                        san xose barakuda
+Hunters                                   hanterzi
+AK59                                      ak59
+Metallurg Cherepovets                     metalurg Cerepoveci
+Torpedo Gorky                             torpedo gorki
+Mogo                                      mogo
+Humo                                      humo
+Nikko Ice Bucks                           niko ais baqsi
+Junior                                    iuniori
+Levice                                    levice
+Moravske Budejovice                       moravske budeiovice
+Rheintal                                  reintali
+Dvur Kralove                              dvur kralove
+Jablonec                                  iabloneci
+Trutnov                                   trutnovi
+Mostecti Lvi                              mosteCti lvi
+Decin                                     deCini
+Pribram                                   prSibrami
+Arosa                                     aroza
+Hronov                                    hronovi
+Novy Jicin                                novi JiCini
+Valasske Mezirici                         valaSske mezirJiCi
+Waterloo Warriors                         vaterloo
+Kobra Praha                               kobra praRa
+ORG Juniors                               org juniorsi
+Carleton University                       karltoni
+ORG                                       org
+Barys Nur-Sultan                          barisi
+Winnipeg Ice                              vinipeg aisi
+Nomad Nur-Sultan                          nomad nur-sultani
+Beijing                                   pekini
+Lotos PKH Gdansk                          lotos pkh gdanski
+Haugesund                                 haugesundi
+Kryzhani Vovky                            kriJani vovki
+Unterland Cavaliers                       unterland kavaliersi
+Valpeagle                                 valpigli
+Olimpija Ljubljana                        olimpia liubliana
+EHC Red Bull Muenchen                     miunxeni
+Fehervari Titanok                         fehervari titanoki
+Aktobe                                    aktobe
+Altay Torpedo                             altai torpedo
+Temirtau                                  temirtau
+Kulager Petropavl                         kulageri
+Reaktivatori                              reaqtivatori
+Broneboytsy                               broneboici
+Kings Town                                qings Tauni
+Serp i Molot                              serp i moloti
+Moskovskiy Eshelon                        moskovski eSeloni
+Chetyre Ledokola                          Cetire ledokola
+Ice Banda                                 ais banda
+Shest Trolley                             Sest trolei
+Rakety                                    raketi
+Boevye Lisy                               boevie lisi
+Chetyre Ronina                            Cetire ronina
+Stalnye Kabany                            stalnie kabani
+Ledianye Voiny                            ledianie voini
+Molotoboytsy                              molotoboici
+Goryachiye Golovy                         goriaCie golovi
+Voiny Suomi                               voini suomi
+Gladiator                                 gladiatori
+Krasnye Kryliya                           krasnie krilia
+Ledoviy Desant                            ledovi desanti
+Stalker Moscow                            stalkeri
+Bystrye Rysi                              bistrie risi
+Zvukovaja Ataka                           zvukovaia ataka
+Beshenye Psy                              beSenie psi
+Mikhaylov Academy                         mixailov akademi
+Vaesby IK                                 vesbiu
+Muik Hockey                               miuik hokei
+Laser HT                                  lazeri
+RaaheK                                    raaheki
+Giants                                    jaienTsi
+D-Kiekko                                  d-kiekko
+S-Kiekko                                  s-kiekko
+Haukat                                    haukati
+Nokian Pyry                               piri
+Karhu HT                                  karhu ht
+Riemu                                     riemu
+Kiekko-Espoo                              kiekko-espoo
+19 Humenne                                hk 19 humene
+IF Vallentuna BK                          valentuna
+Forshaga                                  forshaga
+Malungs IF                                malungsi
+Vaennaes                                  vanasi
+Piteaa                                    piteo
+Kiruna AIF                                kiruna
+Kiruna IF                                 kiruna if
+Oestersunds IK                            estersundi
+Tegs                                      tegsi
+Hammarby IF                               hamarbiu
+Wings HC Arlanda                          arlanda
+Stroemsbro IF                             striomsboro if
+Halmstad                                  halmStadi
+Boraas                                    borasi
+Hanhals IF                                hanhalsi
+Oernskoeldsvik HF                         ornskoldsviki
+Sollentuna                                solentuna
+Hanvikens SK                              tireso hanvikeni
+Enkoepings SK                             enCiopingi
+Segeltorps                                segeltorpsi
+Nykoeping                                 niuCepingi
+Kallinge/Ronneby IF                       kalinge/ronebiu
+Kalmar                                    kalmari
+Morrums                                   morums goisi
+Dalen                                     daleni
+Vimmerby                                  vimerbiu
+Tyringe Hockey                            tiringe
+Grums IK                                  grumsi
+Eskilstuna Linden Hockey                  eskilstuna lindeni
+Koeping                                   kopingi
+Kumla                                     kumla
+Lindloevens IF                            lindlioveni
+Mariestad BoIS                            mariestadsi
+Skoevde                                   skiovde
+Surahammars IF                            surahamarsi
+SK Lejon                                  leioni
+Black Wings 1992                          bleq uingz 1992
+Mariupol                                  mariupoli
+Sokol Kiev                                sokol kievi
+Germany B                                 germania b
+Kramatorsk                                kramatorski
+GKH Stoczniowiec Gdansk                   gks stoCniovec gdanski
+Henderson Silver Knights                  henderson silver naiTsi
+ROC                                       ruseTi
+bridgeport islanders                      brijport ailendersi
+Gomel 2                                   gomel 2
+SKA-GUOR Karelia                          ska-guor karelia
+Krasnoyarskie Rysi                        krasnoiarskie risi
+Zubr Minsk                                zubr minski
+Presov                                    preSovi
+EK Zell am See                            zel am si
+Fehervar AV19                             fehervari
+Dinamo 576                                dinamo 576
+Nuernberg Ice Tigers                      niurnberg ais Taigersi
+EHC RB Muenchen                           miunxeni
+AKM                                       akm
+Dynamo Altay                              dinamo altai
+Dynamo Pardubice B                        dinamo pardubice b
+Ziar nad Hronom                           ziar nad hronomi
+Vorarlberg                                forarlbergi
+Virkia                                    virkia
+Toblach                                   toblaxi
+Slovan Bratislava B                       slovan bratislava b
+Seattle Kraken                            sietl krakeni
+Zemgale                                   zemgale
+Morrums GoIS                              morums gois
+Kyiv                                      kievi
+Rulav Oddr                                rulav oddi
+EHC Kloten                                kloteni
+Legion                                    legioni
+Visby Roma                                visbi-roma
+Vallentuna                                valentuna
+Tranaas                                   tranesi
+Surahammars                               surahamari
+Linden                                    lindeni
+Kalix                                     kaliqsi
+Abbotsford Canucks                        abotsford kenaqsi
+Enkoeping                                 enCiopingi
+Stroemsbro                                stremsboro
+Hanvikens                                 tiuresio hanvikeni
+Vaesby                                    vesbi
+Wings                                     arlanda
+Tyringe                                   tiringi
+Lindloevens                               lindleveni
+Coachella Valley Firebirds                koaCela veli fairberdsi
+Calgary Wranglers                         kalgari renglersi
+Oernskoeldsvik                            ornskoldsviki
+HDD Jesenice                              esenice
+EHC Black Wings Linz                      bleq uingz linci
+Steel Wings Linz                          stil uingz linci
+Denmark B                                 dania b
+Spisska Nova Ves                          spiSska nova vesi
+Brunflo IK                                brunflo
+Kovlands                                  kovlandsi
+Clemensnaas                               klemensnaasi
+Jaerfaella                                iarfala
+Nacka                                     naka
+Baecken                                   bekeni
+Alvesta                                   alvesta
+Mjoelby                                   miolbiu
+Falu IF                                   falu
+Orsa IK                                   orsa
+Ski Elite                                 sqi eliti
+AKM Junior                                akm juniori
+Norilsk                                   norilski
+Bellinzona                                bilinzona
+Marseille                                 marseli
+Leksands IF                               leksandi
+Meudon                                    miodoni
+EC Peiting                                paitingi
+UQTR Patriotes                            uktr
+Concordia Stingers                        konkordia stingerzi
+Rimavska Sobota                           rimavska sobota
+Feltreghiaccio                            feltregiaCio
+HCV Martigny                              martini
+Kyiv Capitals                             kiev qefiTalzi
+Tryzub                                    trizubi
+Brantford Bulldogs                        brantford buldogsi
+Wenatchee Wild                            uenatCi uaildi
+Unia Oswiecim                             unia osvencimi
+Brodernas/Vaesby                          vesbi
+Kharkiv Berserkers                        xarkov berserkersi
+AquaCity Pikes                            akvasiTi paiksi
+VHL Stars                                 vhl sTarzi
+Team McDavid                              Tim makdevidi
+Team MacKinnon                            Tim makkinoni
+Team Matthews                             Tim metiuzi
+Team Hughes                               Tim hiuzi
+Rosvik                                    rosviki
+KB65                                      kb65
+IFK Tumba                                 tumba
+Varmdo                                    varmdo
+Arboga                                    arboga
+Valbo                                     valbo
+Graestorps IK                             grestorpi
+VG-62                                     vg-62
+PEPO                                      pepo
+SKA-Junior                                ska-iuniori
+Magnitka Magnitogorsk                     magnitka magnitogorski
+Chur                                      kuri
+Cornell Big Red                           kornel big redi
+AKM Novomoskovsk                          akm novomoskovski
+Yunison Moscow                            iunison moskovi
+Slavutych Smolensk                        slavutiC smolenski
+Aosta Gladiators                          aosta
+Hamuliakovo                               hamuliakovo
+Utah                                      iuta
+KHL Sisak                                 khl sisaki
+Brampton Steelheads                       brampton stilhedsi
+Storm Odesa                               Storm odesa
+Sokil Kyiv                                sokol kievi
+Kryzhynka                                 kriJinka
+Russia U25                                ruseTi (25)
+KHL Stars                                 khl sTarzi
+Cape Breton Eagles                        keip breton iglzi
+Jonstorps                                 jonstorpsi
+Kungaelvs IK                              kungalvsi
+Norrtaelje IK                             nortelie
+Warkis                                    varkis
+Newfoundland Regiment                     niufaundlendi
+Penticton Vees                            pentinkton visi
+Hidria Jesenice                           hidria esenice
+Lindau                                    lindau
+Tromsoe                                   tromsio
+St. Cloud State University                sent qlaud sTeiT haskisi
+Augustana University                      avgustana vikingsi
+University of Nebraska-Omaha              nebraska-omaha maveriksi
+Air Force Academy                         eir fors falkonzi
+Sacred Heart University                   sakred harT faionersi
+Merrimack College                         merimak uoriorsi
+Bowling Green State University            bouling grin falkonsi
+Robert Morris University                  robert morisi
+Providence College                        providens friarsi
+Quinnipiac University                     kvinipiaks bobqeTsi
+Odeshchina                                odeSCina
+College of the Holy Cross                 kolej of ze holi krosi
+Odense IK                                 odense
+Silkeborg                                 silkeborgi
+Brynaes IF                                briunesi
+Faerjestad BK                             feriestadi
+Djurgaarden IF                            iurgordeni
+SDE HF                                    sde hf
+University of Michigan                    iuniversiTi of miCigani
+Western Michigan University               vestern miCigan iuniversiTi
+Luleaa HF                                 luleo
+Penn State University                     pen sTeiT iuniversiTi
+Stonehill College                         sTounhil koleji
+Ohio State University                     ohaio sTeiT iuniversiTi
+Army West Point                           armi vest foinTi
+Bentley University                        bentli iuniversiTi
+Canisius College                          kanisius koleji
+Boston College                            boston koleji
+University of Denver                      iuniversiTi of denveri
+Boston University                         boston iuniversiTi
+University of Connecticut                 iuniversiTi of konektikuti
+Clarkson University                       klarkson iuniversiTi
+University of North Dakota                iuniversiTi of norT dakota
+Mercyhurst University                     mersiherst iuniversiTi
+University of Massachusetts Lowell        iuniversiTi of masaCusets loueli
+Minnesota State University                minesota sTeiT iuniversiTi
+Rensselaer Polytechnic Institute          renseler politexnik institut
+University of Maine                       iuniversiTi of meini
+Colgate University                        kolgeiT iuniversiTi
+University of New Hampshire               iuniversiTi of niu-hempSiri
+Long Island University                    long ailend iuniversiTi
+University of Notre Dame                  iuniversiTi of notr dami
+Rochester Institute of Technology         roCester institut of teqnoloji
+Lake Superior State University            leiq superior sTeiT iuniversiTi
+Michigan Tech                             miCigan teqi
+Ferris State University                   feris sTeiT iuniversiTi
+Northern Michigan University              norTern miCigan iuniversiTi
+Michigan State University                 miCigan sTeiT iuniversiTi
+University of Alaska-Anchorage            iuniversiTi of aliaska-anqoriji
+University of Minnesota                   iuniversiTi of minesota
+University of Minnesota-Duluth            iuniversiTi of minesota-duluti
+University of Massachusetts               iuniversiTi of masaCusetsi
+University of Wisconsin                   iuniversiTi of viskonsini
+University of Alaska-Fairbanks            iuniversiTi of aliaska-ferbenqsi
+Bemidji State University                  bemidji sTeiT iuniversiTi
+University of St. Thomas                  iuniversiTi of sent-tomasi
+Lindenwood University                     lindvud iuniversiTi
+Miami University Ohio                     maiami iuniversiTi ohaio
+Northeastern University                   norTistern iuniversiTi
+Arizona State University                  arizona sTeiT iuniversiTi
+Princeton University                      prinston iuniversiTi
+Niagara University                        niagara iuniversiTi
+St. Lawrence University                   sent lourens iuniversiTi
+Union College                             iunion koleji
+Harvard University                        harvard iuniversiTi
+University of Vermont                     iuniversiTi of vermonti
+Brown University                          braun iuniversiTi
+Colorado College                          kolorado koleji
+Dartmouth College                         dartmuT koleji
+Yale University                           iel iuniversiTi
+Ottawa Charge                             otava Carji
+New York Sirens                           niu-iork sirensi
+Boston Fleet                              boston fliti
+Montreal Victoire                         monreal viqtori
+Minnesota Frost                           minesota frosti
+Toronto Sceptres                          toronto sqefTresi
+PWHL Vancouver                            pvhl vankuveri
+Seattle PWHL                              sietl pvhl
+Hvidovre IK                               vidovre
+U.S. Collegiate Selects                   kolej seleqtsi
+Utah Mammoth                              iuta memoTi
+Viking Bergen                             viking bergeni
+Urho                                      urho

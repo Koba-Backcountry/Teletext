@@ -6,7 +6,9 @@ from datetime import datetime
 
 matches_cache = {
     "livescore": [],
-    "betcity": []
+    "betcity": [],
+    "livescore_hockey": [],
+    "betcity_hockey": []
 }
 
 def normalize_team_name(name):
@@ -218,6 +220,54 @@ def fetch_livescore():
 
     return matches
 
+def fetch_livescore_hockey():
+    url = f"https://prod-public-api.livescore.com/v1/api/app/date/hockey/{get_today()}/4?countryCode=GE&locale=en&MD=1"
+
+    try:
+        res = requests.get(url, timeout=10)
+        data = res.json()
+    except:
+        return []
+
+    matches = []
+
+    for stage in data.get("Stages", []):
+        league = stage.get("Snm", "")
+        country = stage.get("Cnm") or ""
+        flag = livescore_flags.get(country.strip()) or livescore_flags.get(country.strip().title())
+
+        for ev in stage.get("Events", []):
+            team1 = ev.get("T1", [{}])[0].get("Nm", "").strip()
+            team2 = ev.get("T2", [{}])[0].get("Nm", "").strip()
+
+            ft = ev.get("Eps", "")
+
+            if ft != "NS":
+                score = f"{ev.get('Tr1', 0)} - {ev.get('Tr2', 0)}"
+                minute = ft
+            else:
+                score = "? - ?"
+                esd = str(ev.get("Esd", ""))
+                if esd:
+                    t = esd[8:12]
+                    minute = f"{t[:2]}:{t[2:]}"
+                else:
+                    minute = ""
+
+            matches.append({
+                "league": league,
+                "country": country,
+                "minute": minute,
+                "team1": translate(team1, "hockey"),
+                "score": score,
+                "team2": translate(team2, "hockey"),
+                "flag": flag,
+                "sport_icon": "Hockey.gif",
+                "source": "livescore"
+            })
+
+    return matches
+
 
 # =========================
 # BETCITY
@@ -285,6 +335,68 @@ def fetch_betcity():
 
     return matches
 
+def fetch_betcity_hockey():
+    url = "https://ap.betcityru.com/api/v1/live/results?rev=3&ver=96&csn=f9xg7b"
+
+    try:
+        res = requests.get(url, timeout=10)
+        data = res.json()
+    except:
+        return []
+
+    matches = []
+
+    sports = data.get("reply", {}).get("sports", {})
+
+    for sp in sports.values():
+        sport_name = sp.get("name_sp", "").lower()
+
+        if "хоккей" not in sport_name:
+            continue
+
+        for ch in sp.get("chmps", {}).values():
+            league = ch.get("name_ch", "")
+
+            if "статистика" in league.lower():
+                continue
+
+            country = ""
+            flag = None
+            for k, v in betcity_flags.items():
+                if " " + k.lower() in league.lower():
+                    flag = v
+                    break
+
+            for ev in ch.get("evts", {}).values():
+                team1 = ev.get("name_ht", "").strip()
+                team2 = ev.get("name_at", "").strip()
+
+                score_raw = ev.get("sc_ev", "")
+                if ":" in score_raw:
+                    s1, s2 = score_raw.split(":", 1)
+                    score = f"{s1} - {s2}"
+                else:
+                    score = "? - ?"
+
+                if ev.get("st_ev") == 2:
+                    minute = "FT"
+                else:
+                    minute = ""
+
+                matches.append({
+                    "league": league,
+                    "country": country,
+                    "minute": minute,
+                    "team1": translate(team1, "hockeyBC"),
+                    "score": score,
+                    "team2": translate(team2, "hockeyBC"),
+                    "flag": flag,
+                    "sport_icon": "Hockey.gif",
+                    "source": "betcity"
+                })
+
+    return matches
+
 
 # =========================
 # UPDATE CACHE
@@ -293,10 +405,15 @@ def fetch_betcity():
 def update_matches():
     matches_cache["livescore"] = fetch_livescore()
     matches_cache["betcity"] = fetch_betcity()
+    matches_cache["livescore_hockey"] = fetch_livescore_hockey()
+    matches_cache["betcity_hockey"] = fetch_betcity_hockey()
 
 
 def get_all_matches():
     all_matches = []
     all_matches.extend(matches_cache["livescore"])
     all_matches.extend(matches_cache["betcity"])
+    all_matches.extend(matches_cache["livescore_hockey"])
+    all_matches.extend(matches_cache["betcity_hockey"])
+
     return all_matches
