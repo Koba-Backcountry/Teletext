@@ -459,8 +459,11 @@ def fetch_betcity_hockey():
                 team2 = ev.get("name_at", "").strip()
 
                 score_raw = ev.get("sc_ev", "")
-                if ":" in score_raw:
-                    s1, s2 = score_raw.split(":", 1)
+                # მოვაშოროთ პრეფიქსი (ОТ, БУЛ და სხვა)
+                score_clean = re.sub(r'^[А-Яа-яA-Za-z]+\s+', '', score_raw).strip()
+
+                if ":" in score_clean:
+                    s1, s2 = score_clean.split(":", 1)
                     score = f"{s1} - {s2}"
                 else:
                     score = "? - ?"
