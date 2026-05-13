@@ -100,7 +100,8 @@ body {
 .row {
     display: flex;
     align-items: center;
-    height: 34px;
+    min-height: 34px;
+    height: auto;
     padding: 0 10px;
     border-bottom: 1px solid #333;
 }
