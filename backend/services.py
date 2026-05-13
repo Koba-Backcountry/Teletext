@@ -79,13 +79,68 @@ def normalize_team_name(name):
 
     return name, prefix, suffix
 
+
+def normalize_hockey_livescore(name):
+    name = name.strip()
+    lower = name.lower()
+
+    suffix_map = {
+        "u18": "(18)",
+        "u19": "(19)",
+        "u20": "(20)",
+        "u23": "(23)",
+        "(w)": "(q)",
+        "3x3": "3X3",
+        "womens": "(q)",
+        "women": "(q)",
+        "w": "(q)",
+    }
+
+    # პრეფიქსის მოცილება (hk , hc )
+    for p in ["hk ", "hc "]:
+        if lower.startswith(p):
+            name = name[len(p):].strip()
+            lower = name.lower()
+            break
+
+    # სუფიქსის მოცილება ( hk, hc)
+    for s in [" hk", " hc"]:
+        if lower.endswith(s):
+            name = name[:-len(s)].strip()
+            lower = name.lower()
+            break
+
+    suffix = ""
+
+    # სუფიქსების შემოწმება და მოცილება
+    while True:
+        parts = name.rsplit(" ", 1)
+        if len(parts) < 2:
+            break
+        last = parts[1].lower()
+        if last in suffix_map:
+            mapped = suffix_map[last]
+            suffix = mapped + (" " + suffix if suffix else "")
+            name = parts[0].strip()
+            lower = name.lower()
+        else:
+            break
+
+    # (w) ბოლოში ცალკე შემოწმება
+    if name.lower().endswith("(w)"):
+        suffix = "(q)" + (" " + suffix if suffix else "")
+        name = name[:-3].strip()
+
+    return name.strip(), suffix
+
+
 def get_today():
     return datetime.now().strftime("%Y%m%d")
 
 def translate(name, source):
     db = SessionLocal()
 
-    if source == "betcity":
+    if source in ("betcity", "hockeyBC"):
         original = name.strip()
         lower = original.lower()
         suffix = ""
@@ -103,6 +158,7 @@ def translate(name, source):
             " (жен)": " (qal)",
             " (ж)": " (q)",
             " (люб)": " (moy)",
+            " (люб.)": " (moyv)",
             " (резерв)": " (rezerv)",
             " (унив)": " (univ)",
             " (рез)": " (rez)",
@@ -118,7 +174,25 @@ def translate(name, source):
             " (7х7)": " (6/6)",
             " (мини-футбол)": " (mini-fexb.)",
             " угл": "(kuTx.) ",
-            " жк": "(yv.) "
+            " жк": "(yv.) ",
+            # hockey
+            " (штр)": " (saj)",
+            " (бр)": " (dart)",
+            " (сб. кл.)": " (kl. nak.)",
+            " (2x2)": " (2/2)",
+            " (2х2)": " (2/2)",
+            " (нов)": " (ax)",
+            " (до 18)": " (18-mde)",
+            " (до 22)": " (22-mde)",
+            " (сб. МХЛ)": " (nakr.МХЛ)",
+            " (BCHL)": " (BCHL)",
+            " (WHL)": " (dhl)",
+            " (EJHL)": " (aihl)",
+            " (голы в бол.)": " (goli met.)",
+            " (выиг. вбрасывания)": " (Cagd. mogeba)",
+            " (блок. бр.)": " (dart. blok.)",
+            " (сил. приёмы)": " (Zal. ileTi)",
+            " (видеопросмотры)": " (video Cveneba)",
         }
 
         for k, v in suffix_map.items():
@@ -147,7 +221,7 @@ def translate(name, source):
 
         return translated.strip()
 
-    # --- LIVESCORE (ძველი 그대로) ---
+    # --- LIVESCORE ---
     clean_name, prefix, suffix = normalize_team_name(name)
 
     clean_name = clean_name.strip().lower()
@@ -220,6 +294,7 @@ def fetch_livescore():
 
     return matches
 
+
 def fetch_livescore_hockey():
     url = f"https://prod-public-api.livescore.com/v1/api/app/date/hockey/{get_today()}/4?countryCode=GE&locale=en&MD=1"
 
@@ -254,13 +329,24 @@ def fetch_livescore_hockey():
                 else:
                     minute = ""
 
+            clean1, suf1 = normalize_hockey_livescore(team1)
+            clean2, suf2 = normalize_hockey_livescore(team2)
+
+            translated1 = translate(clean1, "hockey")
+            translated2 = translate(clean2, "hockey")
+
+            if suf1:
+                translated1 = translated1 + " " + suf1
+            if suf2:
+                translated2 = translated2 + " " + suf2
+
             matches.append({
                 "league": league,
                 "country": country,
                 "minute": minute,
-                "team1": translate(team1, "hockey"),
+                "team1": translated1,
                 "score": score,
-                "team2": translate(team2, "hockey"),
+                "team2": translated2,
                 "flag": flag,
                 "sport_icon": "Hockey.gif",
                 "source": "livescore"
@@ -334,6 +420,7 @@ def fetch_betcity():
                 })
 
     return matches
+
 
 def fetch_betcity_hockey():
     url = "https://ap.betcityru.com/api/v1/live/results?rev=3&ver=96&csn=f9xg7b"
