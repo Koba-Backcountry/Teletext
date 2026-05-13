@@ -458,6 +458,8 @@ def fetch_betcity_hockey():
                 team1 = ev.get("name_ht", "").strip()
                 team2 = ev.get("name_at", "").strip()
 
+                import re
+
                 score_raw = ev.get("sc_ev", "")
                 # მოვაშოროთ პრეფიქსი (ОТ, БУЛ და სხვა)
                 score_clean = re.sub(r'^[А-Яа-яA-Za-z]+\s+', '', score_raw).strip()
