@@ -504,8 +504,8 @@ def update_matches():
 def get_all_matches():
     all_matches = []
     all_matches.extend(matches_cache["livescore"])
-    all_matches.extend(matches_cache["betcity"])
     all_matches.extend(matches_cache["livescore_hockey"])
+    all_matches.extend(matches_cache["betcity"])
     all_matches.extend(matches_cache["betcity_hockey"])
 
     return all_matches
