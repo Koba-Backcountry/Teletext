@@ -85,6 +85,7 @@ async function login() {
             document.getElementById("container").style.display = "block";
              loadMatches();
              scrollLoop();
+             setInterval(loadMatches, 90000);
         }
 
     } else {
