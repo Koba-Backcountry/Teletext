@@ -357,7 +357,7 @@ def fetch_betcity_hockey():
         for ch in sp.get("chmps", {}).values():
             league = ch.get("name_ch", "")
 
-            if "статистика" in league.lower():
+            if "статистика" in league.lower() or "киберхоккей" in league.lower():
                 continue
 
             country = ""
