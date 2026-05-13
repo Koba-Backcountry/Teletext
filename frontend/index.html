@@ -222,6 +222,11 @@ async function loadMatches() {
         const row = document.createElement("div");
         row.className = "row";
 
+        if (m.sport_icon === "Hockey.gif") {
+            row.style.background = "#CBEAED";
+            row.style.color = "#000000";
+        }
+
         row.innerHTML = `
             <div class="minute">
                 ${m.source === "betcity"
