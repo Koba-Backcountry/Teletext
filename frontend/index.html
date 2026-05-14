@@ -10,36 +10,95 @@
 
 <!-- AUTH -->
 <div id="auth">
-
     <div id="title">
         <h1>Georgian Teletext</h1>
         <h2>Powered by Koba Skhulukhia</h2>
     </div>
-
     <input id="u" placeholder="username">
     <input id="p" placeholder="password" type="password">
-
     <button onclick="login()">Login</button>
     <button onclick="register()">Register</button>
-
     <div id="msg"></div>
 </div>
 
 <!-- TELETEXT -->
 <div id="container" style="display:none;"></div>
+
+<!-- ADMIN -->
 <div id="admin" style="display:none;">
     <div id="admin-wrapper">
-        <button id="logout-btn" onclick="logout()">Logout</button>
 
-        <div style="margin-top:20px;">
-            <h3>Admin Settings</h3>
-            <input id="newUser" placeholder="new username">
-            <input id="newPass" placeholder="new password" type="password">
-            <button onclick="updateAdmin()">Save</button>
-            <div id="admin-msg"></div>
+        <!-- HEADER -->
+        <div id="admin-header">
+            <div id="admin-logo">
+                <span class="logo-gt">GT</span>
+                <div>
+                    <div class="logo-title">Georgian Teletext</div>
+                    <div class="logo-sub">Admin Panel</div>
+                </div>
+            </div>
+            <button id="logout-btn" onclick="logout()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Logout
+            </button>
         </div>
 
-        <div id="admin-content" style="margin-top:30px;"></div>
+        <!-- MAIN GRID -->
+        <div id="admin-grid">
+
+            <!-- LEFT: USER MANAGEMENT -->
+            <div class="admin-section" id="users-section">
+                <div class="section-header">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    User Management
+                </div>
+
+                <div class="users-columns">
+                    <div class="users-col">
+                        <div class="col-label pending-label">
+                            <span class="dot dot-pending"></span>
+                            Pending
+                            <span class="count-badge" id="pending-count">0</span>
+                        </div>
+                        <div id="pendingList" class="user-list"></div>
+                    </div>
+
+                    <div class="col-divider"></div>
+
+                    <div class="users-col">
+                        <div class="col-label approved-label">
+                            <span class="dot dot-approved"></span>
+                            Approved
+                            <span class="count-badge" id="approved-count">0</span>
+                        </div>
+                        <div id="approvedList" class="user-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: SETTINGS -->
+            <div class="admin-section" id="settings-section">
+                <div class="section-header">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2m0 16v2m7.07-5.07l-1.41-1.41M5.34 18.66l1.41-1.41M2 12h2m16 0h2"/></svg>
+                    Admin Settings
+                </div>
+
+                <div class="settings-form">
+                    <label class="field-label">New Username</label>
+                    <input id="newUser" placeholder="Enter new username" class="admin-input">
+
+                    <label class="field-label">New Password</label>
+                    <input id="newPass" placeholder="Enter new password" type="password" class="admin-input">
+
+                    <button class="save-btn" onclick="updateAdmin()">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                        Save Changes
+                    </button>
+                    <div id="admin-msg"></div>
+                </div>
+            </div>
+
+        </div>
     </div>
 </div>
 
@@ -50,29 +109,23 @@ let position = 0;
 const API = "http://" + window.location.hostname + ":8000";
 
 window.onload = function() {
-    // არაფერი არ უნდა ჩაიტვირთოს ავტომატურად
     document.getElementById("auth").style.display = "block";
     document.getElementById("container").style.display = "none";
     document.getElementById("admin").style.display = "none";
-
     localStorage.removeItem("logged");
 }
 
 async function login() {
-    const res = await fetch(API  + "/login", {
+    const res = await fetch(API + "/login", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            username: u.value,
-            password: p.value
-        })
+        body: JSON.stringify({ username: u.value, password: p.value })
     });
 
     const data = await res.json();
     document.body.className = "teletext-page";
 
     if (data.status === "ok") {
-
         localStorage.setItem("logged", "1");
         document.getElementById("auth").style.display = "none";
 
@@ -83,11 +136,10 @@ async function login() {
         } else {
             document.getElementById("admin").style.display = "none";
             document.getElementById("container").style.display = "block";
-             loadMatches();
-             scrollLoop();
-             setInterval(loadMatches, 90000);
+            loadMatches();
+            scrollLoop();
+            setInterval(loadMatches, 90000);
         }
-
     } else {
         msg.innerText = data.status;
     }
@@ -97,22 +149,14 @@ async function register() {
     const res = await fetch(API + "/register", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            username: u.value,
-            password: p.value
-        })
+        body: JSON.stringify({ username: u.value, password: p.value })
     });
-
     const data = await res.json();
-
     msg.innerText = data.status;
 }
 
 async function setPending(id) {
-    await fetch(API + "/set-pending/" + id, {
-        method: "POST"
-    });
-
+    await fetch(API + "/set-pending/" + id, { method: "POST" });
     loadPendingUsers();
 }
 
@@ -123,54 +167,54 @@ async function loadPendingUsers() {
     const approvedRes = await fetch(API + "/approved-users");
     const approvedData = await approvedRes.json();
 
-    const admin = document.getElementById("admin-content");
-
-    admin.innerHTML = `
-        <div style="display:flex; gap:50px;">
-            <div>
-                <h3>Pending Users</h3>
-                <div id="pendingList"></div>
-            </div>
-            <div>
-                <h3>Approved Users</h3>
-                <div id="approvedList"></div>
-            </div>
-        </div>
-    `;
+    document.getElementById("pending-count").textContent = pendingData.length;
+    document.getElementById("approved-count").textContent = approvedData.length;
 
     const pendingList = document.getElementById("pendingList");
     const approvedList = document.getElementById("approvedList");
 
+    pendingList.innerHTML = "";
+    approvedList.innerHTML = "";
+
+    if (pendingData.length === 0) {
+        pendingList.innerHTML = '<div class="empty-state">No pending users</div>';
+    }
+
     pendingData.forEach(u => {
         const div = document.createElement("div");
-
         div.className = "user-card";
-
         div.innerHTML = `
-            <span>${u.username}</span>
-            <button onclick="approveUser(${u.id})">Approve</button>
+            <div class="user-avatar">${u.username[0].toUpperCase()}</div>
+            <span class="user-name">${u.username}</span>
+            <button class="action-btn approve-btn" onclick="approveUser(${u.id})">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Approve
+            </button>
         `;
-
         pendingList.appendChild(div);
     });
 
+    if (approvedData.length === 0) {
+        approvedList.innerHTML = '<div class="empty-state">No approved users</div>';
+    }
+
     approvedData.forEach(u => {
         const div = document.createElement("div");
-
         div.className = "user-card";
-
         div.innerHTML = `
-            <span>${u.username}</span>
-            <button onclick="setPending(${u.id})">Pending</button>
+            <div class="user-avatar approved-avatar">${u.username[0].toUpperCase()}</div>
+            <span class="user-name">${u.username}</span>
+            <button class="action-btn revoke-btn" onclick="setPending(${u.id})">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Revoke
+            </button>
         `;
-
         approvedList.appendChild(div);
     });
 }
 
 function logout() {
     localStorage.removeItem("logged");
-
     document.body.className = "login-page";
     document.getElementById("auth").style.display = "block";
     document.getElementById("container").style.display = "none";
@@ -178,10 +222,7 @@ function logout() {
 }
 
 async function approveUser(id) {
-    await fetch(API + "/approve/" + id, {
-        method: "POST"
-    });
-
+    await fetch(API + "/approve/" + id, { method: "POST" });
     loadPendingUsers();
 }
 
@@ -195,7 +236,6 @@ async function loadMatches() {
     let lastLeague = null;
 
     data.forEach(m => {
-
         if (m.league !== lastLeague) {
             lastLeague = m.league;
 
@@ -210,12 +250,10 @@ async function loadMatches() {
                         ${m.country ? m.country + " - " : ""}${m.league}
                     </div>
                 </div>
-
                 <div style="margin-left:auto;">
                     ${m.sport_icon ? `<img class="icon" src="SportIcons/${m.sport_icon}">` : ""}
                 </div>
             `;
-
             container.appendChild(header);
         }
 
@@ -243,7 +281,6 @@ async function loadMatches() {
             <div class="score">${m.score}</div>
             <div class="team2">${m.team2}</div>
         `;
-
         container.appendChild(row);
     });
 }
@@ -252,30 +289,23 @@ async function updateAdmin() {
     const res = await fetch(API + "/admin/update", {
         method: "POST",
         headers: {"Content-Type": "application/json"},
-        body: JSON.stringify({
-            username: newUser.value,
-            password: newPass.value
-        })
+        body: JSON.stringify({ username: newUser.value, password: newPass.value })
     });
-
     const data = await res.json();
-    document.getElementById("admin-msg").innerText = data.status;
+    const msg = document.getElementById("admin-msg");
+    msg.textContent = data.status === "ok" ? "✓ Saved successfully" : "Error: " + data.status;
+    msg.className = data.status === "ok" ? "admin-msg-ok" : "admin-msg-err";
 }
 
 function scrollLoop() {
     const container = document.getElementById("container");
-
     position += direction * 0.5;
     container.style.top = -position + "px";
-
     const maxScroll = container.offsetHeight - window.innerHeight;
-
     if (position >= maxScroll) direction = -1;
     if (position <= 0) direction = 1;
-
     requestAnimationFrame(scrollLoop);
 }
-
 </script>
 
 </body>
