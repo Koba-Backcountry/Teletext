@@ -142,88 +142,206 @@ def get_today():
     return datetime.now().strftime("%Y%m%d")
 
 
-def translate(name, source):
+# suffix_map betcity-სთვის — გამოიყენება translate()-ში source-ის მიხედვით
+BETCITY_SUFFIX_MAPS = {
+    "basketballBC": {
+        " (3-х очк. попадания)": " (3 quliani)",
+        " (2-х очк. попадания)": " (2 quliani)",
+        " (подборы)": " (moxsna)",
+        " (фолы)": " (foli)",
+        " (заб. штрафные)": " (gat. jarimebi)",
+        "(ж)": " (q)",
+        "(шк.)": " (sk.)",
+        "(3x3)": " (3/3)",
+        "(3х3)": " (3/3)",
+        "(шк)": " (sk)",
+        "(сурд)": " (surd)",
+        "(унив)": " (univ)",
+        " (мол)": " (ax)",
+        " (мол.)": " (ax)",
+        " (Рез)": " (rez)",
+        " (макк)": " (mak)",
+    },
+    "tennisBC": {
+        " (геймы)": " (geim.)",
+        " (пары)": " (wyv.)",
+        " (дв. ошибки)": " (ormagi Secd.)",
+        " (эйсы)": " (eisi)",
+        " (srl)": " (srl)",
+    },
+    "handballBC": {
+        " (мол)": " (ax)",
+        " (ж)": " (q)",
+        "(унив)": " (univ)",
+        "(кол-во 2-х мин. уд.)": " (2wT gaZ. rao-ba)",
+        "(7-метр. штр. бр.)": " (7-metr. saj. dar.)",
+    },
+    "rugbyBC": {
+        " (ж)": " (q)",
+    },
+    "volleyballBC": {
+        "(ж)": " (q)",
+        "(люб)": " (moy)",
+        "(4x4)": " (4/4)",
+        "(4х4)": " (4/4)",
+        "(микст)": " (mikst)",
+        "(рез)": " (rez)",
+        "(школ)": " (skol)",
+        "(мол)": " (ax)",
+        "(юноши)": " (iun)",
+        "(воен)": " (samx)",
+        "(унив)": " (univ)",
+        "(кад)": " (kad)",
+        "(мол. сб.)": " (ax. nak.)",
+        "(ошибки на подачах)": " (Secdoma Cawodebaze)",
+        "(эйсы)": " (eisi)",
+        "(блоки)": " (bloki)",
+        " (макк)": " (mak)",
+        " (полиция)": " (policia)",
+    },
+}
+
+# პერიოდის სუფიქსები რომლებიც მხოლოდ მოიცილება (არარაფრად ითარგმნება)
+PERIOD_SUFFIXES = {
+    "basketballBC": [
+        " (13)", " (14)", " (15)", " (16)", " (17)", " (18)", " (19)",
+        " (20)", " (21)", " (22)", " (23)", " (24)", " (25)",
+        " (40)", " (45)", " (50)", " (55)", " (45+)",
+    ],
+    "handballBC": [
+        " (16)", " (17)", " (18)", " (19)", " (20)", " (21)", " (22)",
+    ],
+    "rugbyBC": [
+        " (18)", " (19)", " (20)",
+    ],
+    "volleyballBC": [
+        " (14)", " (15)", " (16)", " (17)", " (18)", " (19)", " (20)",
+        " (21)", " (22)", " (23)",
+    ],
+}
+
+
+def translate_betcity_name(name, source):
+    """betcity-ს ყველა source-ისთვის საერთო translate ლოგიკა"""
     db = SessionLocal()
+    original = name.strip()
+    lower = original.lower()
+    suffix = ""
 
-    if source in ("betcity", "hockeyBC", "basketballBC", "tennisBC", "handballBC", "rugbyBC", "volleyballBC"):
-        original = name.strip()
-        lower = original.lower()
-        suffix = ""
+    # პერიოდის სუფიქსების მოცილება (basketball, handball, rugby, volleyball)
+    period_list = PERIOD_SUFFIXES.get(source, [])
+    for ps in period_list:
+        if lower.endswith(ps.lower()):
+            suffix = ps
+            lower = lower[:-len(ps)].strip()
+            break
 
+    # hockey-სთვის პერიოდის რეგექსი (12-23)
+    if not suffix:
         m = re.search(r"\((1[2-9]|2[0-3])\)$", lower)
         if m:
             suffix = " " + m.group(0)
             lower = lower[:m.start()].strip()
 
-        suffix_map = {
-            " (мол)": " (ax)",
-            " (юн)": " (iun)",
-            " (олимп)": " (olimp)",
-            " (жен)": " (qal)",
-            " (ж)": " (q)",
-            " (люб)": " (moy)",
-            " (люб.)": " (moyv)",
-            " (резерв)": " (rezerv)",
-            " (унив)": " (univ)",
-            " (рез)": " (rez)",
-            " (3x3)": " (3/3)",
-            " (3х3)": " (3/3)",
-            " (4x4)": " (4/4)",
-            " (4х4)": " (4/4)",
-            " (5x5)": " (5/5)",
-            " (5х5)": " (5/5)",
-            " (6x6)": " (6/6)",
-            " (6х6)": " (6/6)",
-            " (7x7)": " (6/6)",
-            " (7х7)": " (6/6)",
-            " (мини-футбол)": " (mini-fexb.)",
-            " угл": "(kuTx.) ",
-            " жк": "(yv.) ",
-            # hockey
-            " (штр)": " (saj)",
-            " (бр)": " (dart)",
-            " (сб. кл.)": " (kl. nak.)",
-            " (2x2)": " (2/2)",
-            " (2х2)": " (2/2)",
-            " (нов)": " (ax)",
-            " (до 18)": " (18-mde)",
-            " (до 22)": " (22-mde)",
-            " (сб. МХЛ)": " (nakr.МХЛ)",
-            " (BCHL)": " (BCHL)",
-            " (WHL)": " (dhl)",
-            " (EJHL)": " (aihl)",
-            " (голы в бол.)": " (goli met.)",
-            " (выиг. вбрасывания)": " (Cagd. mogeba)",
-            " (блок. бр.)": " (dart. blok.)",
-            " (сил. приёмы)": " (Zal. ileTi)",
-            " (видеопросмотры)": " (video Cveneba)",
-        }
+    # სპორტ-სპეციფიური suffix_map
+    sport_map = BETCITY_SUFFIX_MAPS.get(source, {})
 
-        for k, v in suffix_map.items():
-            if lower.endswith(k):
+    # საერთო suffix_map (soccer, hockey და ყველასთვის)
+    common_suffix_map = {
+        " (мол)": " (ax)",
+        " (юн)": " (iun)",
+        " (олимп)": " (olimp)",
+        " (жен)": " (qal)",
+        " (ж)": " (q)",
+        " (люб)": " (moy)",
+        " (люб.)": " (moyv)",
+        " (резерв)": " (rezerv)",
+        " (унив)": " (univ)",
+        " (рез)": " (rez)",
+        " (3x3)": " (3/3)",
+        " (3х3)": " (3/3)",
+        " (4x4)": " (4/4)",
+        " (4х4)": " (4/4)",
+        " (5x5)": " (5/5)",
+        " (5х5)": " (5/5)",
+        " (6x6)": " (6/6)",
+        " (6х6)": " (6/6)",
+        " (7x7)": " (6/6)",
+        " (7х7)": " (6/6)",
+        " (мини-футбол)": " (mini-fexb.)",
+        " угл": "(kuTx.) ",
+        " жк": "(yv.) ",
+        # hockey
+        " (штр)": " (saj)",
+        " (бр)": " (dart)",
+        " (сб. кл.)": " (kl. nak.)",
+        " (2x2)": " (2/2)",
+        " (2х2)": " (2/2)",
+        " (нов)": " (ax)",
+        " (до 18)": " (18-mde)",
+        " (до 22)": " (22-mde)",
+        " (сб. МХЛ)": " (nakr.МХЛ)",
+        " (BCHL)": " (BCHL)",
+        " (WHL)": " (dhl)",
+        " (EJHL)": " (aihl)",
+        " (голы в бол.)": " (goli met.)",
+        " (выиг. вбрасывания)": " (Cagd. mogeba)",
+        " (блок. бр.)": " (dart. blok.)",
+        " (сил. приёмы)": " (Zal. ileTi)",
+        " (видеопросмотры)": " (video Cveneba)",
+    }
+
+    # სპორტ-სპეციფიური პირველ ვამოწმებთ
+    combined_map = {**common_suffix_map, **sport_map}
+
+    if not suffix:
+        for k, v in combined_map.items():
+            if lower.endswith(k.lower()):
                 suffix = v
                 lower = lower[:-len(k)].strip()
                 break
 
-        if lower.startswith("фк "):
-            lower = lower[3:].strip()
+    if lower.startswith("фк "):
+        lower = lower[3:].strip()
 
-        if lower.endswith(" фк"):
-            lower = lower[:-3].strip()
+    if lower.endswith(" фк"):
+        lower = lower[:-3].strip()
 
-        result = db.query(Translation).filter(
-            Translation.source_name == lower,
-            Translation.source == source
-        ).first()
+    result = db.query(Translation).filter(
+        Translation.source_name == lower,
+        Translation.source == source
+    ).first()
 
+    db.close()
+
+    translated = result.georgian_name if result else lower
+
+    if suffix:
+        translated = translated + suffix
+
+    return translated.strip()
+
+
+def translate_tennis_betcity(name, source):
+    """Tennis-ისთვის: / სიმბოლოთი გამოყოფილი წყვილები ცალ-ცალკე ითარგმნება"""
+    if "/" in name:
+        parts = name.split("/", 1)
+        left = translate_betcity_name(parts[0].strip(), source)
+        right = translate_betcity_name(parts[1].strip(), source)
+        return left + " / " + right
+    return translate_betcity_name(name, source)
+
+
+def translate(name, source):
+    db = SessionLocal()
+
+    if source in ("betcity", "hockeyBC", "basketballBC", "handballBC", "rugbyBC", "volleyballBC"):
         db.close()
+        return translate_betcity_name(name, source)
 
-        translated = result.georgian_name if result else lower
-
-        if suffix:
-            translated = translated + suffix
-
-        return translated.strip()
+    if source == "tennisBC":
+        db.close()
+        return translate_tennis_betcity(name, source)
 
     # --- LIVESCORE ---
     clean_name, prefix, suffix = normalize_team_name(name)
