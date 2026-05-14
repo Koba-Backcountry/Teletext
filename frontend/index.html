@@ -225,6 +225,12 @@ async function loadMatches() {
         if (m.sport_icon === "Hockey.gif") {
             row.style.background = "#CBEAED";
             row.style.color = "#0000FF";
+        } else if (m.sport_icon === "Basketball.gif") {
+            row.style.background = "#AE7C44";
+            row.style.color = "#FFFFFF";
+        } else if (m.sport_icon === "Tennis.gif") {
+            row.style.background = "#004000";
+            row.style.color = "#FFFFFF";
         }
 
         row.innerHTML = `
