@@ -375,7 +375,7 @@ def fetch_betcity():
     for sp in sports.values():
         sport_name = sp.get("name_sp", "").lower()
 
-        if "футбол" not in sport_name:
+        if "Футбол" not in sport_name:
             continue
 
         for ch in sp.get("chmps", {}).values():
