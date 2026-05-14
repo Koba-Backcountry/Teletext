@@ -1,3 +1,4 @@
+import re
 import requests
 from db import SessionLocal
 from models import Translation
@@ -6,9 +7,16 @@ from datetime import datetime
 
 matches_cache = {
     "livescore": [],
-    "betcity": [],
     "livescore_hockey": [],
-    "betcity_hockey": []
+    "livescore_basketball": [],
+    "livescore_tennis": [],
+    "betcity": [],
+    "betcity_hockey": [],
+    "betcity_basketball": [],
+    "betcity_tennis": [],
+    "betcity_handball": [],
+    "betcity_rugby": [],
+    "betcity_volleyball": [],
 }
 
 def normalize_team_name(name):
@@ -96,14 +104,12 @@ def normalize_hockey_livescore(name):
         "w": "(q)",
     }
 
-    # პრეფიქსის მოცილება (hk , hc )
     for p in ["hk ", "hc "]:
         if lower.startswith(p):
             name = name[len(p):].strip()
             lower = name.lower()
             break
 
-    # სუფიქსის მოცილება ( hk, hc)
     for s in [" hk", " hc"]:
         if lower.endswith(s):
             name = name[:-len(s)].strip()
@@ -112,7 +118,6 @@ def normalize_hockey_livescore(name):
 
     suffix = ""
 
-    # სუფიქსების შემოწმება და მოცილება
     while True:
         parts = name.rsplit(" ", 1)
         if len(parts) < 2:
@@ -126,7 +131,6 @@ def normalize_hockey_livescore(name):
         else:
             break
 
-    # (w) ბოლოში ცალკე შემოწმება
     if name.lower().endswith("(w)"):
         suffix = "(q)" + (" " + suffix if suffix else "")
         name = name[:-3].strip()
@@ -137,15 +141,15 @@ def normalize_hockey_livescore(name):
 def get_today():
     return datetime.now().strftime("%Y%m%d")
 
+
 def translate(name, source):
     db = SessionLocal()
 
-    if source in ("betcity", "hockeyBC"):
+    if source in ("betcity", "hockeyBC", "basketballBC", "tennisBC", "handballBC", "rugbyBC", "volleyballBC"):
         original = name.strip()
         lower = original.lower()
         suffix = ""
 
-        import re
         m = re.search(r"\((1[2-9]|2[0-3])\)$", lower)
         if m:
             suffix = " " + m.group(0)
@@ -242,64 +246,11 @@ def translate(name, source):
 
 
 # =========================
-# LIVESCORE
+# LIVESCORE — საერთო ფუნქცია
 # =========================
 
-def fetch_livescore():
-    url = f"https://prod-public-api.livescore.com/v1/api/app/date/soccer/{get_today()}/4?countryCode=GE&locale=en&MD=1"
-
-    try:
-        res = requests.get(url, timeout=10)
-        data = res.json()
-    except:
-        return []
-
-    matches = []
-
-    for stage in data.get("Stages", []):
-        league = stage.get("Snm", "")
-
-        country = stage.get("Cnm") or ""
-        flag = livescore_flags.get(country.strip()) or livescore_flags.get(country.strip().title())
-
-        for ev in stage.get("Events", []):
-            team1 = ev.get("T1", [{}])[0].get("Nm", "").strip()
-            team2 = ev.get("T2", [{}])[0].get("Nm", "").strip()
-
-            ft = ev.get("Eps", "")
-
-            if ft != "NS":
-                score = f"{ev.get('Tr1', 0)} - {ev.get('Tr2', 0)}"
-                minute = ft
-            else:
-                score = "? - ?"
-                esd = str(ev.get("Esd", ""))
-                if esd:
-                    t = esd[8:12]  # HHMM
-                    minute = f"{t[:2]}:{t[2:]}"
-                else:
-                    minute = ""
-
-            import re
-            if re.match(r'^\d{2}:\d{2}$', minute):
-                continue
-            matches.append({
-                "league": league,
-                "country": country,
-                "minute": minute,
-                "team1": translate(team1, "livescore"),
-                "score": score,
-                "team2": translate(team2, "livescore"),
-                "flag": flag,
-                "sport_icon": "Soccer.gif",
-                "source": "livescore"
-            })
-
-    return matches
-
-
-def fetch_livescore_hockey():
-    url = f"https://prod-public-api.livescore.com/v1/api/app/date/hockey/{get_today()}/4?countryCode=GE&locale=en&MD=1"
+def fetch_livescore_sport(sport, source_key, sport_icon):
+    url = f"https://prod-public-api.livescore.com/v1/api/app/date/{sport}/{get_today()}/4?countryCode=GE&locale=en&MD=1"
 
     try:
         res = requests.get(url, timeout=10)
@@ -332,40 +283,55 @@ def fetch_livescore_hockey():
                 else:
                     minute = ""
 
-            clean1, suf1 = normalize_hockey_livescore(team1)
-            clean2, suf2 = normalize_hockey_livescore(team2)
-
-            translated1 = translate(clean1, "hockey")
-            translated2 = translate(clean2, "hockey")
-
-            if suf1:
-                translated1 = translated1 + " " + suf1
-            if suf2:
-                translated2 = translated2 + " " + suf2
-
-            import re
             if re.match(r'^\d{2}:\d{2}$', minute):
                 continue
+
+            if sport == "hockey":
+                clean1, suf1 = normalize_hockey_livescore(team1)
+                clean2, suf2 = normalize_hockey_livescore(team2)
+                t1 = translate(clean1, source_key)
+                t2 = translate(clean2, source_key)
+                if suf1:
+                    t1 = t1 + " " + suf1
+                if suf2:
+                    t2 = t2 + " " + suf2
+            else:
+                t1 = translate(team1, source_key)
+                t2 = translate(team2, source_key)
+
             matches.append({
                 "league": league,
                 "country": country,
                 "minute": minute,
-                "team1": translated1,
+                "team1": t1,
                 "score": score,
-                "team2": translated2,
+                "team2": t2,
                 "flag": flag,
-                "sport_icon": "Hockey.gif",
+                "sport_icon": sport_icon,
                 "source": "livescore"
             })
 
     return matches
 
 
+def fetch_livescore():
+    return fetch_livescore_sport("soccer", "livescore", "Soccer.gif")
+
+def fetch_livescore_hockey():
+    return fetch_livescore_sport("hockey", "hockey", "Hockey.gif")
+
+def fetch_livescore_basketball():
+    return fetch_livescore_sport("basketball", "basketball", "Basketball.gif")
+
+def fetch_livescore_tennis():
+    return fetch_livescore_sport("tennis", "tennis", "Tennis.gif")
+
+
 # =========================
-# BETCITY
+# BETCITY — საერთო ფუნქცია
 # =========================
 
-def fetch_betcity():
+def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=None):
     url = "https://ap.betcityru.com/api/v1/live/results?rev=3&ver=96&csn=f9xg7b"
 
     try:
@@ -375,82 +341,20 @@ def fetch_betcity():
         return []
 
     matches = []
+    skip_keywords = skip_keywords or []
 
     sports = data.get("reply", {}).get("sports", {})
 
     for sp in sports.values():
         sport_name = sp.get("name_sp", "").lower()
 
-        if "футбол" not in sport_name:
-            continue
-
-        for ch in sp.get("chmps", {}).values():
-
-            league = ch.get("name_ch", "")
-            if "киберфутбол" in league.lower() or "статистика" in league.lower() or "австралийский футбол" in league.lower():
-                continue
-            country = ""
-            flag = None
-            for k, v in betcity_flags.items():
-                if " " + k.lower() in league.lower():
-                    flag = v
-                    break
-
-            for ev in ch.get("evts", {}).values():
-
-                team1 = ev.get("name_ht", "").strip()
-                team2 = ev.get("name_at", "").strip()
-
-                score_raw = ev.get("sc_ev", "")
-                if ":" in score_raw:
-                    s1, s2 = score_raw.split(":", 1)
-                    score = f"{s1} - {s2}"
-                else:
-                    score = "? - ?"
-
-                if ev.get("st_ev") == 2:
-                    minute = "FT"
-                else:
-                    minute = ""
-
-                matches.append({
-                    "league": league,
-                    "country": country,
-                    "minute": minute,
-                    "team1": translate(team1, "betcity"),
-                    "score": score,
-                    "team2": translate(team2, "betcity"),
-                    "flag": flag,
-                    "sport_icon": "Soccer.gif",
-                    "source": "betcity"
-                })
-
-    return matches
-
-
-def fetch_betcity_hockey():
-    url = "https://ap.betcityru.com/api/v1/live/results?rev=3&ver=96&csn=f9xg7b"
-
-    try:
-        res = requests.get(url, timeout=10)
-        data = res.json()
-    except:
-        return []
-
-    matches = []
-
-    sports = data.get("reply", {}).get("sports", {})
-
-    for sp in sports.values():
-        sport_name = sp.get("name_sp", "").lower()
-
-        if "хоккей" not in sport_name:
+        if sport_keyword not in sport_name:
             continue
 
         for ch in sp.get("chmps", {}).values():
             league = ch.get("name_ch", "")
 
-            if "статистика" in league.lower() or "киберхоккей" in league.lower():
+            if any(kw in league.lower() for kw in skip_keywords):
                 continue
 
             country = ""
@@ -464,16 +368,12 @@ def fetch_betcity_hockey():
                 team1 = ev.get("name_ht", "").strip()
                 team2 = ev.get("name_at", "").strip()
 
-                import re
-
                 score_raw = ev.get("sc_ev", "")
-                # მოვაშოროთ პრეფიქსი (ОТ, БУЛ და სხვა)
                 score_clean = re.sub(r'^[А-Яа-яA-Za-z]+\s+', '', score_raw).strip()
 
                 if ":" in score_clean:
                     s1, s2 = score_clean.split(":", 1)
                     score = f"{s1} - {s2}"
-
                 else:
                     score = "? - ?"
 
@@ -486,15 +386,58 @@ def fetch_betcity_hockey():
                     "league": league,
                     "country": country,
                     "minute": minute,
-                    "team1": translate(team1, "hockeyBC"),
+                    "team1": translate(team1, source_key),
                     "score": score,
-                    "team2": translate(team2, "hockeyBC"),
+                    "team2": translate(team2, source_key),
                     "flag": flag,
-                    "sport_icon": "Hockey.gif",
+                    "sport_icon": sport_icon,
                     "source": "betcity"
                 })
 
     return matches
+
+
+def fetch_betcity():
+    return fetch_betcity_sport(
+        "футбол", "betcity", "Soccer.gif",
+        skip_keywords=["киберфутбол", "статистика", "австралийский футбол"]
+    )
+
+def fetch_betcity_hockey():
+    return fetch_betcity_sport(
+        "хоккей", "hockeyBC", "Hockey.gif",
+        skip_keywords=["статистика", "киберхоккей"]
+    )
+
+def fetch_betcity_basketball():
+    return fetch_betcity_sport(
+        "баскетбол", "basketballBC", "Basketball.gif",
+        skip_keywords=["статистика"]
+    )
+
+def fetch_betcity_tennis():
+    return fetch_betcity_sport(
+        "теннис", "tennisBC", "Tennis.gif",
+        skip_keywords=["статистика"]
+    )
+
+def fetch_betcity_handball():
+    return fetch_betcity_sport(
+        "гандбол", "handballBC", "handball.gif",
+        skip_keywords=["статистика"]
+    )
+
+def fetch_betcity_rugby():
+    return fetch_betcity_sport(
+        "регби", "rugbyBC", "Rugby.gif",
+        skip_keywords=["статистика"]
+    )
+
+def fetch_betcity_volleyball():
+    return fetch_betcity_sport(
+        "волейбол", "volleyballBC", "Volleyball.gif",
+        skip_keywords=["статистика"]
+    )
 
 
 # =========================
@@ -503,16 +446,29 @@ def fetch_betcity_hockey():
 
 def update_matches():
     matches_cache["livescore"] = fetch_livescore()
-    matches_cache["betcity"] = fetch_betcity()
     matches_cache["livescore_hockey"] = fetch_livescore_hockey()
+    matches_cache["livescore_basketball"] = fetch_livescore_basketball()
+    matches_cache["livescore_tennis"] = fetch_livescore_tennis()
+    matches_cache["betcity"] = fetch_betcity()
     matches_cache["betcity_hockey"] = fetch_betcity_hockey()
+    matches_cache["betcity_basketball"] = fetch_betcity_basketball()
+    matches_cache["betcity_tennis"] = fetch_betcity_tennis()
+    matches_cache["betcity_handball"] = fetch_betcity_handball()
+    matches_cache["betcity_rugby"] = fetch_betcity_rugby()
+    matches_cache["betcity_volleyball"] = fetch_betcity_volleyball()
 
 
 def get_all_matches():
     all_matches = []
     all_matches.extend(matches_cache["livescore"])
     all_matches.extend(matches_cache["livescore_hockey"])
+    all_matches.extend(matches_cache["livescore_basketball"])
+    all_matches.extend(matches_cache["livescore_tennis"])
     all_matches.extend(matches_cache["betcity"])
     all_matches.extend(matches_cache["betcity_hockey"])
-
+    all_matches.extend(matches_cache["betcity_basketball"])
+    all_matches.extend(matches_cache["betcity_tennis"])
+    all_matches.extend(matches_cache["betcity_handball"])
+    all_matches.extend(matches_cache["betcity_rugby"])
+    all_matches.extend(matches_cache["betcity_volleyball"])
     return all_matches

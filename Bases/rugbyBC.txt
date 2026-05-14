@@ -1,0 +1,476 @@
+﻿Russian Captions                          Georgian Captions
+Сент-Джордж Дрегонс                       sent-jorj dregonsi
+Голд Коуст Тайтенс                        gold qoust taitensi
+Мэнли Си Иглс                             menli si iglsi
+Норт Куинсленд Каубойс                    nort quinslend qauboisi
+Брисбен Бронкос                           brisben bronkosi
+Канберра Рейдерс                          kanbera raidersi
+Канберра Рейдерс 2                        kanbera raidersi 2
+Нью Зиланд Вориос                         niu ziland voriosi
+Вест Тайгерс                              vest taigersi
+Уоррингтон Вулвз                          uorington vulvzi
+Селлфорд Сити Рэдз                        selford siti redzi
+Халл ФК                                   hali
+Харлекуинс Р.Л.                           harlequinsi r.l.
+Каслфорд Тайгерс                          kaslford taigersi
+Уиган Уорриорс                            uigan uoriorsi
+Уэйкфилд Уайлдкэтс                        ueikfild uaildqeTsi
+Хаддерсфилд Джаентс                       hadersfild Jaentsi
+Брэдфорд Буллз                            bredford bulzi
+Ст. Хеленс                                st. helensi
+Лидс Райнос                               lids rainosi
+Халл Кингстон Роверс                      hol kingston roversi
+Мельбурн Сторм                            melburn Stormi
+Сидней Рустерс                            sidnei rustersi
+Румыния                                   rumineTi
+ЮАР-2                                     samxreT afrika 2
+Португалия                                portugalia
+Намибия                                   namibia
+Саут Сидней Ребитоус                      sauT sidnei rebitousi
+Селтик Крузейдерс                         seltik kruzeidersi
+Ньюкасл Найтс                             niukasl naiTsi
+Пенрит Пантерс                            penrit pantersi
+США                                       aSS
+Россия                                    ruseTi
+Каталанс Дрэгонс                          katalans dregonsi
+Балдогс                                   baldogsi
+Кронулла Шаркс                            kronula Sarqsi
+Парраматта Ильс                           paramata ilsi
+Франция                                   safrangeTi
+Австралия                                 avstralia
+Норт Харбор                               nort harbori
+Тасман                                    tasmani
+Каунтис Манукау                           qauntis manukau
+Манавату                                  manavatu
+Вайкато                                   vaikato
+Таранаки                                  taranaki
+Новая Зеландия                            axali zelandia
+Фиджи                                     fiji
+Бэй оф Пленти Стимерс                     bei of plenti sTimersi
+Веллингтон                                velingtoni
+Кантербэри                                kanterberi
+Нортлэнд                                  nortlendi
+Хокис Бэй                                 hokis bei
+ЮАР                                       s.a.r.
+Отаго                                     otago
+Оклэнд                                    oklendi
+Саутлэнд                                  sauTlendi
+Шотландия                                 Sotlandia
+Ирландия                                  irlandia
+Лондон Айриш                              london airiSi
+Харлекуинс                                harlequinsi
+Лион                                      lioni
+Тулуза                                    tuluza
+Тонга                                     tonga
+Ажен                                      aJeni
+Байонна                                   baiona
+Тулон                                     tuloni
+Перпиньян                                 perpiniani
+Брайв                                     braivi
+Япония                                    iaponia
+Уэльс                                     uelsi
+Лондон Вэспс                              london vespsi
+Лейстер Тайгерс                           leister Taigersi
+Кастр                                     kastri
+Монпелье                                  monpelie
+Аргентина                                 argentina
+Англия                                    inglisi
+Грузия                                    saqarTvelo
+Канада                                    kanada
+Сараценс                                  saracensi
+Уорчестер Уорриорс                        uorCester uoriorsi
+Италия                                    italia
+Шаркс                                     Sarqsi
+Нортэмптон Сэйнтс                         norTempton seinTsi
+Клермон                                   klermoni
+Расинг-Метро 92                           rasing-metro 92
+Экзетер                                   ekzeteri
+Самоа                                     samoa
+Блю Буллз                                 blu bulzi
+Пумас                                     pumasi
+Кардифф Блюз                              kardif bluzi
+Глазго Уориорс                            glazgo uoriorsi
+Глостер                                   glosteri
+Бат                                       bati
+Ньюкасл Фэлконс                           niukasl felkonsi
+Леопардс                                  leopardsi
+Вестерн Провинс                           vestern provinsi
+Дурбан Шаркс                              durban Sarqsi
+Голден Лайонс                             golden laionsi
+Эдинбург                                  edinburgi
+Лейнстер                                  leinsteri
+Мюнстер                                   miunsteri
+Лестер Тайгерс                            lester Taigersi
+Бенеттон Тревизо                          beneton trevizo
+Олимпик Пэйс                              olimpik peisi
+Коннахт                                   konahti
+Скарлетс                                  skarletsi
+Оспрейс                                   ospreisi
+Ольстер                                   olsteri
+Айрони                                    aironi
+Уиднис Викингс                            uidnis vikingsi
+Бордо Бегле                               bordo begle
+Стад Франс                                stad fransi
+Гамильтон Чифс                            hamilton Cifsi
+Дунедин Хайлендерс                        dunedin hailendersi
+Окленд Блюз                               oklend bluzi
+Мельбурн Ребелс                           melburn rebelsi
+Сидней Варатас                            sidnei varatasi
+Кристчёрч Крузейдерс                      kristCiorC kruzeidersi
+Канберра Брамбис                          kkanbera brambisi
+Блумфонтейн Читас                         blumfonteini Citasi
+Куинсленд Редз                            quinslend redzi
+Лондон Бронкос                            london bronqosi
+Веллингтон Харрикейнс                     velington harikeinsi
+Перт Форс                                 pert forsi
+Шеффилд Иглз                              Sefild iglzi
+Галифакс                                  galifaqsi
+Ньюпорт                                   niuporti
+Кейптаун Стормерс                         keipTaun stormersi
+Претория Буллз                            pretoria bulzi
+Йоханнесбург Лайонс                       iohanesburg laionsi
+Ли Сентьюэриэнс                           li sentiueriensi
+Корниш Пайрэтс                            korniS pairetsi
+Бристоль                                  bristoli
+Бэтли                                     betli
+Дьюсбери Рамс                             diusberi ramsi
+Йорк Сити Найтс                           iork siTi naiTsi
+Кугарс                                    kugarsi
+Хоукс                                     houqsi
+Фезерстоун Роуверс                        fezerstoun rouversi
+Лондон Уэлш                               london uelSi
+Уругвай                                   urugvai
+Италия-2                                  italia-2
+Новый Южный Уэльс                         axali samxreT uelsi
+Куинсленд                                 quinslendi
+Барроу Рэйдерс                            barou reidersi
+РЛФК Уайтхэвен                            rlfk uaiTheveni
+Грикуас                                   grikuasi
+Фри Стэйт Читас                           fri steit Citasi
+Цебре                                     cebre
+Гренобль                                  grenobli
+Мон-де-Марсан                             mon-de-marsani
+Кавальери Эстра                           kavalieri estra
+Мольяно                                   moliano
+Бухарест Вульфс                           buqarest vulfsi
+Ровиго                                    rovigo
+Кальвизано                                kalvizano
+Герника                                   gernika
+Ойонакс                                   oionaksi
+Орийак                                    oriiaki
+Сан-Дона                                  san-dona
+Лацио                                     lacio
+Пэи дЭкс                                  pei deqsi
+Ля Рошель                                 la roSeli
+Тарб                                      tarbi
+Безье                                     bezie
+Моглиано                                  mogliano
+Альби                                     albi
+Дакс                                      daksi
+Коломье                                   kolomie
+По                                        po
+Ош                                        oSi
+Нарбонна                                  narbona
+Масси                                     masi
+Каркасон                                  karkasoni
+Ньюпорт Гвент Дрэгонс                     niuport gvent dregonsi
+Лондон Скоттиш                            london skotiSi
+Падова                                    padova
+Кения-7                                   kenia-7
+Тонга-7                                   tonga-7
+Самоа-7                                   samoa-7
+Канада-7                                  kanada-7
+Австралия-7                               avstralia-7
+Шотландия-7                               Sotlandia-7
+Англия-7                                  inglisi-7
+Испания-7                                 espaneTi-7
+ЮАР-7                                     s.a.r.-7
+Уэльс-7                                   uelsi-7
+Португалия-7                              portugalia-7
+Фиджи-7                                   fiji-7
+Лайонс                                    laionsi
+Уоркингтон Таун                           uorkington Tauni
+Аргентина-7                               argentina-7
+Франция-7                                 safrangeTi-7
+Новая Зеландия-7                          axali zelandia-7
+Л'Акуила                                  l'aquila
+РЛФК Донкастер                            rlfk donkasteri
+Норт Квинсленд Каубойс                    norT qvinslend qauboisi
+Кавальери                                 kavalieri
+Ровиго Дельта                             rovigo delta
+Саутерн Кингс                             sauTern kingsi
+Плимут Альбион                            plimuT albioni
+Саут Уэльс Скорпионс                      sauT uels skorpionsi
+Норт Уэльс Крузейдерс                     norT uels kruzeidersi
+Лидс Карнеж                               lids karneJi
+Барбариан                                 barbariani
+Сборная Британии и Ирландии               britaneTis da irlandiis nakrebi
+Квинсленд                                 qvinslendi
+Вестерн Форс                              vestern forsi
+Аргентина-2                               argentina 2
+Филиппины-7                               filipinebi-7
+Уругвай-7                                 urugvai-7
+Гонконг-7                                 honkongi-7
+Россия-7                                  ruseTi-7
+Зимбабве-7                                zimbabve-7
+Япония-7                                  iaponia-7
+Рочдейл Хорнетс                           roCdeil horneTsi
+РЛФК Олдхэм                               rlfk oldhemi
+Лондон Сколарс                            london skolarsi
+Бургуин                                   burguini
+Бурк-ан-Брес                              burk-an-bresi
+Острова Кука                              kukis kunZulebi
+Френч Барбариан                           frenC barbariani
+Оксфорд                                   oqsfordi
+Кембридж                                  kembriji
+Виадана                                   viadana
+Англия-2                                  inglisi-2
+Ирландия-2                                irlandia-2
+Нью Зиленд Уорриорз                       niu zilend uoriorzi
+США-7                                     aSS-7
+Тринидад и Тобаго-7                       trinidadi da tobago-7
+Хемел Стагс                               hemel stagsi
+Испания                                   espaneTi
+Крайстчерч Крузейдерс                     kraistCerC kruzeidersi
+Казахстан                                 yazaxeTi
+Глостершайр                               glosterSairi
+Гейтсхед Тандер                           geiTshed Tanderi
+Истерн Провинс Кингс                      istern provins kingsi
+Оксфорд РЛФК                              oqsfordi rlfk
+Монтобан                                  montobani
+Нью Зилэнд Маори                          niu ziland maori
+Санвулвс                                  sanvulvsi
+Хагуарес                                  xaguaresi
+Ойонна                                    oiona
+Кентербери Булдогс                        kenterberi buldogsi
+Голд Коаст Тайтенс                        gold qost taitensi
+Германия-7                                germania-7
+Шри-Ланка-7                               Sri-lanka-7
+Мэнли Си Иглз                             menli si iglzi
+Ли Сенчурионс                             li senCurionsi
+Фезерстоун Роверс                         fezerstoun roversi
+РЛФК Олдем                                rlfk oldemis
+Саут Сидней Рэббитос                      sauT sidnei rebitosi
+Канберра Викингс                          kanbera vikingsi
+Кантри Иглз                               kantri iglzi
+Квинсленд Кантри                          qvinslend qanTri
+Сидней Рейс                               sidnei reisi
+Хокс Бэй                                  hoqs bei
+Нортгэмптон Сэйнтс                        norThempton seinTsi
+Тулуза Олимпик                            tuluza olimpiki
+Солфорд Рэд Дэвилc                        selford red devilsi
+Перт Спирит                               pert spiriti
+Кентербери                                kenterberi
+Кентербери Бульдогс                       kanterberi buldogsi
+Кентербери Бульдогс 2                     kanterberi buldogsi 2
+Бельгия-7                                 belgia-7
+Редклифф Долфинз                          redklif dolfinzi
+Истс Тайгрес                              ists Taigresi
+Польша-7                                  poloneTi-7
+Сент-Джордж Дрэгонс                       sent-jorj dregonsi
+Грейтер Сидней Рамс                       greiter sidnei ramsi
+Папуа-Новая Гвинея                        papua-axali gvinea
+Ливан                                     livani
+Уганда-7                                  uganda-7
+Нью Зиленд Уорриорс                       niu zilend uoriorsi
+Эксетер                                   eqseteri
+Хаддерсфилд Джайентс                      hadersfild jaienTsi
+Вайонг Рус                                vaiong rusi
+Нью Зиленд Уорриорс 2                     niu zilend uoriorsi 2
+Ирландия-7                                irlandia-7
+Китай-7                                   CineTi-7
+Саутс Логан Мэгпис                        sauTs logan megpisi
+Илливарра                                 ilivara
+Италия-7                                  italia-7
+Френч Барбарианс                          frenC barbariansi
+Ковентри Беарз                            qovenTri bearzi
+Ньюкасл Тандер                            niukasl Tanderi
+Кентербери 2                              kenterberi 2
+Брисбен Сити                              brisben siTi
+Фиджиан Друа                              fijian drua
+НСВ Варатас                               nsv varatasi
+Ньютаун                                   niuTauni
+Пенрит Пантерс 2                          penrit panTersi 2
+Норт Сидней                               norT sidnei
+Вентвортвилл                              ventvortvili
+Брив                                      brivi
+ПНГ Хантерс                               png hantersi
+Маккей Каттерс                            makei katersi
+Норт Дэвилс                               norT devilsi
+Твид Хэдс Сигаллс                         tvid heds sigalsi
+Виннум Мэнли Сигаллс                      vinum menli sigalsi
+Саншайн Коаст Фалконс                     sanSain qoast falkonsi
+Таунсвиль Блэкхоукс                       Taunsvil bleqhouqsi
+Маунтис                                   mauntisi
+Ньюкасл Найтс 2                           niukasl naiTsi 2
+Нозерн Прайд                              nozern praidi
+Берли Беарс                               berli bearsi
+Капрас                                    kaprasi
+Сент-Джордж Дрэгонс 2                     sent-jorj dregonsi 2
+Ипсвич Джетс                              ifsviC jeTsi
+Саут Сидней Рэббитос 2                    sauT sidnei rebitos 2
+Франция-9                                 safrangeTi-9
+Ливан-9                                   libani-9
+Новая Зеландия-9                          axali zelandia-9
+Англия-9                                  inglisi-9
+Великобритания                            didi britaneTi
+Великобритания-7                          didi britaneTi-7
+Тойота Верблиц                            toiota verblici
+Хино Ред Долфинс                          xino red dolfinsi
+Хонда Хит                                 honda hiti
+Рико Блек Ремс                            riko bleq remsi
+НТТ Шайнинг Аркс                          ntt Saining arksi
+Вестерн Сабёрбс Мегпайс                   vestern sabiorbs megpaisi
+Металлург                                 metalurgi
+ВВА-Подмосковье                           vva-podmoskovie
+Маори Олл Блэкс                           maori ol bleqi
+Моана Пасифика                            moana pasifika
+Ленстер                                   lensteri
+НГ Дрэгонс                                ng dregonsi
+Лондон Уоспс                              london uospsi
+Тошиба Брейв Лупус                        toSiba breiv lupusi
+Кубота Спирс                              kubota spirsi
+Ямаха Юбило                               iamaha iubilo
+Канон Иглз                                qanon iglzi
+Парраматта Ильс 2                         paramata ils 2
+Панасоник Уайлд Найтс                     panasonik uaild naiTsi
+Сантори Санголиат                         santori sangoliati
+Сиэттл Сивулвс                            sietl sivulvsi
+ЛА Гилтинис                               la giltinisi
+Нола Голд                                 nola goldi
+Вест Уэльс Райдерс                        vest uels raidersi
+Локомотив-Пенза                           lokomotiv-penza
+Динамо                                    dinamo
+Уэйкфилд Тринити                          ueikfild triniti
+Слава-ЦСП                                 slava-csp
+Бразилия-7                                brazilia-7
+Енисей-СТМ                                enisei-stm
+Регби Юнайтед                             regbi iunaitedi
+АТЛ                                       atl
+Красный Яр                                krasni iari
+НЕК Грин Рокетс                           nek grin roketsi
+Мицубиси Cагамихара Дайнаборс             micubisi sagamihara dainaborsi
+Уайтхэвен РЛФК                            uaiTheven rlfk
+Барроу Рейдерс                            barou raidersi
+ЦСКА                                      cska
+Бордо-Бегль                               bordo begli
+Расинг-92                                 rasing-92
+Ла-Рошель                                 la roSeli
+ВВА-Подмосковье 2                         vva-podmoskovie
+ЦСКА 2                                    cska 2
+Зимбабве                                  zimbabve
+Слава-ЦСП 2                               slava-csp 2
+Ямайка-7                                  iamaika-7
+Малайзия-7                                malaizia-7
+Френч Барбарианс-7                        frenC barbarians-7
+Лу-7                                      lu-7
+Стад Тулузан-7                            stad tuluzan-7
+Авирон Байонне-7                          aviron baione-7
+Уорринга                                  uoringa
+Гордон                                    gordoni
+Блэктаун                                  bleqTauni
+Олдем РЛФК                                oldem rlfk
+Саутерн Найтс                             sauTern naiTsi
+Хериотс                                   heriotsi
+Батуми                                    baTumi
+Тель-Авив Хит                             Tel-aviv hiti
+Нортгэмптон Сейнтс                        norThempton seinTsi
+Прованс                                   provansi
+Невер                                     neveri
+Суайо Ангулем                             suaio angulemi
+Арес                                      aresi
+Локомотиви                                lokomotivi
+Ямайка                                    iamaika
+Казбеги                                   yazbegi
+Лело Сараценс                             lelo saracensi
+Арми                                      armi
+Джики Гори                                jiqi gori
+Кобе Стил                                 kobe stili
+Кинтэцу Лайнерс                           kintecu lainersi
+Сидзуока Блю Ревс                         siZuoka bliu revsi
+Ураясу Рокс                               uraiasu roksi
+Камаиси Сивейвс                           kamaisi siveivsi
+Звезды Маори                              maori ol sTarsi
+Коренные народы Австралии                 indijenos ol sTarsi
+Регби Нью-Йорк Айронворкерс               regbi niu-iork aironvorkersi
+Хьюстон Сэйбркетс                         hiuston seibrqeTsi
+Чили-7                                    Cili-7
+Долфинз                                   dolfinzi
+Сан-Диего Легион                          san-diego legioni
+Даллас Джакалс                            dalas jakalsi
+Чикаго Хаундс                             Cikago haundsi
+Торонто Арроус                            toronto arousi
+Юта Уорриорс                              iuta uoriorsi
+Нью Ингланд Фри Джекс                     niu ingland fri jeksi
+Химик                                     ximiki
+Ротор                                     rotori
+Богатыри                                  bogatiri
+Колорно                                   kolorno
+Вестерн Клайдсдейлс                       vestern klaidsdeilsi
+Донкастер РЛФК                            donkaster rlfk
+Хунслет РЛФК                              hunslet rlfk
+Мидлендс Харрикейнз                       midlends harikeinzi
+Сидней Рустерс 2                          sidnei rustersi 2
+Хантер Вайлдфайрс                         hanter vaildfairsi
+ОАЭ-7                                     age-7
+Южная Корея-7                             samx. korea-7
+Валенсе Романс                            valense romansi
+Руэн Норманди                             ruen normandi
+ЦСКА-7                                    cska-7
+Кубань-7                                  yubani-1
+Красный Яр 2                              krasni iar 2
+Енисей-СТМ-2                              enisei-stm-2
+Стрела                                    strela
+ЦСКА-Динамо                               cska-dinamo
+Орлы                                      arwivebi
+Зилант-7                                  zilant-t
+Красный Яр-7                              krasnii iar-7
+Академия                                  akademia
+Витязь-7                                  vitiaz-7
+Ростов-ДГТУ-7                             rostov-dgtu-7
+Бордо-7                                   bordo-7
+Таиланд-7                                 tailandi-7
+Тойота Индастриз Шаттлз                   toiota indastriz Satlzi
+Майами Шаркс                              maiami Sarqsi
+Кочеби                                    koCebi
+Сентрал Читаз                             sentral Citazi
+ВВА-Подмосковье-7                         vva-podmoskovie-7
+Таниварау                                 tanivarau
+Маунт Альберт Лионессес                   maunT albert lionesesi
+Папакура Си Иглз                          papakura si iglzi
+Отахуху Леопардс                          otahuhu leopardsi
+Енисей-СТМ-7                              enisei-stm-7
+Нотерн Сабербс                            noTern saberbsi
+Мэнли                                     menli
+Южная Корея                               samxreT korea
+Малайзия                                  malaizia
+Те Атату Рустерс                          te atatu rustersi
+Отара Скорпионс                           otara skorpionsi
+Мэрист Сейнтс                             merist seinTsi
+Папакура Си Иглс                          papakura si iglsi
+Гленора Бирс                              glenora birsi
+Московская академия регби                 moskovis ragbis akademia
+Спартак                                   spartaki
+Норт Бич Си Иглс                          norT biC si iglsi
+Джундалуп Джайентс                        jundalup jaienTsi
+Элленбрук Рэббитоуз                       elenbruk rebitouzi
+Фримантл Рустерс                          frimantl rustersi
+Сб. Республики Татарстан-7                nakr. rspublika tatarstan-7
+Кинг Каунтри                              qing qaunTri
+Теймс Валли                               Teims vali
+Локомотив-Пенза 2                         lokomotiv-penza 2
+Лангон                                    langoni
+Тао                                       tao
+Нидерланды                                niderlandi
+Сосьете Женераль Вэллей                   sosiete Jeneral velei
+Кролл Тайгерс                             krol taigersi
+Пайпер Коулун                             faifer kouluni
+Лландовери                                landoveri
+Понтипул                                  pontipuli
+Сан Исидро                                san isidro
+Буэнос Айрес                              buenos airesi
+Эббв-Вейл                                 ebbv-veili
+Кармартен Квинс                           karmarten qvinsi
+Айа Кутаиси                               aia quTaisi
+Сб. Санкт-Петербурга                      sankt-peterburgis nakr.
+Грузия-7                                  saqarTvelo-7

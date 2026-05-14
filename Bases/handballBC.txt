@@ -1,0 +1,1665 @@
+﻿Russian Captions                          Georgian Captions
+Украина                                   ukraina
+Польша                                    poloneTi
+Черногория                                Cernogoria
+Швеция                                    Svecia
+Австрия                                   avstria
+Германия                                  germania
+Беларусь                                  belorusia
+Дания                                     dania
+Босния и Герцеговина                      bosnia hercogovina
+Венгрия                                   ungreTi
+Португалия                                portugalia
+Словения                                  slovenia
+Литва                                     litva
+Испания                                   espaneTi
+Израиль                                   israeli
+Словакия                                  slovakeTi
+Латвия                                    latvia
+Россия                                    ruseTi
+Исландия                                  islandia
+Швейцария                                 Sveicaria
+Румыния                                   rumineTi
+Хорватия                                  xorvatia
+Македония                                 makedonia
+Франция                                   safrangeTi
+Норвегия                                  norvegia
+Нидерланды                                holandia
+Чехия                                     CexeTi
+Бенин                                     benini
+Египет                                    egvipte
+Аргентина                                 argentina
+Венесуэла                                 venesuela
+Катар                                     katari
+Тунис                                     tunisi
+Сербия                                    serbeTi
+Иран                                      irani
+Канада                                    kanada
+Алжир                                     alJiri
+Юж. Корея                                 samx. korea
+Бразилия                                  brazilia
+Чили                                      Cile
+Греция                                    saberZneTi
+Сунгуль                                   sunguli
+Каустик                                   kaustiki
+Скиф-Кубань                               skif-yubani
+Мотор-ЗНТУ-ЗАС                            motor-zntu-zas
+Заря Каспия                               zaria kaspia
+Пермские медведи                          permskie medvedi
+Клуж-Напока                               kluJ-napoka
+Залау                                     zalau
+Бухарест ЦСМ                              csm buqaresti
+Константа                                 konstanta
+Динамо Брашов                             dinamo braSovi
+ЗТР Запорожье                             ztr zaporoJie
+РГУФК-Чеховские медведи                   rgufk-Cexovskie medvedi
+Кубань                                    yubani
+Астраханочка                              astraxanoCka
+Политехник Донецк                         polinexnik donecki
+Гамбург                                   hamburgi
+ТХВ Киль                                  txv kili
+АГУ-Адыиф                                 agu-adiifi
+Ростов-Дон                                rostov-doni
+ЗНТУ-ЗАС                                  zntu-zas
+Партизан Белград                          belgradis partizani
+АЕК                                       aek
+Копенгаген АГ                             ag kopenhageni
+Скьерн                                    skierni
+Савехоф                                   savehofi
+Бешикташ                                  beSiqTaSi
+Балинген-Вайльштеттен                     balingen-vailiSteteni
+Гуммерсбах                                humersbaxi
+Ветцлар                                   vetclari
+Айнтрахт                                  aintraxti
+Ганновер-Бургдорф                         hanover-burgdorfi
+Фюхзе Берлин                              fiuxze berlini
+Динамо Минск                              dinamo minski
+Вальядолид                                valiadolidi
+Дюнкерк                                   diunkerki
+Фивер                                     fiveri
+Звезда                                    zvezda
+Луч                                       luCi
+Лада Тольятти                             lada toliati
+Кировчанка                                kirovCanka
+Университет                               universiteti
+Динамо Волгоград                          dinamo volgogradi
+Гроссвальштадт                            grosvalStadti
+Рейн-Некар                                rein-nekari
+Лемго                                     lemgo
+Бергишер                                  bergiSeri
+Виборг                                    viborgi
+Миттьюлланд                               mitiulandi
+Морс-Тю                                   mors-tiu
+Сёндерйюске                               sionderiuske
+Ольборг                                   olborgi
+Нордшелланд                               norSelandi
+Скиве                                     skive
+Скандерборг                               skanderborgi
+Орхус                                     orhusi
+Олтчим                                    oltCimi
+Заечар                                    zaeCari
+Тулуза                                    tuluza
+Монпелье                                  monpelie
+Фленсбург-Хандевитт                       flensburg-handeviti
+Хюттенберг                                hiutenbergi
+Стинта Бакау                              stinta bakau
+Пандури                                   panduri
+Лемвиг-Тюборон                            lemvig-tiuboroni
+Мельзунген                                melzungeni
+Атлетико Мадрид                           madridis atletiko
+Камерун                                   kameruni
+Сенегал                                   senegali
+Нигерия                                   nigeria
+Локомотив Челябинск                       lokomotiv Celiabinski
+Динамо-Виктор                             dinamo-viqtori
+Чеховские медведи                         Cexovskie medvedi
+Кабо-Верде                                kabo-verde
+Энергия                                   energia
+Университет-Нева                          universitet-neva
+Факел-ТКЗ                                 fakel-tkz
+Стяуа Бухарест                            stiaua buqaresti
+Динамо Кэлэраши                           dinamo keleraSi
+КИФ Колдинг                               kif qoldingi
+Сайнт Рафаэль                             saint rafaeli
+Алингзас                                  alingzasi
+Капериотумба                              kaperiotumba
+Кристианштад                              kristianStadi
+Аранас                                    aranasi
+Мальме                                    malmio
+Дротт                                     droti
+Мозамбик                                  mozambiki
+Конго ДР                                  kongo
+Кения                                     kenia
+Ангола                                    angola
+Редбергслидс                              redbergslidsi
+Одорей                                    odorei
+ГК Истадс                                 istadsi
+Луги                                      lugi
+Х 43 Лунд                                 h 43 lundi
+Бьеррингбро-Силькеборг                    bieringbro-silkeborgi
+Хаммарбю                                  hamarbiu
+Магдебург                                 magdeburgi
+Твис Холстебро                            tvis holstebro
+Нейчехаус Логроно                         neiCexaus logrono
+Загреб                                    zagrebi
+Букстехудер                               bukstehuderi
+Наварра                                   navara
+Метц                                      meci
+Хипо                                      xipo
+Металлург Скопье                          metalurg skopie
+Копер                                     koperi
+Буковина Сучава                           bukovina suCava
+Зубри                                     zubri
+Ловосице                                  lovosice
+Анайтасуна                                anaitasuna
+Торревьеха                                toreviexa
+Гюиф                                      giuifi
+Скёвде                                    skiovde
+Сьюдад Энкантада Куэнка                   siudad enkantada kuenka
+Констанца                                 konstanca
+Кадеттен Шаффхаузен                       kadeten Safhauzeni
+Барселона                                 barselona
+Иври                                      ivri
+Плоешти                                   ploeSti
+Крим Любляна                              krim liubliana
+Тюрингер                                  tiuringeri
+Ларвик                                    larviki
+Подравка                                  podravka
+Адемар                                    ademari
+Веспрем                                   vespremi
+Дьер                                      dieri
+Пик Сегед                                 pik segedi
+Шамбери                                   Samberi
+Будучность                                buduCnosti
+Бюосен Тронхейм                           biuosen tronheimi
+Карвина                                   karvina
+Границе                                   granice
+Арагон                                    aragoni
+Виве Кельце                               vive kelce
+Висла                                     visla
+Азербайджан                               azerbaijani
+Италия                                    italia
+Турция                                    TurqeTi
+Париж                                     parizi
+Сан Антонио                               san antonio
+Босна Сараево                             bosna saraevo
+Трембле                                   tremble
+Люббеке                                   liubeke
+Йичин                                     iiCini
+Дессау-Росслауэр                          desau-roslaueri
+Гвадалахара                               gvadalahara
+Октавио                                   oqtavio
+Сессон-Севинье                            seson-sevinie
+Истр                                      istri
+Рандерс                                   randersi
+Эсбьерг                                   esbiergi
+Тертнес                                   tertnesi
+ШПИГО                                     Spigo
+ХИТ Иннсбрук                              xit insbruki
+Ференцварош ТК                            tk ferencvaroSi
+Дебрецен                                  debreceni
+Црвена Звезда                             crvena zvezda
+Уэска                                     ueska
+Нант                                      nanti
+Престижио                                 prestiJio
+Гёппинген                                 giopingeni
+Пуэрто Сагунто                            puerto sagunto
+Кретель                                   kreteli
+Гранольерс                                granolersi
+Маккаби Ришон                             makabi riSoni
+Япония                                    iaponia
+Кот-д'Ивуар                               kot diuari
+Куба                                      kuba
+Уругвай                                   urugvai
+Китай                                     CineTi
+Казахстан                                 yazaxeTi
+Австралия                                 avstralia
+Бахрейн                                   bahreini
+Марокко                                   maroko
+Иордания                                  iordania
+Шпаркассе Швац                            Sparkase Svaci
+Линц                                      linci
+Нордхорн                                  nordhorni
+Университет Ижевск                        universitet iJevski
+Корона Брашов                             korona braSovi
+Томис Констанца                           tomis konstanca
+Бельгия                                   belgia
+Великобритания                            didi britaneTi
+СКА Минск                                 ska minski
+Люблин                                    liublini
+Рух Хожов                                 rux xoJovi
+Поли Тимишоара                            poli timiSoara
+Дунаря                                    dunaria
+Караш-Северин Решица                      karaS-severin reSica
+Потайса Турда                             potaisa turda
+Селестат                                  selestati
+Ним                                       nimi
+Байер                                     baieri
+Чургои                                    Curgoi
+Миттьюлланн                               mittiulani
+Бекешчабаи                                bekeSCabai
+ЕТВ-Эрд                                   etv-erd
+Спортинг                                  sportingi
+Болонья                                   bolonia
+Амбра                                     ambra
+Оцелул Галаци                             ocelul galaci
+Лейпциг                                   laifcigi
+Эслёв                                     esliovi
+Хейд                                      heidi
+Шиофок                                    Siofoki
+Вац                                       vaci
+Гдыня                                     gdinia
+Сессон-Ренн                               seson-reni
+Горенье                                   gorenie
+Марибор Браник                            maribor braniki
+Дукла Прага                               dukla praRa
+Мидтъюлланн                               midtiulani
+Гомель                                    gomeli
+Заглебье Любин                            zaglebie liubini
+Альпла                                    alpla
+Хаслум                                    xaslumi
+Элверум                                   elverumi
+Вардар Скопье                             vardar skopie
+Куманово                                  kumanovo
+Доминиканская Респ.                       dominikis resp.
+Вакер Тун                                 vaker Tuni
+Диомидис                                  diomidisi
+Конго                                     kongo
+ОАЭ                                       a.g.e.
+Гонконг                                   honkongi
+Ирак                                      erayi
+Узбекистан                                uzbekeTi
+Финляндия                                 fineTi
+Мотор                                     motori
+Парагвай                                  paragvai
+Мудхар                                    mudxari
+Сидней Унив.                              sidnei univ.
+Замалек                                   zamaleki
+Сан-Бернарду                              san-bernardu
+Эль Джаиш                                 el jaiSi
+Кённам                                    kionami
+СК                                        sk
+Минден                                    mindeni
+Сидней Унив                               sidnei univ.
+Аль Садд Катар                            al sad katari
+Нара                                      nara
+Нойхаузен                                 noihauzeni
+Оденсе                                    odense
+Слагелсе                                  slagelse
+Рибе-Эсбьерг                              ribe-esbiergi
+Рингстед                                  ringstedi
+ТУСЕМ Эссен                               tusem eseni
+Порту                                     portu
+Бозен                                     bozeni
+Унион Леобен                              union leobeni
+Роман                                     romani
+Слога                                     sloga
+Татран Прешов                             tatran preSovi
+Байя Маре                                 baia mare
+ФИФ Фредериксберг                         fif frederiksbergi
+Сокол Пршеров                             sokol prSerovi
+Оппсал                                    opsali
+ВастерасИрста                             vasterasirsta
+Сконела                                   skonela
+Экс                                       eqsi
+Левангер                                  levangeri
+Глассверкет                               glasverketi
+Кристиансанн                              kristiansani
+Гьовик                                    gioviki
+Брегенц                                   bregenci
+Кремс                                     kremsi
+Вествин                                   vestvini
+Легница                                   legnica
+Азоты-Пулавы                              azoti-pulavi
+Забже                                     zabJe
+Динамо Бухарест                           dinamo buqaresti
+Анталья Муратпаша                         antalia muratpaSa
+Стабек                                    stabeki
+Балтика Щецин                             baltika SCecini
+Сола                                      sola
+Флинт Тёнсберг                            flint tionsbergi
+Сторхамар                                 storhamari
+Рунар                                     runari
+Фолло                                     folo
+Нёттерёй                                  nioterioi
+ХИТ Тироль                                xit tiroli
+Пльзень                                   plzeni
+Викинг Ставангер                          viking stavangeri
+Стал Мелец                                stal meleci
+Хробры Глогув                             xrobri gloguvi
+Пётркув-Трыбунальский                     piotrkuv-tribunalski
+Будё                                      budio
+Хаугаланд                                 xaugalandi
+Фюллинген Берген                          fiulingen bergeni
+БСК-НИФ                                   bsk-nif
+Арендал                                   arendali
+РСБ                                       rsb
+Аль Араби Кувейт                          al arabi kuveiti
+Клуб Африкэйн                             klub afrikeini
+Аль Кувейт                                al kuveiti
+Флёри Луаре                               fliori luare
+Ницца                                     nica
+Серкль Ним                                serkl nimi
+Тулон Сен-Сир                             tulon sen-siri
+Вейен                                     veieni
+Пивоварна                                 pivovarna
+Сокол Поруба                              sokol poruba
+Погонь Щецин                              pogon SCecini
+Чувай Пшемысл                             Cuvai pSemisli
+Квидзын                                   kviZini
+Барнбах Кофлах                            barnbax koflaxi
+Кангас                                    kangasi
+Залэу                                     zaleu
+Ферндорф                                  ferndorfi
+Бад Швартау                               bad Svartau
+Эмсдеттен                                 emsdeteni
+Бильер                                    bilieri
+Ст. Галлен                                st. galeni
+Штефа                                     Stefa
+Пфади Винтертур                           pfadi vinterturi
+Исси Пари                                 isi pari
+Вилья де Аранда                           vilia de aranda
+Пальма дель Рио                           palma del rio
+Еленя Гура                                elenia gura
+Аль Джазира                               al jazira
+Аль Нур                                   al nuri
+Аль Раян                                  al raiani
+Маскат                                    maskati
+Старт Эльблонг                            start elblongi
+Безансон                                  bezansoni
+Крайова                                   kraiova
+Драммен                                   drameni
+Балатонфюреди                             balatonfiuredi
+Войводина                                 voivodina
+Фюнфхаус                                  fiunfhausi
+Аль Сахель                                al saheli
+Аль Салибикает                            al salibikaeti
+Китайский Тайпей                          CineTis taipei
+Кувейт                                    kuveiti
+Сев. Корея                                Cr. korea
+Бней Герцлия                              bnei herclia
+АСА Тель-Авив                             asa Tel-avivi
+Маккаби Кирьят-Моцкин                     makabi kiriat-mockini
+Савион                                    savioni
+Рамат-ха-Шарон                            ramat-xa-Saroni
+Маккаби Рамат Ган                         makabi ramat gani
+Туркменистан                              TurqmeneTi
+Индия                                     indoeTi
+Фрыдек-Мистек                             fridek-misteki
+Брно                                      brno
+Копривнице                                koprovnice
+Индонезия                                 indonezia
+Сисция                                    sescia
+Карловац                                  karlovaci
+Айзенах                                   aizenaxi
+Эрланген                                  erlangeni
+Раднички Крагуевац                        radniCki kraguevaci
+Юскюдар                                   iuskiudari
+Чанкая                                    Cankaia
+Политехника Кошалиньская                  politexnika koSalinskaia
+Бенфика                                   benfika
+Белененсеш                                belenenseSi
+Керра                                     kera
+Маккаби Тель-Авив                         makabi Tel-avivi
+Регион Z                                  regioni z
+Муратпаша Блд                             muratfaSa bld
+Кобленц Вайберн                           koblenc vaiberni
+Маккаби Кирьятим                          makabi kiriatimi
+Хапоэль Ашдод                             hapoel aSdodi
+Казма                                     kazma
+Аль Салмия                                al salmia
+Франкфуртер                               frankfurteri
+Трир                                      triri
+Метцинген                                 metcingeni
+Сённерйюск                                sioneriuski
+Арукюла                                   arukiula
+Тапа                                      tapa
+Бигано                                    bigano
+Галац                                     galaci
+Фюлкир                                    fiulkiri
+Гретта                                    greta
+Саудовская Аравия                         saudis arabeTi
+Дижон                                     diJoni
+Веспрем Барабаш                           vesprem barabaSi
+Скуру                                     skuru
+Хорс Х 65                                 horsi 65
+Бломберг-Липпе                            blomberg-lipe
+Милениум                                  mileniumi
+Унион Корнойбург                          union kornoiburgi
+Гавр                                      havri
+Линдесберг                                lindesbergi
+Хальбю                                    halbiu
+Эннередс                                  eneredsi
+ВиаКон Кехра                              viakon kexra
+Таллин                                    talini
+Базель                                    bazeli
+Госсау                                    gosau
+Загорье                                   zagorie
+Буревестник Луганск                       burevestnik luganski
+Виктория-Регия                            viqtoria-regia
+Кропскультур                              kropskulturi
+Аудентес                                  audentesi
+Хапоэль Кирьят-Оно                        hapoel kiriaT-ono
+Вардар СЦБТ                               scbt vardari
+Жувелиш                                   JuveliSi
+Кринс-Люцерн                              krins-liucerni
+Амичита Цюрих                             amiCita ciurixi
+Брук                                      bruki
+Холлабрунн                                holabruni
+Бера Бера                                 bera bera
+Ольденбург                                oldenburgi
+Сен-Рафаэль                               sen-rafaeli
+Спорвеген                                 sporvegeni
+Берн                                      berni
+Хамм-Вестфален                            ham-vestfaleni
+Х 43 Лундагард                            X 43 lundagardi
+ИФК Истад                                 ifk istadi
+Хаукар                                    haukari
+Акюрейри                                  akiureiri
+Оломоуц                                   olomouci
+Сенец                                     seneci
+Дунайварош                                dunaivaroSi
+Фехервар КЦ                               fexervari
+Бенсхайм-Ауэрбах                          bensxaim-auerbaxi
+Фриш Гёппинген                            friS giopingeni
+Новы-Сонч                                 novi-sonCi
+Кванджу                                   kvanju
+Сеул                                      seuli
+Инчхон                                    inCxoni
+Ярмук                                     iarmuki
+Аль Курайн                                al kuraini
+Бад-Вильдунген                            bad-vildungeni
+Короса                                    korosa
+Санму                                     sanmu
+Аль Ахли Бахрейн                          al ahli bahreini
+Аль Насар                                 al nasari
+Аль-Фехахиль                              al-fehahili
+Тэгу                                      tegu
+Хайтан                                    xaitani
+Аль Шабаб                                 al Sababi
+Аль Шабаб Манама                          al Sabab manama
+Хапоэль Ришон                             hapoel riSoni
+Самчхок                                   samCxoki
+Кронон                                    krononi
+Динамо-Полтава                            dinamo poltava
+Чунгнам                                   Cungnami
+Аль Ахли ОАЭ                              al axli a.g.e.
+Аль Ахли Триполи                          al axli tripoli
+Эсперансе Тунис                           esperanse tunisi
+Трофайах                                  trofaiaxi
+Ферлах                                    ferlaxi
+Валюр                                     valiuri
+Афтурелдинг                               aftureldingi
+Фрам                                      frami
+ИР Рейкьявик                              ir reikiaviki
+Аль Фехахиль                              al fexaxili
+Пусан                                     pusani
+Будивельнык                               budivelniki
+Малтепе                                   maltepe
+КРКА Ново-Место                           krka novo-mesto
+Дусан                                     dusani
+Аль Тадамон                               al tadamoni
+Аль Шабаб (Кувейт)                        al Sabab (kuveiti)
+Аль Наср (ОАЭ)                            al nasri (a.g.e.)
+Люнгбю                                    liungbiu
+Рингкёбинг                                ringkiobingi
+ИБВ                                       ibv
+Хафнарфьярдар                             hafnarfiardari
+Дайдо                                     daido
+Цзянсу                                    cziansu
+Хельсинборг                               helsinborgi
+Аль Кадсия                                al kadsia
+ГОГ                                       gog
+Аль Джахра                                al jaxra
+Эмпор Росток                              empor rostoki
+Ауэ                                       aue
+Силькеборг                                silkeborgi
+Аякс Копенгаген                           aiaqs kopenhageni
+Кельце                                    kelce
+Зелина                                    zelina
+Римбо Руслаген                            rimbo ruslageni
+Дьёр                                      diori
+Людвигсхафен-Фризенхайм                   liudgvisxafen-frizenxaimi
+Портовик                                  portoviki
+Мешков Брест                              meSkov bresti
+Ардешен                                   ardeSeni
+ПКБ                                       pkb
+Вильянди                                  viliandi
+Халден                                    haldeni
+Тарту Юликоол                             tartu iulikooli
+Валга Кявал                               valga kiavali
+Таллас                                    talasi
+Тапа-2                                    tapa-2
+Милли Пиянго                              mili piango
+Измир БСБ                                 izmiri bsb
+Килкис                                    kilkisi
+Анкара Ил Озел Идаре                      ankara il ozel idare
+Едитепе                                   editepe
+Атцгерсдорф                               atchersdorfi
+Хипо 2                                    hipo 2
+Аль Джаиш (Катар)                         al jaiSi (katari)
+Аль Гарафа                                al harafa
+Винер Нойштадт                            viner noiStadti
+Виймси Теэрийстмаркет                     viimsi teeriistmarketi
+Пылва Сервити                             pilva serviti
+Кехра                                     kexra
+Нейчехаус Логроньо                        neiCehaus logronio
+Рийхимяки                                 riiximiaki
+Дикен                                     dikeni
+Анкараспор                                ankaraspori
+Мерсин                                    mersini
+Рух Хожув                                 rux xoJuvi
+Старт Эльблёнг                            start elbliongi
+БК-46                                     bk-46
+Вест                                      vesti
+Фудж Аль Атфа                             fuj al atfa
+Аль Джаиш (Ливан)                         al jaiSi (libani)
+Саарлуис                                  saarluisi
+Локомотива Загреб                         lokomotiva zagrebi
+Бурса Нилюфер Блд                         bursa niliufer bld
+Славия Прага                              slavia praRa
+Илидца                                    ilidca
+Любушки                                   liubuSki
+Локомотив Варна                           lokomotiv varna
+Спартак Варна                             spartak varna
+Баник Мост                                banik mosti
+Бриттерм                                  britermi
+Цегледи                                   cegledi
+Нексе                                     nekse
+Пореч                                     poreCi
+Бозен Локер                               bozen lokeri
+Прессано                                  presano
+Армения                                   somxeTi
+Болгария                                  bulgareTi
+Агуаш-Санташ                              aguaS-santaSi
+Молдавия                                  moldova
+Мерш                                      merSi
+Стандарт                                  standarti
+Эш                                        eSi
+Нельба Вагровиц                           nelba vagrovici
+Беттембур                                 betemburi
+Стандард                                  standardi
+Беки                                      beki
+Этыр                                      etiri
+Лехвия                                    lexvia
+Аль Кияд                                  al qiiadi
+Хапоэль Петах-Тиква                       hapoel petax-tikva
+Буфарик                                   bufariki
+Руиба                                     ruiba
+Аркатрон Минск                            arkatron minski
+Злин                                      zlini
+Аль Садд (Катар)                          al sadi (katari)
+Катар СК                                  katari sk
+Аль Араби (Кувейт)                        al arabi (kuveiti)
+Дюделанж                                  diudelanJi
+Чхоннам                                   Cxonnami
+Аль Вакра                                 al vakra
+Борац Банья Лука                          borac bania luka
+Конюх Живинице                            koniuh Jivinice
+Тонгерен                                  tongereni
+Ахиллес Бохолт                            axiles boxolti
+Аль Араби Доха                            al arabi doha
+Кипр                                      kviprosi
+Люксембург                                luqsemburgi
+Эстония                                   estoneTi
+Аль Тадамон (Йемен)                       al tadamoni (iemeni)
+Аль Шрара Лахдж                           al Srara lahji
+Пермские медведи-2                        permskie medvedi-2
+СГАУ-Саратов                              sgau-saratovi
+Габон                                     gaboni
+Минден-2                                  mindeni 2
+Крефельд                                  krefeldi
+Фюксе Берлин                              fiukse berlini
+Мес Керман                                mes kermani
+Самен Аль-Ходжадж Себзевар                samen al-xojaj sebzevari
+Холон                                     holoni
+Нес-Циона                                 nes-ciona
+Вардар ПРО                                vardar pro
+Фризенхайм                                frizenhaimi
+Хенштедт-Ульцбург                         henStedt-ulcburgi
+Бенидорм                                  benidormi
+Этуаль дю Сахель                          etual diu saheli
+Таубате                                   taubate
+Потаисса Турда                            potaisa turda
+Волендам                                  volendami
+Битигхайм                                 bitighaimi
+РК Вардар                                 rk vardari
+Бенсхайм Ауэрбах                          benshaim auerbaxi
+Альтдорф                                  altdorfi
+Нептун Констанца                          neptun konstanca
+Рымнику-Вылча                             rimniku-vilCa
+СКИФ                                      skif
+Нексе Нашице                              nekse naSice
+Анхель Хименес                            anxel ximenesi
+Бидасоа Ирун                              bidasoa iruni
+Хуанферса Групо Фегар                     xuanfersa grupo fegari
+Аль Ахли Джидда                           al ahli jida
+Аль Сафа                                  al safa
+Одорхею-Секуйеск                          odorxeiu-sekuieski
+Ловчен                                    lovCeni
+Напредак                                  napredaki
+ПСЖ                                       psJ
+Каспиан Казвин                            kaspian kazvini
+Саба Кум                                  saba kumi
+Ирони Реховот                             ironi rexovoti
+Аль Халидж                                al xaliji
+Аль Вехда                                 al vexda
+Аль Ибтисам                               al ibtisami
+Аль Адала                                 al adala
+Копенгаген                                kopenhageni
+Трабзонспор                               trabzonspori
+Генчлербирлиги                            genClerbirligi
+ВолГУ-Каустик                             volgu-kaustiki
+Алингсос                                  alingsosi
+Ровинари Тыргу-Жиу                        rovinari tirgu-Jiu
+БарБар                                    barbari
+Хепко Эрак                                xepko eraki
+Никандишан Шардари Исфахан                nikandiSan Sardari ispaxani
+Аль Наджма Бенгази                        al najma bengazi
+Татабанья                                 tatabania
+Петрковия                                 petrkovia
+Нюкёбинг                                  niukiobingi
+Мадейра Сад                               madeira sadi
+Пассош Мануэл                             pasoS manueli
+Тала Аль Джаиш                            tala al jaiSi
+Аль Нассер Бенгази                        al naser bengazi
+Скикда                                    skikda
+Сетиф                                     setifi
+Шахтер-Академия Донецк                    Saxtior-akademia donecki
+Металопластика Шабац                      metaloplastika Sabaci
+Тубли                                     tubli
+Аль Тадамон (Бахрейн)                     al tadamoni (bahreini)
+Херульф Мосс                              herulf mosi
+Самен Аль-Ходжадж Мешхед                  samen al-xojaj meSxedi
+Нирой Зaмини                              niroi zamini
+Парс Мес Фелаверджан                      pars mes felaverjani
+Мсила                                     msila
+Оран                                      orani
+Четате ДеваТранс                          Cetate devatransi
+Фредрикстад                               fredrikstadi
+Нордстранд                                nordstrandi
+Сторд                                     stordi
+Фалк Хортен                               falk horteni
+Ваци КШЕ                                  vaci kSe
+Аль Наджма Манама                         al najma manama
+Аль Иттихад                               al itihadi
+ХИФК                                      hifk
+АИФК                                      aifk
+Акиллес                                   akilesi
+Брага                                     braga
+Ландхаус                                  landhausi
+СУС Нюборг                                sus niuborgi
+Тёндер                                    tionderi
+ХК Копавогур                              xk kopavoguri
+Люббекке                                  liubeke
+Далфсен                                   dalfseni
+Гвардя Ополе                              gvardia opole
+Зомимак-М                                 zomimak-m
+Сучава                                    suCava
+Поважска Быстрица                         povaJska bistrica
+Бахрейн СК                                bahreini sk
+Аль Ахли (Бахрейн)                        al ahli (bahreini)
+Беджая                                    bejaia
+Уаргла                                    uargla
+Бордж Бу Арреридж                         borj bu areriji
+Аль Ансар                                 al ansari
+БВУФК-Будивельник                         bvufk-budivelniki
+КДЮСШ-ЛДУФК-Политехник                    kdusS-ldufk-politexniki
+Хапоэль Рамат-Ган                         hapoel ramat-gani
+Слован                                    slovani
+Аль Тадамон (Кувейт)                      al tadamoni (kuveiti)
+Самахидж                                  samaxiji
+Селфосс                                   selfosi
+Хапоэль Ришон Беэр-Тувия                  hapoel riSon beer-tuvia
+УОР-Звезда-2                              uor-zvezda-2
+Ростов-Дон-2                              rostov-don-2
+УПИ                                       upi
+Ярославна                                 iaroslavna
+Аль Даир                                  al  dairi
+КСДЮСШОР-Олимп                            ksdusSor-olimpi
+Мекалия Атлетико Гвардес                  mekalia atletiko gvardesi
+Дьёндьёши                                 diondioSi
+Спарта Хельсинки                          sparta helsinki
+КюИФ                                      kiuifi
+Антальяспор                               antaliaspori
+Миос Бигано                               mios bigano
+Трабзон                                   trabzoni
+Арач                                      araCi
+Беккелагет                                bekelageti
+Осым                                      osimi
+Легионово                                 legionovo
+Братислава                                bratislava
+Слован Модра                              slovan modra
+Технолог-Спартак                          texnolog-spartaki
+Анагеннис                                 anagenisi
+ПАОК                                      paoki
+АСК-ЛУ                                    ask-lu
+Вайнёде                                   vainiode
+Медвешчак                                 medveSCaki
+Спачва                                    spaCva
+Анафен Колежи                             anafen koleJi
+Нове Замки                                nove zamki
+Топольчаны                                topolCani
+Висла Плоцк                               visla plocki
+Фоивос                                    foivosi
+УОР-Звезда-3                              uor-zvezda-3
+Лутраки                                   lutraki
+ХАНТ                                      xanti
+Дука                                      duka
+Севница                                   sevnica
+Алиса-БГАУ                                alisa-bgau
+Михаловце                                 mixalovce
+Партизанске                               partizanske
+Униря Слобозия                            uniria slobozia
+Лада-2                                    lada-2
+Луч-УОР                                   luC-uor
+Слован Дусло Шаля                         slovan duslo Salia
+Карпаты                                   karpati
+Днепрянка Херсон                          dneprianka xersoni
+Атлас                                     atlasi
+Рибница                                   ribnica
+Тримо Требнье                             trimo trebnie
+Ерузалем Ормож                            eruzalem ormoJi
+Глоговец                                  glogoveci
+Зриньски Мостар                           zrinski mostari
+Приедор                                   priedori
+Маккаби Холон                             makabi xoloni
+Стиинта Бухарест                          stiinta buqaresti
+Грузия                                    saqarTvelo
+Бад-Швартау                               bad-Svartau
+Биттенфельд                               bitenfeldi
+Скара                                     skara
+Зелене Долине Жалец                       zelene doline Jaleci
+Гвинея                                    gvinea
+Драгунас                                  dragunasi
+Вярска                                    viarska
+Ливия                                     livia
+Анкара Енимахалле                         ankara enimaxale
+Аль Ахли Доха                             al ahli doha
+Оман                                      omani
+Адана                                     adana
+Эльче-Мустанг                             elCe-mustangi
+Алькобендас                               alkobendasi
+Батрун                                    batruni
+Аль Садака                                al sadaka
+Аль Шабаб Мар Элиас                       al Sabab mar eliasi
+Вестманнаэйяр                             vestmanaeiari
+Нафт у Газ Гечсаран                       naft u gaz geCsarani
+Рудар Костолац                            rudar kostolaci
+Этыр-64                                   etir-64
+Динамо-2 Волгоград                        dinamo-2 volgogradi
+Сюдхаусёэрне                              siudhausioerne
+Интер-Академик                            inter-akademiki
+Ум Алхосм                                 um alhosmi
+Трешневка                                 treSnevka
+Аль Хор                                   al xori
+СИФ                                       sif
+Тяньцзинь                                 tianczini
+Шаньдун                                   Sanduni
+Шанхай                                    Sanxai
+Гуандун                                   guanduni
+Бэйцзин                                   beiczini
+Стинта Бакэу                              stinta bakeu
+Либерейшн Арми                            libereiSn armi
+Кристианстад                              kristianstadi
+Аньхой                                    anxoi
+Орошхаза                                  oroSxaza
+Хёрс Х 65                                 hiors h 65
+Хельсингборг                              helsingborgi
+Целтниекс-ЛСПА                            celtnieks-lspa
+Латголс                                   latgolsi
+Аль Сакр Таиз                             al sakr taizi
+Аль Джалаа                                al jalaa
+Иттихад Ибб                               itihad ibb
+Шабаб Аль Джил                            Sabab al jili
+Олькуш                                    olkuSi
+РК Металлург Скопье                       rk metalurg skopie
+Хорта                                     xorta
+Левски-1920                               levski-1920
+Быки                                      biki
+Стьярнан                                  stiarnani
+Железничар 1949                           JelezniCari 1949
+Мославина                                 moslavina
+Бузет                                     buzeti
+Добруджа                                  dobruja
+Фасано                                    fasano
+Аль Садд (Ливан)                          al sadi (libani)
+Польша-2                                  poloneTi II
+Челик                                     Celiki
+Аль Ахли (ОАЭ)                            al ahli (a.g.s.)
+Аль Кияда                                 al kiada
+Арияна                                    ariana
+Махдия                                    maxdia
+Сирия                                     siria
+Васлуй                                    vaslui
+Кэлэраши                                  keleraSi
+Штиинца Бакэу                             Stiinca bakeu
+Дервента                                  derventa
+Эсперанс Тунис                            esperans tunisi
+Валанс                                    valansi
+Тыргу-Муреш                               tirgu-mureSi
+Оддер                                     oderi
+Гурник Забже                              gurnik zabJe
+Шленск Вроцлав                            Slensk vroclavi
+Энерджа Тыргу-Жиу                         enerja tirgu-Jiu
+Выбжеже Гданьск                           vibJeJe gdanski
+БГК им. Мешкова                           bgk meSkovis sax.
+Таргос Бево                               targos bevo
+Самора                                    samora
+Кангас Моррасо                            kangas moraso
+Нельба Вонгровец                          nelba vongroveci
+Аль Джаиш Доха                            al jaiS doxa
+Рикох                                     rikoxi
+Акчаабат Тютюнспор                        akCaabat tiutiunspori
+Аль Садд Доха                             al sad doxa
+Ставрополье-СКФУ                          stavropolie skfu
+Динамо Астрахань                          dinamo astraxani
+Татран Литовел                            tatran litoveli
+Скрим                                     skrimi
+Лиллестрём                                lilestriomi
+Мец                                       meci
+БГК-2                                     bgk-2
+ГК им. Лёвина                             gk liovinis sax.
+ЗТР-СДЮШОР                                ztr-sduSor
+Заглембе Любин                            zaglembe liubini
+Одорхей                                   odorxei
+Филиппос                                  filiposi
+БНТУ-БелАЗ                                bntu-belazi
+Городничанка                              gorodniCanka
+Утена                                     utena
+Губерния                                  gubernia
+Измир БШБ                                 izmiri bSb
+ЗТР                                       ztr
+Бровары                                   brovari
+Эконом-Университет                        ekonom universiteti
+Динамо-Синара                             dinamo sinara
+Горче Петров                              gorCe petrovi
+Лада                                      lada
+Аранес                                    aranesi
+Драма                                     drama
+Жито Прилеп                               Jito prilepi
+Скиф Омск                                 skif omski
+Маккаби Раанана                           makabi raanana
+Ирони Реховот 2                           ironi rexovoti 2
+Мезёкёвешди                               meziokioveSdi
+Вильнюс                                   vilniusi
+Кайсери                                   kaiseri
+Динамо Бх                                 dinamo bx
+УОР 2                                     uor 2
+Буревестник Оренбург                      burevestnik orenburgi
+Березина                                  berezina
+ЦСКА Киев                                 cska kievi
+Огре                                      ogre
+Нес-Циона 2                               nes-ciona 2
+Тюресе                                    tiurese
+Мошонмадьяровар                           moSonmadiarovari
+Шико Андебол                              Siko andeboli
+Целле                                     cele
+Юрмалас Спортс                            iurmalas sportsi
+Раднички Кр                               radniCki kr
+Хуанферса                                 xuanfersa
+Ляонин                                    liaonini
+Вендсиссель                               vendsiseli
+Маккаби П.-Т.                             makabi p.-t.
+Хапоэль К.-О.                             hapoel k.-o.
+Охрид                                     oxridi
+Пролет 62                                 prolet 62
+Радовиш                                   radoviSi
+Фоксани                                   foqsani
+Тыргу-Жиу                                 tirgu-Jiu
+Мексика                                   meqsika
+США                                       aSS
+Кольстад                                  kolstadi
+Релинген                                  relingeni
+Уфа-Алиса                                 ufa-alisa
+Сычуань                                   siCuani
+Байер Дормаген                            baier dormageni
+Чиснэдие                                  Cesnedie
+УГНТУ-ВНЗМ Уфа                            ugntu-vnzm ufa
+Динамо Челябинск                          dinamo Celiabinski
+Иониас                                    ioniasi
+Хельтон                                   heltoni
+Куэнка                                    kuenka
+Рейн-Неккар                               rein-nekari
+Шёвде                                     Siovde
+Севехоф                                   sevehofi
+Адрьян Петря                              adrian petria
+СК Хоукс                                  sk houqsi
+Стяуа Бх                                  stiaua bx
+СКА-РГУОР                                 ska-rguor
+Витязь Минск                              vitiaz minski
+Кишварда                                  kiSvarda
+АГУ-Адыиф-2                               agu-adiif-2
+Кубань-2                                  kuban-2
+Свердловчанка                             sverdlovCanka
+Хэйлунцзян                                xeiluncziani
+Гуанси                                    guansi
+Синьцзян                                  sincziani
+Вьетнам                                   vietnami
+Загнос Спор                               zagnos spori
+Гая                                       gaia
+Асомада                                   asomada
+КИВС Астана                               kivs astana
+КДЮСШ № 3                                 kdusS № 3
+Кайсар-КАМ-КГУ-2                          kaisar-kam-kgu-2
+Кандыагаш                                 kandiagaSi
+Астана                                    astana
+Алматы                                    almati
+Дрейкиш                                   dreikiSi
+Аль-Карама Хомс                           al-karama xomsi
+Бальмазуйвароши                           balmazuivaroSi
+Аль-Садд Доха                             al-sad doha
+Ускюдар                                   uskiudari
+Астраханочка-2                            astraxanoCka-2
+Ростов-Дон-3-СШ-13                        rostov-don-3-sS-13
+Ростов-Дон-3                              rostov-don-3
+Анадолу Унив                              anadolu univ
+Бангладеш                                 bangladeSi
+Петрошими Марун                           petroSimi maruni
+Казерун                                   kazeruni
+Бейкоз                                    beikozi
+ОДТЮ                                      odtu
+Хитит Унив.                               xitit univ.
+Фэгэраш                                   fegeraSi
+Бухарест КСМ                              buqarest ksm
+Бухарест КСМ 2                            buqarest ksm 2
+Шэньси                                    Sensi
+Челябинская обл.-2                        Celiabinskis olqi-2
+Волгоградская обл.                        volgogradis olqi
+Карлскруна                                karlskruna
+Варберг                                   varbergi
+Аль-Равда                                 al-ravda
+Аль-Хедая                                 al-xedaia
+Беларусь (юн)                             belarusi (iun)
+Эльблонг                                  elblongi
+Филиппины                                 filipinebi
+Таиланд                                   tailandi
+Спартак Москва                            spartak moskovi
+СШОР-5-Университет-2                      sSor-5-universitet-2
+Ставрополье-СУОР                          stavropolie-suor
+Ростов-Дон-2-УОР                          rostov-don-2-uor
+Луч-2                                     luC-2
+Ерпен Шиен                                erpen Sieni
+Будаёрш                                   budaiorSi
+МТК Будапешт                              mtk budapeSti
+Зубржи                                    zubrJi
+Эльверум                                  elverumi
+Пролет-62                                 prolet-62
+Трамбле                                   tramble
+Саран                                     sarani
+Масси Эссонн                              masi esoni
+Шаля                                      Salia
+Поважска-Бистрица                         povaJska-bistrica
+АЛК Варшава                               alk varSava
+УЗ Зелёна-Гура                            uz zeliona-gura
+Самарская обл.                            samaris olqi
+Башкортостан                              baSkortostani
+ДГТУ Ростов-на-Дону                       dgtu rostov-na-donu
+КГУФКСТ Краснодар                         kgufkst krasnodari
+ДВФУ Владивосток                          dvfu vladovostoki
+ВГПУ Воронеж                              vgpu voroneJi
+Неймеген Унив.                            neimegen univ.
+Осло Унив.                                oslo univ.
+Сталь Гожув                               stal goJuvi
+Клайностхайм                              klainostxaimi
+Ханау                                     xanau
+Сталь Мелец                               stal meleci
+Китайский Тайбэй                          CineTis taibei
+Малайзия                                  malaizia
+Фёрде                                     fiorde
+Фьелхаммер                                fielhameri
+Акер                                      akeri
+Волда                                     volda
+Пакистан                                  pakistani
+Глазго                                    glazgo
+Южная Корея                               samxreT korea
+ЗТР-Буревестник                           ztr-burevestniki
+Бакэу                                     bakeu
+Фокшани                                   fokSani
+Дайдо Стил                                daido stili
+Тойота Брэйв Кингз                        toiota breiv kingzi
+Тойота Регароссо                          toiota regaroso
+Хокурику Блю Тандер                       xokuriku bliu Tanderi
+Пипперс                                   pipersi
+УоН                                       uon
+Бистрица                                  bistrica
+Осаки Осол                                osaki osoli
+Ганнерс                                   ganersi
+Наньюки                                   naniuki
+Новая Зеландия                            axali zelandia
+Виймси-2                                  viimsi-2
+Дьёндьёш                                  diondioSi
+Чурго                                     Curgo
+Пиньейрус                                 pinieirusi
+Расинг-92                                 rasing-92
+Амо Альстермо                             amo alstermo
+Авиатор-СШОР                              aviator-sSor
+ЦСП СДЮСШОР-7                             csp sdusSor-7
+Астраханская обл.-2                       astraxanis olqi-2
+Московская обл.-2                         moskovis olqi-2
+Московская обл.-1                         moskovis olqi-1
+Ростовская обл.                           rostovis olqi
+Ханам                                     xanami
+Енимахалле                                enimaxale
+Казхром                                   kazxromi
+ДЮСШ №4 Шымкент                           dusS №4 Simkenti
+СДЮСШ Алматинская обл.                    sdusS almatis olqi
+Адыяман                                   adiamani
+МЕК                                       mek
+ААББ Риу-Бранку                           aabb riu-branku
+Ассермурб                                 asermurbi
+Звезда-УОР                                zvezda-uor
+Тойота Мотор                              toiota motori
+Тойота Блю Фалкон                         toiota bliu falkoni
+Тойота Ред Торнадо                        toiota red tornado
+Китакуни                                  kitakuni
+Омрон                                     omroni
+Сони                                      soni
+Караганда                                 yaraganda
+СДЮСШОР №5 Астана                         sdusSor №5 astana
+ДЮСШ №1 Костанай                          dusS №1 kostanai
+ТФСЕ-КСА                                  tfse-ksa
+Сент Иштван                               sent iStvani
+Румыния-2                                 rumineTi-2
+Колумбия                                  kolumbia
+НСПБ                                      nspb
+Рейнджерс                                 reinjersi
+Штефан чел Маре Унив.                     Stefan Cel mare univ.
+Риека Унив.                               rieka univ.
+Порту Унив.                               portu univ.
+Гранада Унив.                             granada univ.
+Бохум Унив.                               boxum univ.
+ГСУ                                       gsu
+Биньдинь                                  bindini
+Хазянг                                    xaziangi
+Фареры                                    fareri
+Эльбфлоренц                               elbflorenci
+Рапид Бх                                  rapidi bx
+Утлейра                                   utleira
+Скрея                                     skreia
+Добруджа Констанца                        dobruja konstanca
+Маломержице                               malomerJice
+Слатина                                   slatina
+Бузэу                                     buzeu
+Слобозия                                  slobozia
+Хокксунн                                  xoksuni
+Релинген 2                                relingeni 2
+Тумба ИФК                                 ifk tumba
+Нючёпинг                                  niuCiopingi
+Пшемысль                                  pSemisli
+ЦСКА М                                    cska m
+Жоры                                      Jori
+Гуиф                                      guifi
+Луч-УОР №1                                luC-uor №1
+Инспаед                                   inspaedi
+НЮС                                       nus
+Динамо-СШОР                               dinamo-sSor
+Бакканирс                                 bakanirsi
+Вориор                                    voriori
+Университет-Нева-2                        universitet-neva-2
+Динамо-2-СШОР                             dinamo-2-sSori
+Голешов                                   goleSovi
+Газена Уничов                             gazena uniCovi
+Акбузат Уфа                               akbuzat ufa
+Дунаря Брэила                             dunaria briela
+Вакунага Леолик                           vakunaga leoliki
+Улинзи                                    ulinzi
+Шаньси                                    Sansi
+Аль-Араби                                 al-arabi
+Аль-Араби Эль-Кувейт                      al-arabi el-kuveiti
+Аль-Вакра                                 al-vakra
+Аль-Вехда                                 al-vehda
+Сепахан                                   sepahani
+Аль-Араби Доха                            al-arabi doha
+Непал                                     nepali
+Шри-Ланка                                 Sri-lanka
+Голден Вулвз Фукуока                      golden vulvz fukuoka
+СК Хокс                                   sk hoksi
+Жальгирис                                 Jalgirisi
+Реал Николаев                             real nikolaevi
+Рюкю Корасон                              riukiu korasoni
+Спартак-2 Москва                          spartak-2 moskovi
+Виктор Ставрополь                         viqtor stavropoli
+ЦОР-БГК                                   cor-bgk
+СКА-Суворовец                             ska-suvoroveci
+МССУОР №2-ЦСКА                            mssuor №2-cska
+Политехника Гливице                       politexnika glivice
+Катовице Унив.                            katovice univ.
+Донские казаки-ЮФУ                        donskie kazaki-ifu
+ПО Ополе                                  po opole
+АГХ Краков                                agx krakovi
+Фридек-Мистек                             fridek misteki
+Погонь 1922                               pogon 1922
+Осака                                     osaka
+Хоккоку Банк                              xokoku banki
+Нагоя                                     nagoia
+Акбузат Уфа-2                             akbuzat ufa-2
+Чеховские медведи УОР №4                  Cexovskie medvedi uor №4
+Акбузат-2 Уфа                             akbuzat-2 ufa
+Динамо-Синара 2                           dinamo-sinara 2
+Динамо-Синара 3                           dinamo-sinara 3
+Такамацу Унив.                            takamacu univ.
+Дунэря Брэйла-2                           duneria breila-2
+Фельдкирх                                 feldkirxi
+Эндинген                                  endingeni
+Мадейра САД                               madeira sad
+Мая-Исмаи                                 maia-ismai
+Динамо Панчево                            dinamo panCevo
+Кунгэльв                                  kungelvi
+Грац                                      graci
+Топольчани                                topolCani
+Кошице                                    koSice
+Копршивнице                               koprSivnice
+Нове-Весели                               nove-veseli
+Комло                                     komlo
+Горенье Веленье                           gorenie velenie
+Рийхимяки Кокс                            riiximiaki koksi
+БЕСА                                      besa
+Сарребург                                 sareburgi
+Анжер                                     anJeri
+Адемар Леон                               ademar leoni
+Ат. Вальядолид                            at. valiadolidi
+Пуэнте-Хениль                             puente-xenili
+Сисне                                     sisne
+Добова                                    dobova
+Крка Ново-Место                           krka novo-mesto
+Нава                                      nava
+Синфин                                    sinfini
+ЦСКА-2                                    cska-2
+Осака Унив.                               osaka univ.
+Фудзи Унив.                               fuZi univ.
+Хиросима                                  hirosima
+Алан Маре                                 alan mare
+Миэ Вайлет Айрис                          mie vailet airisi
+Зикстар Токио                             zikstar tokio
+Сунгуль-2                                 sungul-2
+Хида Такаяма                              xida takaiama
+Чхуннам Нац. Унив. Тэджон                 Cxunam nac. univ. tejoni
+Корейский Нац. Спорт. Унив.               koreis nac. sport. univ.
+Канвон Нац. Унив.                         kanvon nac. univ.
+Вонкван Унив.                             vonkvan univ.
+Саннес                                    sanesi
+Галичанка                                 galiCanka
+Решица                                    reSica
+Университатя Клуж                         universitatia kluJi
+Спартак Киев                              spartak kievi
+Берестье                                  berestie
+Хайдунанаш                                xaidunanaSi
+Гранитас-Карис                            granitas-karisi
+Алитус                                    alitusi
+Питешти                                   piteSti
+Имеди-СТУ Телави                          imedi-stu Telavi
+Кутаиси-2015                              qutaisi-2015
+Георге                                    george
+Штиинца Бх                                Stiinca bx
+Луч-РГСУ                                  luC-rgsu
+Мукорьо                                   mukorio
+Олимпиакос                                olimpiakosi
+Фредерисия                                frederisia
+Беларусь-2004                             belarus-2004
+РЦОР                                      rcor
+Дачия Миовени                             daCia mioveni
+Александрия КСМ                           aleqsandria ksm
+Романья                                   romania
+Фонди                                     fondi
+Сингапур                                  singapuri
+Орадя                                     oradia
+Сигишоара ХКМ                             sigiSoara xkm
+Графометаль Ла Риоха                      grafometal la rioxa
+Гурпеа Бети Онак                          gurpea beti onaki
+Эстудиантес                               estudiantes
+Сан Фернандо Б                            san fernando b
+Урлингам                                  urlingami
+Ферро Карриль Оэсте Б                     fero karil oeste b
+Горица                                    gorica
+Сесвете                                   sesvete
+ССП Бухарест                              ssp buqaresti
+Дева                                      deva
+Байя Маре 2                               baia mare 2
+Одорхей Секуйеск                          odorhei sekuieski
+Олимпия                                   olimpia
+Балонмано Усаб                            balonmano usabi
+Мсиг                                      msigi
+Зегу Йусеф                                zegu iusefi
+МРК Любляна                               mpk liubliana
+Шмартно                                   Smartno
+Свиш Иванчна Горица                       sviS ivanCna gorica
+Кока                                      koka
+НЕКА                                      neka
+Дабаш                                     dabaSi
+Купеле Бойнице                            kupele boinice
+Нове-Замки                                nove zamki
+Лока                                      loka
+Словень-Градец                            sloven gradeci
+Римпар                                    rimpari
+Эгер-Эстерхази                            eger- esterhazi
+Будакалас                                 budakalasi
+Млинотест Айдовшчина                      mlinotest aidovSCina
+Фюксе                                     fiukse
+Барнбах Кёфлах                            barnbax kioflaxi
+Фёслауэр                                  fioslaueri
+Дубочица Лесковац                         duboCica leskovaci
+Академику                                 akademiku
+БЭКА                                      beka
+Сан Фернандо                              san fernando
+Повуа Б                                   povua b
+Арсенал                                   arsenali
+Порту Б                                   portu b
+Модикуш Сандин                            modiSuk sandini
+Динамо Сунгуль                            dinamo sunguli
+ВГТУ Воронеж                              vgtu voroneJi
+Кубань-3-ДЮСШ                             kuban-3-dusS
+Сокол Брянск                              sokol brianski
+Штутгарт                                  Stutgarti
+Кёнхи Унив.                               kionxi univ.
+Чосон Унив.                               Coson univ.
+Уйдук Унив.                               uiduk univ.
+Шербур                                    Serburi
+Селеста                                   selesta
+Батуми                                    baTumi
+Нанси                                     nansi
+Кретей                                    kreta
+Овалье                                    ovalie
+Сьюдад Де Морено                          siudad de moreno
+Сан-Карлус                                san karlusi
+Сан-Каэтану                               san kaetanu
+Ривер Плейт                               river pleiti
+Ферро Карриль Оэсте                       fero karil oeste
+Аль-Салмия                                al salmia
+Аль-Наджма Манама                         al najma manama
+СКА-БГУФК Минск                           ska-bgufk minski
+Ямагути Банк                              iamaguti banki
+Террас Хотелс                             teras hotelsi
+Байрру-Жанейру                            bairu-Janeiru
+Ассомада                                  asomada
+Кагава Банк                               kagava banki
+Северная Македония                        CrdiloeT makedonia
+Мунис                                     munisi
+Бартоломе Митре                           bartolome mitre
+Седало                                    sedalo
+Хувентуд Унида                            xuventud unida
+Замбия                                    zambia
+Эртфрендс БМ                              ertfrends bm
+Косово                                    kosovo
+Каванда                                   kavanda
+УПДФ                                      updf
+Ндежж Хопперс                             ndeJ hopersi
+КИФ Коллинг                               kif kolingi
+Нербё                                     nerbio
+Мальмё                                    malmio
+Кечкемет                                  keCkemeti
+Динамо Аст                                dinamo asti
+Афганистан                                avRaneTi
+Татран Ступава                            tatran stupava
+Годонин                                   godonini
+Эрд                                       erdi
+Балатонфюред                              balatonfiuredi
+Цеглед                                    cegledi
+Брест                                     bresti
+Румерике Рэйвенс                          rumerike reivensi
+Цуг                                       cugi
+Вашаш                                     vaSaSi
+Берген                                    bergeni
+Ярослав                                   iaroslavi
+Фьелльхаммер                              fielhameri
+Сигетсентмиклош                           sigetsentmikloSi
+Топличанин Прокупле                       topliCanin prokuple
+Рюгер Ставангер                           riuger stavangeri
+Касерио                                   kaserio
+Сьюдад Де Малага                          siudad de malaga
+Хольстебро                                holstebro
+ВестеросИрста                             vesterosirsta
+Будаи Фаркашок                            budai farkaSoki
+Ягодина                                   iagodina
+Саннефьорд                                sanefiordi
+Архентинос Хуниорс                        arxentinos xuniorsi
+Сан-Мигель                                san-migeli
+Доррего                                   dorego
+Висенте Лопес                             visente lopesi
+Мариано Акоста                            mariano akosta
+Заглембе Сосновец                         zaglembe sosnoveci
+Хапоэль Р.                                hapoel r.
+Молде                                     molde
+Слога Добой                               sloga doboi
+Машека Могилёв                            maSeka mogiliovi
+Кишпешт                                   kiSpeSti
+Сомбатхей ККА                             sombatxei kka
+Сосница Гливице                           sosnica glivice
+Потсдам                                   potsdami
+Дунаря Браила                             dunaria braila
+Алкалоид                                  alkaloidi
+Брауншвейг                                braunSveigi
+Гуарульюс                                 guaruliusi
+Сер Сорокаба                              ser sorokaba
+Кильмес Б                                 kilmesi b
+Винкуло Ганадеро                          vinkulo ganadero
+Михалыджчык                               mixalijCiki
+Аль-Даир                                  al-dairi
+Аль-Тадамон (Бахрейн)                     al-tadamoni (bahreini)
+Хёрдур                                    hiorduri
+Афтурельдинг                              aftureldingi
+ФХ Хабнарфьордюр                          habnarfiordiuri
+Клуб Африкен                              klub afrikeni
+Аль-Шарджа                                al-Sarja
+Лемвиг-Тюборён                            lemvig-tiuborioni
+Балтийская заря                           baltiiskaia zaria
+Млади Радник                              mladi radniki
+Топличанин                                topliCanini
+Харгита                                   xargita
+Врилиссия                                 vrilisia
+Ионикос                                   ionikosi
+Нилюфер Блд                               niliufer bld
+Хатай                                     hatai
+Роскилле                                  roskile
+Хадстен                                   hadsteni
+ХИК                                       hik
+МК Алжир                                  mk alJiri
+ЦСКА-3 М                                  cska-3 m
+Насиональ Сан-Жозе                        nasional san-Joze
+Аль-Садд                                  al-sadi
+Аль-Ахли                                  al-ahli
+Потаисса Турда-2                          potaisa turda-2
+КСМ Сигишоара                             ksm sigiSoara
+Изола                                     izola
+Корона Кельце                             korona kelce
+АЗС УМКС Люблин                           azs umks liublini
+Пари-92                                   pari-92
+Сокол Писек                               sokol piseki
+Дунайска-Стреда                           dunaiska-streda
+Фана                                      fana
+Споно Иглс Ноттвиль                       spono igls notvili
+Торсланда                                 torslanda
+Сённермаркенс                             sionermarkensi
+Эйструп                                   eistrupi
+Гудме                                     gudme
+Бьеррингбро                               bieringbro
+ДХГ Оденсе                                dhg odense
+Птуй                                      ptui
+Веленье                                   velenie
+Ялыкавак                                  ialikavaki
+Косьцежина                                kosceJina
+Салерно                                   salerno
+Стружанка                                 struJanka
+Железничар Инджия                         JelezniCar injia
+Далматинка Плоче                          dalmatinka ploCe
+Гёреле Блд.                               giorele bld.
+Аль-Ахли Каир                             al-ahli kairi
+Гиш                                       giSi
+Банк Аль-Ахли                             bank al-ahli
+ЖРК Вардар                                Jrk vardari
+Спартак Кисела Вода                       spartak kisela voda
+Кузман Вардар Илинден                     kuzman vardar ilindeni
+Аль-Халидж                                al-xaliji
+Боден                                     bodeni
+Рунар Саннефьорд                          runar sanefiordi
+Нордстранн                                nordstrani
+Викинг ТИФ                                viking tif
+Маккаби Р.                                makabi r.
+Норшелланн                                norSelani
+Кикинда                                   kikinda
+Наиса Ниш                                 naisa niSi
+Амицития Цюрих                            amicitia ciurixi
+Зур Арау                                  zur arau
+Кобежице                                  kobeJice
+Островия                                  ostrovia
+Овче Поле                                 ovCe pole
+Пелистер                                  pelisteri
+Кан                                       kani
+Министрос                                 ministrosi
+Ула Варена                                ula varena
+Сокол Шальчининкай                        sokol SalCininkai
+Сынниколау-Маре                           sinikolau-mare
+Бузэу 2                                   buzeu 2
+Спор Тото Ск                              spor toto sk
+Трабзон Блд                               trabzon bld
+СК Глайдерс                               sk glaidersi
+Хернинг-Икаст                             herning-ikasti
+Атлетико Гуардес                          atletiko guardesi
+Х71                                       X71
+Университатя Крайова                      universitatia kraiova
+Константин Бранкузи Тыргу-Жиу             konstantin brankuzi tirgu-Jiu
+Лухан                                     luxani
+Велес Сарсфилд                            veles sarsfildi
+Дефенса и Хустисия                        defensa i xutisia
+Мотив Хихон                               motiv xixoni
+Бьеловар                                  bielovari
+Замет                                     zameti
+Айнтрахт Хаген                            aintraxt hageni
+Любек-Швартау                             liubek-Svartau
+Повуа Варзин                              povua varzini
+Альпла ФТ                                 alpla ft
+Зальцбург                                 zalcburgi
+Брегенц ФТ                                bregenci ft
+Спайдерс Вельс                            spaiders velsi
+Линтфорт                                  lintforti
+Регенсбург                                regensburgi
+ИБВ Вестманнаэйяр                         ibv vestmanaeiari
+Дуго-Село 55                              dugo-selo 55
+Хабитат                                   habitati
+Мокнин                                    moknini
+Нуасёр                                    nuasiori
+ФАНЗ Яунде                                fanz iaunde
+Сейхан Блд                                seixan bld
+Зейтинбурну                               zeitinburnu
+Людвигсхафен                              liudvigsxafeni
+Хэнд Торрес                               hend toresi
+Сан-Педру ду Сул                          san-pedru du suli
+Витория                                   vitoria
+ЦХТ Оран                                  cxt orani
+МФ Акбу                                   mf akbu
+Акбу                                      akbu
+Бумердес                                  bumerdesi
+Фукуи Блю Тандер                          fukui bliu Tanderi
+1875 Клуб                                 1875 klubi
+Аль-Джаиш (Ливан)                         al-jaiSi (libani)
+Тояма                                     toiama
+Акитакада Вакунага                        akitakada vakunaga
+Вилья Бальестер                           vilia baliesteri
+Кильмес                                   qilmesi
+Польворинес                               polvorinesi
+Металопластика                            metaloplastika
+Бутел Скопье                              butel skopie
+Нордхорн-Линген                           nordhorn-lingeni
+Альба Фехервар                            alba fehervari
+ЯГС Фёслауэр                              igs fioslaueri
+ПЛЕР Будапешт                             pler budapeSti
+Вечеш                                     veCeSi
+БФКА Веспрем                              bfka vespremi
+Мезёкёвешд                                meziokioveSdi
+Гзира                                     gzira
+Аль-Терасанах                             al-terasanaxi
+Олимпик                                   olimpiki
+Темимьен                                  temimieni
+Хорсенс                                   horsensi
+Еврофарм Пелистер                         evrofarm pelisteri
+Кобург                                    koburgi
+Университет Буэнос-Айрес                  universitet buenos-airesi
+Страконице                                strakonice
+Эль-Маади                                 el-maadi
+Эль-Убур                                  el-uburi
+Бергише Пантер                            bergiSe panteri
+Куновице                                  kunovice
+Гавличкув-Брод                            gavliCkuv-brodi
+Монголия                                  monRoleTi
+Бенфика Б                                 benfika b
+Сиштер Алкобаса                           siSter alkobasa
+Цент Колежи                               cent koleJi
+Гёктюрк                                   gioktiurki
+Парнассос Строволу                        pernasos strovolu
+Калиш                                     kaliSi
+Кошалин                                   koSalini
+Саласпилс                                 salaspilsi
+Козармишлень                              kozarmiSleni
+Панчево                                   panCevo
+Металац                                   metalaci
+Власотинце                                vlasotince
+Смедерево                                 smederevo
+Пуэрто-Рико                               puerto-riko
+Ризе Блд                                  rize bld
+Сакарья                                   sakaria
+Квинсленд                                 qvinslendi
+Эльче                                     elCe
+Рокаса Гран-Канария                       rokasa gran-kanaria
+Тулон                                     tuloni
+Стад Тунизьен                             stad tunizieni
+Эль Менза                                 el menza
+Зенит                                     zeniti
+АВФ Варшава                               avf varSava
+Марковиа Радзымин                         markovia radzimini
+МСГ                                       msg
+Шпаркассе Швац ФТ                         Sparkase Svac ft
+Ван Эрек Бес Йилдиз                       van erek bes iildizi
+Эльта                                     elta
+Швеса Вильнюс                             Svesa vilniusi
+Ломас                                     lomasi
+Брюль                                     briuli
+Аль-Шамал                                 al-Samali
+Аль-Гарафа                                al-garafa
+Аль-Духаиль                               al-duhaili
+ЦСКА Москва                               cska moskovi
+Мсакен                                    msakeni
+Хаммам Сус                                hamam susi
+Хаммамет                                  hamameti
+Гремда                                    gremda
+Сканнерборг                               skanerborgi
+СКА Львов                                 ska lvovi
+КД 4 де Жунью                             kd 4 de Juniu
+Эштрела Паласио                           eStrela palasio
+Мора Вирей                                mora virei
+ФК ду Уиже                                fk du uiJe
+Карпаты Ужгород                           karpati uJgorodi
+Донбасс                                   donbasi
+Измаил                                    izmaili
+4 де Жунью                                4 de Juniu
+Обра Социал де Максинде                   obra social de maksinde
+АМЦК Бий                                  amck bii
+МШ Уэд-Тлелат                             mS ued-tlelati
+Эль-Уэд                                   el-uedi
+Академику Порту                           akademiku portu
+Афифенсе                                  afifense
+Араракуара                                ararakuara
+Каан Като                                 kaan kato
+Лимож Унив.                               limoJ univ.
+Леон Унив.                                leon univ.
+Дуйсбург-Эссен Унив.                      duisburg-essen univ.
+Минью Унив.                               miniu univ.
+УП Оломоуц                                up olomouci
+Унив. Кастилия-Ла-Манча                   kastilia-la-manc univ.
+АДХЖ                                      adxJ
+Адреча ЖБА                                adreCa Jba
+Эсперанса                                 esperansa
+Гифу                                      gifu
+Оппсал 2                                  opsali 2
+Фредрикстад Б                             fredrikstadi b
+Нордстранн 2                              nordstrani 2
+Хаслум ИЛ                                 haslum il
+Эстсиден                                  estsideni
+Беларусь-2                                belarusi-2
+Охрид-2013                                oxrid-2013
+Регулюс Осака                             regulius osaka
+Утлейра 2                                 utleira 2
+Сельбу                                    selbu
+Брэйв Кингз Кария                         breiv kingz karia
+Алвамос Осака                             alvamos osak
+Сони Блю Сакуя Кагосима                   soni bliu sakuia kagosima
+Калифорния Иглс                           kalifornia iglsi
+Аль-Кувейт                                al-kuveiti
+Бурган                                    burgani
+Глория Бистрица                           gloria bistrica
+Струга                                    struga
+Аист Китая                                aist kitaia
+ГрИФК                                     grifk
+Порриньо                                  porinio
+Бриксен                                   brikseni
+Аула Вальядолид                           aula valiadolidi
+Феризай                                   ferizai
+Лимож                                     limoJi
+Понто-Комбо                               ponto-kombo
+Курнон-д'Овернь                           kurnon-d'overni
+Бийер                                     biieri
+Фронтиньян                                frontiniani
+Морведре Сагунто                          morvedre sagunto
+Репласа Бети Онак                         replasa beti onaki
+Норддюрс                                  nordiursi
+Шамбре Турень                             Sambre tureni
+Стелла Сен-Мор                            stela sen-mori
+Самбре                                    sambre
+Гарадаг                                   garadagi
+Дифферданж                                diferdanJi
+Торрелавега                               torelavega
+Бергсёй                                   bergsioi
+Шарлоттенлунн СК                          Sarlotenlun sk
+Аль-Сафа                                  al-safa
+Раджа Агадир                              raja agadiri
+Аджиджа                                   ajija
+Киркос                                    kirkosi
+Мечал                                     meCali
+Аль-Нур                                   al-nuri
+Африка Спортс Абиджан                     afrika sports abijani
+Черноморочка                              CernomoroCka
+Дортмунд                                  dortmundi
+Людвигсбург                               liudvigsburgi
+Бени Киар                                 beni kiari
+ЭС Сахель                                 es saheli
+МОГК                                      mohk
+Требьеса Никшич                           trebiesa nikSiCi
+ЖРК Феникс                                Jrk feniqsi
+Цвиккау                                   cvikau
+Кастор                                    kastori
+Уэд                                       uedi
+НР Хуссайн Дей                            nr husain dei
+Гросвалльштадт                            grosvalStadti
+Назаре                                    nazare
+Спачва Винковцы                           spaCva vinkovci
+Бор-РТБ                                   bor-rtb
+Ацгерсдорф                                acgersdorfi
+Партизан                                  partizani
+Халле-Нойштадт                            hale-noiStadti
+Буххольц-Розенгартен                      buxolc-rozengarteni
+Вайблинген                                vaiblingeni
+Золинген-Графрат                          zolingen-grafrati
+Вердер Бремен                             verder bremeni
+Рёдерталь                                 riodertali
+Курпфальц Берен Кеч                       kurpfalc beren keCi
+Фафи                                      fafi
+Коимбра                                   koimbra
+Сисмария                                  sismaria
+Алавариум                                 alavariumi
+Тарока                                    taroka
+Кале Леса                                 kale lesa
+Жил Эанеш                                 Jil eaneSi
+Жуан ди Барруш                            Juan di baruSi
+Урбис Гнезно                              urbis gnezno
+ЭОН Орнео Аликанте                        eon orneo alikante
+Агустинос Аликанте                        agustinos alikante
+ХСГ Барнбах Кёфлах                        hsg barnbax kioflaxi
+Вараждин                                  varaJdini
+Рудар Самобор                             rudar samobori
+Осиек                                     osieki
+Трогир                                    trogiri
+Логроньо                                  logronio
+Синь                                      sini
+Малага                                    malaga
+Суасо                                     suaso
+Эльда                                     elda
+Падроенсе                                 padroense
+Извиджач                                  izvijaCi
+Бомбиньяс                                 bombiniasi
+Флорианополис                             florianopolisi
+Перола Байя Фарта                         perola baia farta
+Бенга                                     benga
+Аль-Кадсия                                al-kadsia
+Спортинг Луанда                           sporting luanda
+Примейру де Агошту А                      primeiru de agoStu a
+Медеа                                     medea
+Алже Сантр                                alJe santri
+Олимпик Махниа                            olimpik maxnia
+АТ Сетиф                                  at setifi
+Айн-Млила                                 ain-mlila
+Уэд Слай                                  ued slai
+Баб-эль-Уэд                               bab-el-uedi
+НРКГ Алже                                 nrkg alJe
+Акрим                                     akrimi
+Аль-Шабаб (Сирия)                         al-Sababi (siria)
+Нафт Аль-Басра                            naft al-basra
+КСМ Констанца                             ksm konstanca
