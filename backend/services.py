@@ -423,7 +423,7 @@ def fetch_betcity_tennis():
 
 def fetch_betcity_handball():
     return fetch_betcity_sport(
-        "гандбол", "handballBC", "handball.gif",
+        "гандбол", "handballBC", "Handball.gif",
         skip_keywords=["статистика"]
     )
 
