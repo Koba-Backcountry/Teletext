@@ -375,13 +375,13 @@ def fetch_betcity():
     for sp in sports.values():
         sport_name = sp.get("name_sp", "").lower()
 
-        if "Футбол" not in sport_name:
+        if "футбол" not in sport_name:
             continue
 
         for ch in sp.get("chmps", {}).values():
 
             league = ch.get("name_ch", "")
-            if "киберфутбол" in league.lower() or "статистика" in league.lower():
+            if "киберфутбол" in league.lower() or "статистика" in league.lower() or "Австралийский футбол" in league.lower():
                 continue
             country = ""
             flag = None
