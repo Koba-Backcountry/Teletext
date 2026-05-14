@@ -530,7 +530,7 @@ def fetch_betcity_hockey():
 def fetch_betcity_basketball():
     return fetch_betcity_sport(
         "баскетбол", "basketballBC", "Basketball.gif",
-        skip_keywords=["статистика"]
+        skip_keywords=["статистика", "кибербаскетбол"]
     )
 
 def fetch_betcity_tennis():
