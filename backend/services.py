@@ -280,6 +280,9 @@ def fetch_livescore():
                 else:
                     minute = ""
 
+            import re
+            if re.match(r'^\d{2}:\d{2}$', minute):
+                continue
             matches.append({
                 "league": league,
                 "country": country,
@@ -340,6 +343,9 @@ def fetch_livescore_hockey():
             if suf2:
                 translated2 = translated2 + " " + suf2
 
+            import re
+            if re.match(r'^\d{2}:\d{2}$', minute):
+                continue
             matches.append({
                 "league": league,
                 "country": country,
