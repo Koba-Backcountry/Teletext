@@ -384,20 +384,8 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
         flag = livescore_flags.get(country.strip()) or livescore_flags.get(country.strip().title())
 
         for ev in stage.get("Events", []):
-            team1_list = ev.get("T1", [])
-            team2_list = ev.get("T2", [])
-
-            team1 = " / ".join(
-                p.get("Nm", "").strip()
-                for p in team1_list
-                if p.get("Nm")
-            )
-
-            team2 = " / ".join(
-                p.get("Nm", "").strip()
-                for p in team2_list
-                if p.get("Nm")
-            )
+            team1 = ev.get("T1", [{}])[0].get("Nm", "").strip()
+            team2 = ev.get("T2", [{}])[0].get("Nm", "").strip()
 
             ft = ev.get("Eps", "")
 
