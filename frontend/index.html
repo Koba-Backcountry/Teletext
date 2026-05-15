@@ -107,6 +107,12 @@ let direction = 1;
 let position = 0;
 
 const API = "http://" + window.location.hostname + ":8000";
+const API_KEY = "gt-secret-2024-xK9mP";
+
+const authHeaders = {
+    "Content-Type": "application/json",
+    "x-api-key": API_KEY
+};
 
 window.onload = function() {
     document.getElementById("auth").style.display = "block";
@@ -156,15 +162,18 @@ async function register() {
 }
 
 async function setPending(id) {
-    await fetch(API + "/set-pending/" + id, { method: "POST" });
+    await fetch(API + "/set-pending/" + id, {
+        method: "POST",
+        headers: authHeaders
+    });
     loadPendingUsers();
 }
 
 async function loadPendingUsers() {
-    const pendingRes = await fetch(API + "/pending-users");
+    const pendingRes = await fetch(API + "/pending-users", { headers: authHeaders });
     const pendingData = await pendingRes.json();
 
-    const approvedRes = await fetch(API + "/approved-users");
+    const approvedRes = await fetch(API + "/approved-users", { headers: authHeaders });
     const approvedData = await approvedRes.json();
 
     document.getElementById("pending-count").textContent = pendingData.length;
@@ -222,7 +231,10 @@ function logout() {
 }
 
 async function approveUser(id) {
-    await fetch(API + "/approve/" + id, { method: "POST" });
+    await fetch(API + "/approve/" + id, {
+        method: "POST",
+        headers: authHeaders
+    });
     loadPendingUsers();
 }
 
@@ -288,7 +300,7 @@ async function loadMatches() {
 async function updateAdmin() {
     const res = await fetch(API + "/admin/update", {
         method: "POST",
-        headers: {"Content-Type": "application/json"},
+        headers: authHeaders,
         body: JSON.stringify({ username: newUser.value, password: newPass.value })
     });
     const data = await res.json();

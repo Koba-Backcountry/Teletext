@@ -1,4 +1,4 @@
-from fastapi import FastAPI
+from fastapi import FastAPI, Header, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 from pydantic import BaseModel
 from db import Base, engine, SessionLocal
@@ -7,6 +7,7 @@ from scheduler import scheduler
 from services import get_all_matches, update_matches
 from models import User, Translation
 from sqlalchemy import inspect
+from typing import Optional
 
 app = FastAPI()
 
@@ -17,6 +18,16 @@ app.add_middleware(
     allow_methods=["*"],
     allow_headers=["*"],
 )
+
+# =========================
+# API KEY
+# =========================
+
+API_KEY = "gt-secret-2024-xK9mP"
+
+def verify_key(x_api_key: Optional[str] = Header(None)):
+    if x_api_key != API_KEY:
+        raise HTTPException(status_code=403, detail="Forbidden")
 
 
 @app.on_event("startup")
@@ -65,14 +76,14 @@ def startup():
     update_matches()
 
 
+# =====================
+# PUBLIC ENDPOINTS
+# =====================
+
 @app.get("/matches")
 def matches():
     return get_all_matches()
 
-
-# =====================
-# REGISTER
-# =====================
 
 class UserCreate(BaseModel):
     username: str
@@ -103,10 +114,6 @@ def register(user: UserCreate):
     return {"status": "ok"}
 
 
-# =====================
-# LOGIN
-# =====================
-
 class UserLogin(BaseModel):
     username: str
     password: str
@@ -135,34 +142,25 @@ def login(user: UserLogin):
 
 
 # =====================
-# PENDING USERS
+# PROTECTED ENDPOINTS
 # =====================
 
 @app.get("/pending-users")
-def pending_users():
+def pending_users(x_api_key: Optional[str] = Header(None)):
+    verify_key(x_api_key)
     db = SessionLocal()
 
     users = db.query(User).filter(User.is_approved == 0).all()
 
-    result = [
-        {
-            "id": u.id,
-            "username": u.username
-        }
-        for u in users
-    ]
+    result = [{"id": u.id, "username": u.username} for u in users]
 
     db.close()
-
     return result
 
 
-# =====================
-# APPROVE USER
-# =====================
-
 @app.post("/approve/{user_id}")
-def approve_user(user_id: int):
+def approve_user(user_id: int, x_api_key: Optional[str] = Header(None)):
+    verify_key(x_api_key)
     db = SessionLocal()
 
     u = db.query(User).filter(User.id == user_id).first()
@@ -172,16 +170,11 @@ def approve_user(user_id: int):
         return {"status": "not_found"}
 
     u.is_approved = 1
-
     db.commit()
     db.close()
 
     return {"status": "ok"}
 
-
-# =====================
-# ADMIN UPDATE
-# =====================
 
 class AdminUpdate(BaseModel):
     username: str
@@ -189,7 +182,8 @@ class AdminUpdate(BaseModel):
 
 
 @app.post("/admin/update")
-def update_admin(data: AdminUpdate):
+def update_admin(data: AdminUpdate, x_api_key: Optional[str] = Header(None)):
+    verify_key(x_api_key)
     db = SessionLocal()
 
     admin = db.query(User).filter(User.is_admin == 1).first()
@@ -207,12 +201,9 @@ def update_admin(data: AdminUpdate):
     return {"status": "ok"}
 
 
-# =====================
-# APPROVED USERS
-# =====================
-
 @app.get("/approved-users")
-def approved_users():
+def approved_users(x_api_key: Optional[str] = Header(None)):
+    verify_key(x_api_key)
     db = SessionLocal()
 
     users = db.query(User).filter(
@@ -220,25 +211,15 @@ def approved_users():
         User.is_admin == 0
     ).all()
 
-    result = [
-        {
-            "id": u.id,
-            "username": u.username
-        }
-        for u in users
-    ]
+    result = [{"id": u.id, "username": u.username} for u in users]
 
     db.close()
-
     return result
 
 
-# =====================
-# SET USER TO PENDING
-# =====================
-
 @app.post("/set-pending/{user_id}")
-def set_pending(user_id: int):
+def set_pending(user_id: int, x_api_key: Optional[str] = Header(None)):
+    verify_key(x_api_key)
     db = SessionLocal()
 
     u = db.query(User).filter(User.id == user_id).first()
@@ -248,7 +229,6 @@ def set_pending(user_id: int):
         return {"status": "not_found"}
 
     u.is_approved = 0
-
     db.commit()
     db.close()
 
