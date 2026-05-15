@@ -123,9 +123,9 @@ async function login() {
     });
 
     const data = await res.json();
-    document.body.className = "teletext-page";
 
     if (data.status === "ok") {
+        document.body.className = "teletext-page";
         localStorage.setItem("logged", "1");
         document.getElementById("auth").style.display = "none";
 
