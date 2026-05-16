@@ -332,6 +332,16 @@ def translate_tennis_betcity(name, source):
     return translate_betcity_name(name, source)
 
 
+def translate_tennis_livescore(name, source):
+    """Tennis livescore-ისთვის: / სიმბოლოთი გამოყოფილი წყვილები ცალ-ცალკე ითარგმნება"""
+    if " / " in name:
+        parts = name.split(" / ", 1)
+        left = translate(parts[0].strip(), source)
+        right = translate(parts[1].strip(), source)
+        return left + " / " + right
+    return translate(name, source)
+
+
 def translate(name, source):
     db = SessionLocal()
 
@@ -384,8 +394,15 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
         flag = livescore_flags.get(country.strip()) or livescore_flags.get(country.strip().title())
 
         for ev in stage.get("Events", []):
-            team1 = ev.get("T1", [{}])[0].get("Nm", "").strip()
-            team2 = ev.get("T2", [{}])[0].get("Nm", "").strip()
+            t1_list = ev.get("T1", [{}])
+            t2_list = ev.get("T2", [{}])
+
+            if len(t1_list) >= 2:
+                team1 = t1_list[0].get("Nm", "").strip() + " / " + t1_list[1].get("Nm", "").strip()
+                team2 = t2_list[0].get("Nm", "").strip() + " / " + t2_list[1].get("Nm", "").strip()
+            else:
+                team1 = t1_list[0].get("Nm", "").strip()
+                team2 = t2_list[0].get("Nm", "").strip()
 
             ft = ev.get("Eps", "")
 
@@ -413,6 +430,9 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
                     t1 = t1 + " " + suf1
                 if suf2:
                     t2 = t2 + " " + suf2
+            elif sport == "tennis":
+                t1 = translate_tennis_livescore(team1, source_key)
+                t2 = translate_tennis_livescore(team2, source_key)
             else:
                 t1 = translate(team1, source_key)
                 t2 = translate(team2, source_key)
