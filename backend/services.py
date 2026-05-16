@@ -142,7 +142,55 @@ def get_today():
     return datetime.now().strftime("%Y%m%d")
 
 
-# suffix_map betcity-სთვის — გამოიყენება translate()-ში source-ის მიხედვით
+# =========================
+# PERIOD SCORE HELPERS
+# =========================
+
+def get_livescore_period_score(ev, sport):
+    """livescore-ის ტაიმების ანგარიში სპორტის მიხედვით"""
+    parts = []
+
+    if sport == "hockey":
+        for i in range(1, 4):
+            t1 = ev.get(f"Tr1Pe{i}")
+            t2 = ev.get(f"Tr2Pe{i}")
+            if t1 is not None and t2 is not None:
+                parts.append(f"{t1}:{t2}")
+
+    elif sport == "basketball":
+        for i in range(1, 5):
+            t1 = ev.get(f"Tr1Q{i}")
+            t2 = ev.get(f"Tr2Q{i}")
+            if t1 is not None and t2 is not None:
+                parts.append(f"{t1}:{t2}")
+
+    elif sport == "tennis":
+        for i in range(1, 6):
+            t1 = ev.get(f"Tr1S{i}")
+            t2 = ev.get(f"Tr2S{i}")
+            if t1 is not None and t2 is not None:
+                parts.append(f"{t1}:{t2}")
+
+    if parts:
+        return "[" + ", ".join(parts) + "]"
+    return ""
+
+
+def get_betcity_period_score(sc_add_ev):
+    """betcity-ს sc_add_ev ველიდან ტაიმების ანგარიში"""
+    if not sc_add_ev or not sc_add_ev.strip():
+        return ""
+
+    parts = [p.strip().replace(":", "-") for p in sc_add_ev.split(",") if p.strip()]
+    # უკან ვაბრუნებთ : სიმბოლოთი
+    parts = [p.replace("-", ":") for p in parts]
+
+    if parts:
+        return "[" + ", ".join(parts) + "]"
+    return ""
+
+
+# suffix_map betcity-სთვის
 BETCITY_SUFFIX_MAPS = {
     "basketballBC": {
         " (3-х очк. попадания)": " (3 quliani)",
@@ -201,7 +249,6 @@ BETCITY_SUFFIX_MAPS = {
     },
 }
 
-# პერიოდის სუფიქსები რომლებიც მხოლოდ მოიცილება (არარაფრად ითარგმნება)
 PERIOD_SUFFIXES = {
     "basketballBC": [
         " (13)", " (14)", " (15)", " (16)", " (17)", " (18)", " (19)",
@@ -222,13 +269,11 @@ PERIOD_SUFFIXES = {
 
 
 def translate_betcity_name(name, source):
-    """betcity-ს ყველა source-ისთვის საერთო translate ლოგიკა"""
     db = SessionLocal()
     original = name.strip()
     lower = original.lower()
     suffix = ""
 
-    # პერიოდის სუფიქსების მოცილება (basketball, handball, rugby, volleyball)
     period_list = PERIOD_SUFFIXES.get(source, [])
     for ps in period_list:
         if lower.endswith(ps.lower()):
@@ -236,17 +281,14 @@ def translate_betcity_name(name, source):
             lower = lower[:-len(ps)].strip()
             break
 
-    # hockey-სთვის პერიოდის რეგექსი (12-23)
     if not suffix:
         m = re.search(r"\((1[2-9]|2[0-3])\)$", lower)
         if m:
             suffix = " " + m.group(0)
             lower = lower[:m.start()].strip()
 
-    # სპორტ-სპეციფიური suffix_map
     sport_map = BETCITY_SUFFIX_MAPS.get(source, {})
 
-    # საერთო suffix_map (soccer, hockey და ყველასთვის)
     common_suffix_map = {
         " (мол)": " (ax)",
         " (юн)": " (iun)",
@@ -271,7 +313,6 @@ def translate_betcity_name(name, source):
         " (мини-футбол)": " (mini-fexb.)",
         " угл": "(kuTx.) ",
         " жк": "(yv.) ",
-        # hockey
         " (штр)": " (saj)",
         " (бр)": " (dart)",
         " (сб. кл.)": " (kl. nak.)",
@@ -291,7 +332,6 @@ def translate_betcity_name(name, source):
         " (видеопросмотры)": " (video Cveneba)",
     }
 
-    # სპორტ-სპეციფიური პირველ ვამოწმებთ
     combined_map = {**common_suffix_map, **sport_map}
 
     if not suffix:
@@ -323,7 +363,6 @@ def translate_betcity_name(name, source):
 
 
 def translate_tennis_betcity(name, source):
-    """Tennis-ისთვის: / სიმბოლოთი გამოყოფილი წყვილები ცალ-ცალკე ითარგმნება"""
     if "/" in name:
         parts = name.split("/", 1)
         left = translate_betcity_name(parts[0].strip(), source)
@@ -333,7 +372,6 @@ def translate_tennis_betcity(name, source):
 
 
 def translate_tennis_livescore(name, source):
-    """Tennis livescore-ისთვის: / სიმბოლოთი გამოყოფილი წყვილები ცალ-ცალკე ითარგმნება"""
     if " / " in name:
         parts = name.split(" / ", 1)
         left = translate(parts[0].strip(), source)
@@ -421,6 +459,9 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
             if re.match(r'^\d{2}:\d{2}$', minute):
                 continue
 
+            # ტაიმების ანგარიში
+            period_score = get_livescore_period_score(ev, sport) if sport in ("hockey", "basketball", "tennis") else ""
+
             if sport == "hockey":
                 clean1, suf1 = normalize_hockey_livescore(team1)
                 clean2, suf2 = normalize_hockey_livescore(team2)
@@ -443,6 +484,7 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
                 "minute": minute,
                 "team1": t1,
                 "score": score,
+                "period_score": period_score,
                 "team2": t2,
                 "flag": flag,
                 "sport_icon": sport_icon,
@@ -515,6 +557,8 @@ def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=Non
                 else:
                     score = "? - ?"
 
+                period_score = get_betcity_period_score(ev.get("sc_add_ev", ""))
+
                 if ev.get("st_ev") == 2:
                     minute = "FT"
                 else:
@@ -526,6 +570,7 @@ def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=Non
                     "minute": minute,
                     "team1": translate(team1, source_key),
                     "score": score,
+                    "period_score": period_score,
                     "team2": translate(team2, source_key),
                     "flag": flag,
                     "sport_icon": sport_icon,

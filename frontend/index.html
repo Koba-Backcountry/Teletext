@@ -283,15 +283,29 @@ async function loadMatches() {
             row.style.color = "#FFFFFF";
         }
 
+        const isMultiLine = m.sport_icon !== "Soccer.gif";
+        const hasPeriod = m.period_score && m.period_score.trim() !== "";
+
         row.innerHTML = `
             <div class="minute">
                 ${m.source === "betcity"
                     ? `<img src="SportIcons/flash.gif" style="height:24px;">`
                     : m.minute}
             </div>
-            <div class="team1">${m.team1.includes(" / ") ? m.team1.replace(" / ", "<br>") : m.team1}</div>
-            <div class="score">${m.score}</div>
-            <div class="team2">${m.team2.includes(" / ") ? m.team2.replace(" / ", "<br>") : m.team2}</div>
+            <div class="team1">
+                ${isMultiLine
+                    ? m.team1.replace(" / ", "<br>")
+                    : m.team1}
+            </div>
+            <div class="score">
+                ${m.score}
+                ${hasPeriod ? `<div style="font-size:18px; opacity:0.75;">${m.period_score}</div>` : ""}
+            </div>
+            <div class="team2">
+                ${isMultiLine
+                    ? m.team2.replace(" / ", "<br>")
+                    : m.team2}
+            </div>
         `;
         container.appendChild(row);
     });
