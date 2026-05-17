@@ -234,6 +234,23 @@ function applyStyle(el, sport_icon) {
     }
 }
 
+// score1/score2 — საერთო ანგარიში
+// period — "[2 1 0]" ფორმატი ან ""
+// აბრუნებს HTML სტრიქონს doubles-right-ისთვის ერთი ხაზისთვის
+function buildScoreRow(score, period) {
+    const parts = period && period.trim() !== ""
+        ? period.replace("[", "").replace("]", "").trim().split(/\s+/).filter(p => p !== "")
+        : [];
+
+    // პირველი ელემენტი (საერთო ანგარიში) — უკიდურეს მარცხნივ
+    // დანარჩენი ელემენტები — space-evenly დარჩენილ სივრცეში
+    const restHtml = parts.length > 0
+        ? `<div class="score-rest">${parts.map(p => `<span>${p}</span>`).join("")}</div>`
+        : "";
+
+    return `<div class="score-row"><span class="score-main">${score}</span>${restHtml}</div>`;
+}
+
 async function loadMatches() {
     const res = await fetch(API + "/matches");
     const data = await res.json();
@@ -248,6 +265,7 @@ async function loadMatches() {
         if (m.league !== lastLeague) {
             lastLeague = m.league;
             if (m.league.toLowerCase().includes("пляжный волейбол")) return;
+
             const header = document.createElement("div");
             header.className = "row";
             header.style.background = "#000000";
@@ -262,19 +280,15 @@ async function loadMatches() {
             container.appendChild(header);
         }
 
-        if (m.league.toLowerCase().includes("пляжный волейбол")) {
-            lastLeague = m.league;
-            return;
-        }
+        if (m.league.toLowerCase().includes("пляжный волейбол")) return;
 
         const isSoccer = m.sport_icon === "Soccer.gif" && m.source === "livescore";
-        const hasPeriod = m.period1 && m.period1.trim() !== "";
         const minuteHtml = m.source === "betcity"
             ? `<img src="SportIcons/flash.gif" style="height:24px;">`
             : m.minute;
 
         // ==================
-        // SOCCER — ძველი layout
+        // SOCCER — ერთი ხაზი
         // ==================
         if (isSoccer) {
             const row = document.createElement("div");
@@ -289,21 +303,15 @@ async function loadMatches() {
         }
 
         // ==================
-        // სხვა სპორტი — ახალი layout
+        // სხვა სპორტი — 2 ან 4 ხაზი
         // ==================
         const isDoubles = m.team1.includes(" / ");
 
         if (isDoubles) {
-            // წყვილები (tennis doubles) — 4 ხაზი, 2+2
-            // team1 = "A / B", team2 = "C / D"
             const [t1a, t1b] = m.team1.split(" / ");
             const [t2a, t2b] = m.team2.split(" / ");
 
-            // პირველი წყვილი — 2 ხაზი
-            // ხაზი 1: minute | t1a | (ანგარიში vertically centered — rowspan 2)
-            // ხაზი 2:        | t1b |
-            // გამოვიყენებთ wrapper div-ს ორი ხაზისთვის
-
+            // პირველი წყვილი
             const block1 = document.createElement("div");
             block1.className = "doubles-block";
             applyStyle(block1, m.sport_icon);
@@ -320,11 +328,11 @@ async function loadMatches() {
                     </div>
                 </div>
                 <div class="doubles-right">
-                    <div class="doubles-score">${m.score1}${hasPeriod ? " " + m.period1 : ""}</div>
+                    ${buildScoreRow(m.score1, m.period1)}
                 </div>`;
             container.appendChild(block1);
 
-            // მეორე წყვილი — 2 ხაზი
+            // მეორე წყვილი
             const block2 = document.createElement("div");
             block2.className = "doubles-block";
             applyStyle(block2, m.sport_icon);
@@ -341,15 +349,12 @@ async function loadMatches() {
                     </div>
                 </div>
                 <div class="doubles-right">
-                    <div class="doubles-score">${m.score2}${hasPeriod ? " " + m.period2 : ""}</div>
+                    ${buildScoreRow(m.score2, m.period2)}
                 </div>`;
             container.appendChild(block2);
 
         } else {
             // ერთი გუნდი — 2 ხაზი
-            // ხაზი 1: minute | გუნდი1 | score1 [period1]
-            // ხაზი 2:        | გუნდი2 | score2 [period2]
-
             const block = document.createElement("div");
             block.className = "doubles-block";
             applyStyle(block, m.sport_icon);
@@ -366,8 +371,8 @@ async function loadMatches() {
                     </div>
                 </div>
                 <div class="doubles-right">
-                    <div class="doubles-score">${m.score1}${hasPeriod ? " " + m.period1 : ""}</div>
-                    <div class="doubles-score">${m.score2}${hasPeriod ? " " + m.period2 : ""}</div>
+                    ${buildScoreRow(m.score1, m.period1)}
+                    ${buildScoreRow(m.score2, m.period2)}
                 </div>`;
             container.appendChild(block);
         }

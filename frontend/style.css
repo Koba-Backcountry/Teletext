@@ -92,7 +92,7 @@ body {
 }
 
 /* ========================
-   TELETEXT
+   TELETEXT — SOCCER
 ======================== */
 
 #container {
@@ -113,6 +113,7 @@ body {
     width: 5%;
     text-align: left;
     font-size: 24px;
+    flex-shrink: 0;
 }
 
 .team1 {
@@ -143,6 +144,73 @@ body {
     font-weight: bold;
     text-decoration: underline;
     color: #00FFFF;
+}
+
+/* ========================
+   TELETEXT — სხვა სპორტი
+======================== */
+
+.doubles-block {
+    display: flex;
+    width: 100%;
+    align-items: stretch;
+}
+
+.doubles-left {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+
+.doubles-row {
+    display: flex;
+    align-items: center;
+    min-height: 34px;
+    padding: 0 10px;
+}
+
+.doubles-name {
+    font-family: 'Grotesk';
+    font-size: 42px;
+    padding: 0 10px;
+    flex: 1;
+}
+
+/* doubles-right — 40% სიგანე, ანგარიშები vertically centered */
+.doubles-right {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-left: 1px solid #333;
+    box-sizing: border-box;
+}
+
+/* ერთი ხაზის ანგარიში — score-main მარცხნივ, score-rest დარჩენილ სივრცეში */
+.score-row {
+    display: flex;
+    align-items: center;
+    font-family: 'Grotesk';
+    font-size: 42px;
+    flex: 1;
+    min-height: 34px;
+    padding: 0 10px;
+    white-space: nowrap;
+}
+
+/* საერთო ანგარიში — უკიდურეს მარცხნივ */
+.score-main {
+    flex-shrink: 0;
+    margin-right: 10px;
+}
+
+/* პერიოდების კონტეინერი — დარჩენილ სივრცეში თანაბრად */
+.score-rest {
+    display: flex;
+    flex: 1;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 32px;
 }
 
 /* ========================
@@ -327,14 +395,8 @@ body {
     padding-right: 4px;
 }
 
-.user-list::-webkit-scrollbar {
-    width: 3px;
-}
-
-.user-list::-webkit-scrollbar-track {
-    background: transparent;
-}
-
+.user-list::-webkit-scrollbar { width: 3px; }
+.user-list::-webkit-scrollbar-track { background: transparent; }
 .user-list::-webkit-scrollbar-thumb {
     background: rgba(0, 255, 255, 0.2);
     border-radius: 3px;
@@ -448,9 +510,7 @@ body {
     margin-top: 10px;
 }
 
-.field-label:first-child {
-    margin-top: 0;
-}
+.field-label:first-child { margin-top: 0; }
 
 .admin-input {
     width: 100%;
@@ -465,9 +525,7 @@ body {
     transition: border-color 0.2s;
 }
 
-.admin-input::placeholder {
-    color: rgba(255,255,255,0.2);
-}
+.admin-input::placeholder { color: rgba(255,255,255,0.2); }
 
 .admin-input:focus {
     border-color: rgba(0, 255, 255, 0.4);
@@ -497,9 +555,7 @@ body {
     transform: translateY(-1px);
 }
 
-.save-btn:active {
-    transform: translateY(0);
-}
+.save-btn:active { transform: translateY(0); }
 
 #admin-msg {
     margin-top: 8px;
@@ -508,77 +564,5 @@ body {
     min-height: 18px;
 }
 
-.admin-msg-ok {
-    color: #00c97a;
-}
-
-.admin-msg-err {
-    color: #ff6b6b;
-}
-
-.score-block {
-    width: 15%;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    font-family: 'Grotesk';
-}
-
-.score-num {
-    font-size: 42px;
-}
-
-.period-str {
-    font-size: 20px;
-    opacity: 0.85;
-}
-
-.doubles-block {
-    display: flex;
-    width: 100%;
-    align-items: stretch;
-}
-
-.doubles-left {
-    width: 60%;
-    display: flex;
-    flex-direction: column;
-}
-
-.doubles-row {
-    display: flex;
-    align-items: center;
-    min-height: 34px;
-    padding: 0 10px;
-}
-
-.doubles-name {
-    font-family: 'Grotesk';
-    font-size: 42px;
-    padding: 0 10px;
-    width: calc(100% - 5%);
-}
-
-.doubles-right {
-    width: 40%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-left: 1px solid #333;
-    box-sizing: border-box;
-}
-
-.doubles-score {
-    font-family: 'Grotesk';
-    font-size: 42px;
-    white-space: nowrap;
-    text-align: center;
-    flex: 1;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 100%;
-}
+.admin-msg-ok { color: #00c97a; }
+.admin-msg-err { color: #ff6b6b; }
