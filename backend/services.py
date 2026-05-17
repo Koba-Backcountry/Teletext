@@ -56,7 +56,6 @@ def normalize_team_name(name):
     prefix = ""
     suffixes = []
 
-    # --- PREFIX ---
     parts = name.split(" ", 1)
     if len(parts) > 1:
         first = parts[0].lower()
@@ -64,27 +63,20 @@ def normalize_team_name(name):
             prefix = prefix_map[first]
             name = parts[1].strip()
 
-    # --- MULTIPLE SUFFIX ---
     while True:
         parts = name.rsplit(" ", 1)
-
         if len(parts) < 2:
             break
-
         last = parts[1].lower()
-
         if last in suffix_map:
             mapped = suffix_map[last]
-
             if mapped:
                 suffixes.insert(0, mapped)
-
             name = parts[0].strip()
         else:
             break
 
     suffix = " ".join(suffixes) if suffixes else ""
-
     return name, prefix, suffix
 
 
@@ -146,48 +138,67 @@ def get_today():
 # PERIOD SCORE HELPERS
 # =========================
 
-def get_livescore_period_score(ev, sport):
-    """livescore-ის ტაიმების ანგარიში სპორტის მიხედვით"""
-    parts = []
+def get_livescore_period_scores(ev, sport):
+    """
+    ბრუნებს (period1, period2):
+    period1 = "[p1 p2 p3]"  — პირველი გუნდის ტაიმების ანგარიში
+    period2 = "[p1 p2 p3]"  — მეორე გუნდის ტაიმების ანგარიში
+    """
+    t1_parts = []
+    t2_parts = []
 
     if sport == "hockey":
         for i in range(1, 4):
-            t1 = ev.get(f"Tr1Pe{i}")
-            t2 = ev.get(f"Tr2Pe{i}")
-            if t1 is not None and t2 is not None:
-                parts.append(f"{t1}:{t2}")
+            v1 = ev.get(f"Tr1Pe{i}")
+            v2 = ev.get(f"Tr2Pe{i}")
+            if v1 is not None and v2 is not None:
+                t1_parts.append(str(v1))
+                t2_parts.append(str(v2))
 
     elif sport == "basketball":
         for i in range(1, 5):
-            t1 = ev.get(f"Tr1Q{i}")
-            t2 = ev.get(f"Tr2Q{i}")
-            if t1 is not None and t2 is not None:
-                parts.append(f"{t1}:{t2}")
+            v1 = ev.get(f"Tr1Q{i}")
+            v2 = ev.get(f"Tr2Q{i}")
+            if v1 is not None and v2 is not None:
+                t1_parts.append(str(v1))
+                t2_parts.append(str(v2))
 
     elif sport == "tennis":
         for i in range(1, 6):
-            t1 = ev.get(f"Tr1S{i}")
-            t2 = ev.get(f"Tr2S{i}")
-            if t1 is not None and t2 is not None:
-                parts.append(f"{t1}:{t2}")
+            v1 = ev.get(f"Tr1S{i}")
+            v2 = ev.get(f"Tr2S{i}")
+            if v1 is not None and v2 is not None:
+                t1_parts.append(str(v1))
+                t2_parts.append(str(v2))
 
-    if parts:
-        return "[" + ", ".join(parts) + "]"
-    return ""
+    if t1_parts:
+        return "[" + " ".join(t1_parts) + "]", "[" + " ".join(t2_parts) + "]"
+    return "", ""
 
 
-def get_betcity_period_score(sc_add_ev):
-    """betcity-ს sc_add_ev ველიდან ტაიმების ანგარიში"""
+def get_betcity_period_scores(sc_add_ev):
+    """
+    betcity sc_add_ev: "0:0, 2:1, 0:1"
+    ბრუნებს (period1, period2):
+    period1 = "[0 2 0]"  — პირველი გუნდის ყველა ტაიმი
+    period2 = "[0 1 1]"  — მეორე გუნდის ყველა ტაიმი
+    """
     if not sc_add_ev or not sc_add_ev.strip():
-        return ""
+        return "", ""
 
-    parts = [p.strip().replace(":", "-") for p in sc_add_ev.split(",") if p.strip()]
-    # უკან ვაბრუნებთ : სიმბოლოთი
-    parts = [p.replace("-", ":") for p in parts]
+    t1_parts = []
+    t2_parts = []
 
-    if parts:
-        return "[" + ", ".join(parts) + "]"
-    return ""
+    for p in sc_add_ev.split(","):
+        p = p.strip()
+        if ":" in p:
+            a, b = p.split(":", 1)
+            t1_parts.append(a.strip())
+            t2_parts.append(b.strip())
+
+    if t1_parts:
+        return "[" + " ".join(t1_parts) + "]", "[" + " ".join(t2_parts) + "]"
+    return "", ""
 
 
 # suffix_map betcity-სთვის
@@ -343,7 +354,6 @@ def translate_betcity_name(name, source):
 
     if lower.startswith("фк "):
         lower = lower[3:].strip()
-
     if lower.endswith(" фк"):
         lower = lower[:-3].strip()
 
@@ -355,10 +365,8 @@ def translate_betcity_name(name, source):
     db.close()
 
     translated = result.georgian_name if result else lower
-
     if suffix:
         translated = translated + suffix
-
     return translated.strip()
 
 
@@ -391,9 +399,7 @@ def translate(name, source):
         db.close()
         return translate_tennis_betcity(name, source)
 
-    # --- LIVESCORE ---
     clean_name, prefix, suffix = normalize_team_name(name)
-
     clean_name = clean_name.strip().lower()
 
     result = db.query(Translation).filter(
@@ -404,10 +410,8 @@ def translate(name, source):
     db.close()
 
     translated = result.georgian_name if result else clean_name
-
     if suffix:
         translated = translated + " " + suffix
-
     return translated.strip()
 
 
@@ -445,10 +449,12 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
             ft = ev.get("Eps", "")
 
             if ft != "NS":
-                score = f"{ev.get('Tr1', 0)} - {ev.get('Tr2', 0)}"
+                score1 = str(ev.get("Tr1", 0))
+                score2 = str(ev.get("Tr2", 0))
                 minute = ft
             else:
-                score = "? - ?"
+                score1 = "?"
+                score2 = "?"
                 esd = str(ev.get("Esd", ""))
                 if esd:
                     t = esd[8:12]
@@ -459,8 +465,10 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
             if re.match(r'^\d{2}:\d{2}$', minute):
                 continue
 
-            # ტაიმების ანგარიში
-            period_score = get_livescore_period_score(ev, sport) if sport in ("hockey", "basketball", "tennis") else ""
+            if sport in ("hockey", "basketball", "tennis"):
+                period1, period2 = get_livescore_period_scores(ev, sport)
+            else:
+                period1, period2 = "", ""
 
             if sport == "hockey":
                 clean1, suf1 = normalize_hockey_livescore(team1)
@@ -483,8 +491,10 @@ def fetch_livescore_sport(sport, source_key, sport_icon):
                 "country": country,
                 "minute": minute,
                 "team1": t1,
-                "score": score,
-                "period_score": period_score,
+                "score1": score1,
+                "score2": score2,
+                "period1": period1,
+                "period2": period2,
                 "team2": t2,
                 "flag": flag,
                 "sport_icon": sport_icon,
@@ -553,11 +563,13 @@ def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=Non
 
                 if ":" in score_clean:
                     s1, s2 = score_clean.split(":", 1)
-                    score = f"{s1} - {s2}"
+                    score1 = s1.strip()
+                    score2 = s2.strip()
                 else:
-                    score = "? - ?"
+                    score1 = "?"
+                    score2 = "?"
 
-                period_score = get_betcity_period_score(ev.get("sc_add_ev", ""))
+                period1, period2 = get_betcity_period_scores(ev.get("sc_add_ev", ""))
 
                 if ev.get("st_ev") == 2:
                     minute = "FT"
@@ -569,8 +581,10 @@ def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=Non
                     "country": country,
                     "minute": minute,
                     "team1": translate(team1, source_key),
-                    "score": score,
-                    "period_score": period_score,
+                    "score1": score1,
+                    "score2": score2,
+                    "period1": period1,
+                    "period2": period2,
                     "team2": translate(team2, source_key),
                     "flag": flag,
                     "sport_icon": sport_icon,

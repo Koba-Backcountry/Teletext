@@ -515,3 +515,22 @@ body {
 .admin-msg-err {
     color: #ff6b6b;
 }
+
+.score-block {
+    width: 15%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    font-family: 'Grotesk';
+}
+
+.score-num {
+    font-size: 42px;
+}
+
+.period-str {
+    font-size: 20px;
+    opacity: 0.85;
+}

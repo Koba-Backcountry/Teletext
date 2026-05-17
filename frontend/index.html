@@ -269,45 +269,74 @@ async function loadMatches() {
             container.appendChild(header);
         }
 
-        const row = document.createElement("div");
-        row.className = "row";
+        const isSoccer = m.sport_icon === "Soccer.gif";
+        const hasPeriod = m.period1 && m.period1.trim() !== "";
 
-        if (m.sport_icon === "Hockey.gif") {
-            row.style.background = "#CBEAED";
-            row.style.color = "#0000FF";
-        } else if (m.sport_icon === "Basketball.gif") {
-            row.style.background = "#AE7C44";
-            row.style.color = "#FFFFFF";
-        } else if (m.sport_icon === "Tennis.gif") {
-            row.style.background = "#004000";
-            row.style.color = "#FFFFFF";
+        // ფონის ფერი
+        const bgColor = m.sport_icon === "Hockey.gif" ? "#CBEAED"
+                      : m.sport_icon === "Basketball.gif" ? "#AE7C44"
+                      : m.sport_icon === "Tennis.gif" ? "#004000"
+                      : "";
+        const textColor = m.sport_icon === "Hockey.gif" ? "#0000FF"
+                        : (m.sport_icon === "Basketball.gif" || m.sport_icon === "Tennis.gif") ? "#FFFFFF"
+                        : "";
+
+        const minuteHtml = m.source === "betcity"
+            ? `<img src="SportIcons/flash.gif" style="height:24px;">`
+            : m.minute;
+
+        if (isSoccer) {
+            // Soccer — ერთი ხაზი, ძველი ფორმატი
+            const row = document.createElement("div");
+            row.className = "row";
+            row.innerHTML = `
+                <div class="minute">${minuteHtml}</div>
+                <div class="team1">${m.team1}</div>
+                <div class="score">${m.score1} - ${m.score2}</div>
+                <div class="team2">${m.team2}</div>
+            `;
+            container.appendChild(row);
+        } else {
+            // Hockey / Basketball / Tennis / სხვა — 2 ხაზი
+            // tennis წყვილებში team1 = "A / B", team2 = "C / D" — ვყოფთ
+            const team1parts = m.team1.split(" / ");
+            const team2parts = m.team2.split(" / ");
+
+            // პირველი ხაზი: პირველი გუნდი(ჩოგბ.) | score1 period1
+            const row1 = document.createElement("div");
+            row1.className = "row";
+            if (bgColor) row1.style.background = bgColor;
+            if (textColor) row1.style.color = textColor;
+            row1.style.borderBottom = "none";
+
+            row1.innerHTML = `
+                <div class="minute">${minuteHtml}</div>
+                <div class="team1">${team1parts[0]}</div>
+                <div class="score-block">
+                    <span class="score-num">${m.score1}</span>
+                    ${hasPeriod ? `<span class="period-str">${m.period1}</span>` : ""}
+                </div>
+                <div class="team2">${team2parts[0]}</div>
+            `;
+            container.appendChild(row1);
+
+            // მეორე ხაზი: მეორე გუნდი(ჩოგბ.) | score2 period2
+            const row2 = document.createElement("div");
+            row2.className = "row";
+            if (bgColor) row2.style.background = bgColor;
+            if (textColor) row2.style.color = textColor;
+
+            row2.innerHTML = `
+                <div class="minute"></div>
+                <div class="team1">${team1parts[1] || ""}</div>
+                <div class="score-block">
+                    <span class="score-num">${m.score2}</span>
+                    ${hasPeriod ? `<span class="period-str">${m.period2}</span>` : ""}
+                </div>
+                <div class="team2">${team2parts[1] || ""}</div>
+            `;
+            container.appendChild(row2);
         }
-
-        const isMultiLine = m.sport_icon !== "Soccer.gif";
-        const hasPeriod = m.period_score && m.period_score.trim() !== "";
-
-        row.innerHTML = `
-            <div class="minute">
-                ${m.source === "betcity"
-                    ? `<img src="SportIcons/flash.gif" style="height:24px;">`
-                    : m.minute}
-            </div>
-            <div class="team1">
-                ${isMultiLine
-                    ? m.team1.replace(" / ", "<br>")
-                    : m.team1}
-            </div>
-            <div class="score">
-                ${m.score}
-                ${hasPeriod ? `<div style="font-size:18px; opacity:0.75;">${m.period_score}</div>` : ""}
-            </div>
-            <div class="team2">
-                ${isMultiLine
-                    ? m.team2.replace(" / ", "<br>")
-                    : m.team2}
-            </div>
-        `;
-        container.appendChild(row);
     });
 }
 
