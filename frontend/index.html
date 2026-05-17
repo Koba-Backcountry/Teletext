@@ -127,7 +127,6 @@ async function login() {
         headers: {"Content-Type": "application/json"},
         body: JSON.stringify({ username: u.value, password: p.value })
     });
-
     const data = await res.json();
 
     if (data.status === "ok") {
@@ -162,17 +161,13 @@ async function register() {
 }
 
 async function setPending(id) {
-    await fetch(API + "/set-pending/" + id, {
-        method: "POST",
-        headers: authHeaders
-    });
+    await fetch(API + "/set-pending/" + id, { method: "POST", headers: authHeaders });
     loadPendingUsers();
 }
 
 async function loadPendingUsers() {
     const pendingRes = await fetch(API + "/pending-users", { headers: authHeaders });
     const pendingData = await pendingRes.json();
-
     const approvedRes = await fetch(API + "/approved-users", { headers: authHeaders });
     const approvedData = await approvedRes.json();
 
@@ -181,14 +176,10 @@ async function loadPendingUsers() {
 
     const pendingList = document.getElementById("pendingList");
     const approvedList = document.getElementById("approvedList");
-
     pendingList.innerHTML = "";
     approvedList.innerHTML = "";
 
-    if (pendingData.length === 0) {
-        pendingList.innerHTML = '<div class="empty-state">No pending users</div>';
-    }
-
+    if (pendingData.length === 0) pendingList.innerHTML = '<div class="empty-state">No pending users</div>';
     pendingData.forEach(u => {
         const div = document.createElement("div");
         div.className = "user-card";
@@ -198,15 +189,11 @@ async function loadPendingUsers() {
             <button class="action-btn approve-btn" onclick="approveUser(${u.id})">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
                 Approve
-            </button>
-        `;
+            </button>`;
         pendingList.appendChild(div);
     });
 
-    if (approvedData.length === 0) {
-        approvedList.innerHTML = '<div class="empty-state">No approved users</div>';
-    }
-
+    if (approvedData.length === 0) approvedList.innerHTML = '<div class="empty-state">No approved users</div>';
     approvedData.forEach(u => {
         const div = document.createElement("div");
         div.className = "user-card";
@@ -216,8 +203,7 @@ async function loadPendingUsers() {
             <button class="action-btn revoke-btn" onclick="setPending(${u.id})">
                 <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
                 Revoke
-            </button>
-        `;
+            </button>`;
         approvedList.appendChild(div);
     });
 }
@@ -231,11 +217,21 @@ function logout() {
 }
 
 async function approveUser(id) {
-    await fetch(API + "/approve/" + id, {
-        method: "POST",
-        headers: authHeaders
-    });
+    await fetch(API + "/approve/" + id, { method: "POST", headers: authHeaders });
     loadPendingUsers();
+}
+
+function applyStyle(el, sport_icon) {
+    if (sport_icon === "Hockey.gif") {
+        el.style.background = "#CBEAED";
+        el.style.color = "#0000FF";
+    } else if (sport_icon === "Basketball.gif") {
+        el.style.background = "#AE7C44";
+        el.style.color = "#FFFFFF";
+    } else if (sport_icon === "Tennis.gif") {
+        el.style.background = "#004000";
+        el.style.color = "#FFFFFF";
+    }
 }
 
 async function loadMatches() {
@@ -248,94 +244,126 @@ async function loadMatches() {
     let lastLeague = null;
 
     data.forEach(m => {
+        // --- HEADER ---
         if (m.league !== lastLeague) {
             lastLeague = m.league;
-
             const header = document.createElement("div");
             header.className = "row";
             header.style.background = "#000000";
-
             header.innerHTML = `
                 <div style="display:flex; align-items:center; gap:10px;">
                     ${m.flag ? `<img class="flag" src="Flags/${m.flag}">` : ""}
-                    <div class="league">
-                        ${m.country ? m.country + " - " : ""}${m.league}
-                    </div>
+                    <div class="league">${m.country ? m.country + " - " : ""}${m.league}</div>
                 </div>
                 <div style="margin-left:auto;">
                     ${m.sport_icon ? `<img class="icon" src="SportIcons/${m.sport_icon}">` : ""}
-                </div>
-            `;
+                </div>`;
             container.appendChild(header);
         }
 
         const isSoccer = m.sport_icon === "Soccer.gif";
         const hasPeriod = m.period1 && m.period1.trim() !== "";
-
-        // ფონის ფერი
-        const bgColor = m.sport_icon === "Hockey.gif" ? "#CBEAED"
-                      : m.sport_icon === "Basketball.gif" ? "#AE7C44"
-                      : m.sport_icon === "Tennis.gif" ? "#004000"
-                      : "";
-        const textColor = m.sport_icon === "Hockey.gif" ? "#0000FF"
-                        : (m.sport_icon === "Basketball.gif" || m.sport_icon === "Tennis.gif") ? "#FFFFFF"
-                        : "";
-
         const minuteHtml = m.source === "betcity"
             ? `<img src="SportIcons/flash.gif" style="height:24px;">`
             : m.minute;
 
+        // ==================
+        // SOCCER — ძველი layout
+        // ==================
         if (isSoccer) {
-            // Soccer — ერთი ხაზი, ძველი ფორმატი
             const row = document.createElement("div");
             row.className = "row";
             row.innerHTML = `
                 <div class="minute">${minuteHtml}</div>
                 <div class="team1">${m.team1}</div>
                 <div class="score">${m.score1} - ${m.score2}</div>
-                <div class="team2">${m.team2}</div>
-            `;
+                <div class="team2">${m.team2}</div>`;
             container.appendChild(row);
+            return;
+        }
+
+        // ==================
+        // სხვა სპორტი — ახალი layout
+        // ==================
+        const isDoubles = m.team1.includes(" / ");
+
+        if (isDoubles) {
+            // წყვილები (tennis doubles) — 4 ხაზი, 2+2
+            // team1 = "A / B", team2 = "C / D"
+            const [t1a, t1b] = m.team1.split(" / ");
+            const [t2a, t2b] = m.team2.split(" / ");
+
+            // პირველი წყვილი — 2 ხაზი
+            // ხაზი 1: minute | t1a | (ანგარიში vertically centered — rowspan 2)
+            // ხაზი 2:        | t1b |
+            // გამოვიყენებთ wrapper div-ს ორი ხაზისთვის
+
+            const block1 = document.createElement("div");
+            block1.className = "doubles-block";
+            applyStyle(block1, m.sport_icon);
+            block1.style.borderBottom = "1px solid #333";
+            block1.innerHTML = `
+                <div class="doubles-left">
+                    <div class="doubles-row">
+                        <div class="minute">${minuteHtml}</div>
+                        <div class="doubles-name">${t1a}</div>
+                    </div>
+                    <div class="doubles-row">
+                        <div class="minute"></div>
+                        <div class="doubles-name">${t1b}</div>
+                    </div>
+                </div>
+                <div class="doubles-right">
+                    <div class="doubles-score">${m.score1}${hasPeriod ? " " + m.period1 : ""}</div>
+                </div>`;
+            container.appendChild(block1);
+
+            // მეორე წყვილი — 2 ხაზი
+            const block2 = document.createElement("div");
+            block2.className = "doubles-block";
+            applyStyle(block2, m.sport_icon);
+            block2.style.borderBottom = "1px solid #333";
+            block2.innerHTML = `
+                <div class="doubles-left">
+                    <div class="doubles-row">
+                        <div class="minute"></div>
+                        <div class="doubles-name">${t2a}</div>
+                    </div>
+                    <div class="doubles-row">
+                        <div class="minute"></div>
+                        <div class="doubles-name">${t2b}</div>
+                    </div>
+                </div>
+                <div class="doubles-right">
+                    <div class="doubles-score">${m.score2}${hasPeriod ? " " + m.period2 : ""}</div>
+                </div>`;
+            container.appendChild(block2);
+
         } else {
-            // Hockey / Basketball / Tennis / სხვა — 2 ხაზი
-            // tennis წყვილებში team1 = "A / B", team2 = "C / D" — ვყოფთ
-            const team1parts = m.team1.split(" / ");
-            const team2parts = m.team2.split(" / ");
+            // ერთი გუნდი — 2 ხაზი
+            // ხაზი 1: minute | გუნდი1 | score1 [period1]
+            // ხაზი 2:        | გუნდი2 | score2 [period2]
 
-            // პირველი ხაზი: პირველი გუნდი(ჩოგბ.) | score1 period1
-            const row1 = document.createElement("div");
-            row1.className = "row";
-            if (bgColor) row1.style.background = bgColor;
-            if (textColor) row1.style.color = textColor;
-            row1.style.borderBottom = "none";
-
-            row1.innerHTML = `
-                <div class="minute">${minuteHtml}</div>
-                <div class="team1">${team1parts[0]}</div>
-                <div class="score-block">
-                    <span class="score-num">${m.score1}</span>
-                    ${hasPeriod ? `<span class="period-str">${m.period1}</span>` : ""}
+            const block = document.createElement("div");
+            block.className = "doubles-block";
+            applyStyle(block, m.sport_icon);
+            block.style.borderBottom = "1px solid #333";
+            block.innerHTML = `
+                <div class="doubles-left">
+                    <div class="doubles-row">
+                        <div class="minute">${minuteHtml}</div>
+                        <div class="doubles-name">${m.team1}</div>
+                    </div>
+                    <div class="doubles-row">
+                        <div class="minute"></div>
+                        <div class="doubles-name">${m.team2}</div>
+                    </div>
                 </div>
-                <div class="team2">${team2parts[0]}</div>
-            `;
-            container.appendChild(row1);
-
-            // მეორე ხაზი: მეორე გუნდი(ჩოგბ.) | score2 period2
-            const row2 = document.createElement("div");
-            row2.className = "row";
-            if (bgColor) row2.style.background = bgColor;
-            if (textColor) row2.style.color = textColor;
-
-            row2.innerHTML = `
-                <div class="minute"></div>
-                <div class="team1">${team1parts[1] || ""}</div>
-                <div class="score-block">
-                    <span class="score-num">${m.score2}</span>
-                    ${hasPeriod ? `<span class="period-str">${m.period2}</span>` : ""}
-                </div>
-                <div class="team2">${team2parts[1] || ""}</div>
-            `;
-            container.appendChild(row2);
+                <div class="doubles-right">
+                    <div class="doubles-score">${m.score1}${hasPeriod ? " " + m.period1 : ""}</div>
+                    <div class="doubles-score">${m.score2}${hasPeriod ? " " + m.period2 : ""}</div>
+                </div>`;
+            container.appendChild(block);
         }
     });
 }
