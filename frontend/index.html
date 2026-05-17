@@ -247,6 +247,7 @@ async function loadMatches() {
         // --- HEADER ---
         if (m.league !== lastLeague) {
             lastLeague = m.league;
+            if (m.league.toLowerCase().includes("пляжный волейбол")) return;
             const header = document.createElement("div");
             header.className = "row";
             header.style.background = "#000000";
@@ -259,6 +260,11 @@ async function loadMatches() {
                     ${m.sport_icon ? `<img class="icon" src="SportIcons/${m.sport_icon}">` : ""}
                 </div>`;
             container.appendChild(header);
+        }
+
+        if (m.league.toLowerCase().includes("пляжный волейбол")) {
+            lastLeague = m.league;
+            return;
         }
 
         const isSoccer = m.sport_icon === "Soccer.gif" && m.source === "livescore";
