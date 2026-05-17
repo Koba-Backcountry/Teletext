@@ -245,7 +245,7 @@ function buildScoreRow(score, period) {
     // პირველი ელემენტი (საერთო ანგარიში) — უკიდურეს მარცხნივ
     // დანარჩენი ელემენტები — space-evenly დარჩენილ სივრცეში
     const restHtml = parts.length > 0
-        ? `<div class="score-rest">${parts.map(p => `<span>${p}</span>`).join("")}</div>`
+        ? `<div class="score-rest">(<span>${parts.join("</span><span>")}</span>)</div>`
         : "";
 
     return `<div class="score-row"><span class="score-main">${score}</span>${restHtml}</div>`;
