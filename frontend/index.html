@@ -261,7 +261,7 @@ async function loadMatches() {
             container.appendChild(header);
         }
 
-        const isSoccer = m.sport_icon === "Soccer.gif";
+        const isSoccer = m.sport_icon === "Soccer.gif" && m.source === "livescore";
         const hasPeriod = m.period1 && m.period1.trim() !== "";
         const minuteHtml = m.source === "betcity"
             ? `<img src="SportIcons/flash.gif" style="height:24px;">`
