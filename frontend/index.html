@@ -319,11 +319,11 @@ async function loadMatches() {
             block1.innerHTML = `
                 <div class="doubles-left">
                     <div class="doubles-row">
-                        <div class="minute">${minuteHtml}</div>
+                        <div class="minute"></div>
                         <div class="doubles-name">${t1a}</div>
                     </div>
-                    <div class="doubles-row">
-                        <div class="minute"></div>
+                    <div class="doubles-row" style="align-items:flex-end;">
+                        <div class="minute">${minuteHtml}</div>
                         <div class="doubles-name">${t1b}</div>
                     </div>
                 </div>
@@ -339,8 +339,8 @@ async function loadMatches() {
             block2.style.borderBottom = "1px solid #333";
             block2.innerHTML = `
                 <div class="doubles-left">
-                    <div class="doubles-row">
-                        <div class="minute"></div>
+                    <div class="doubles-row" style="align-items:flex-start;">
+                        <div class="minute">${minuteHtml}</div>
                         <div class="doubles-name">${t2a}</div>
                     </div>
                     <div class="doubles-row">
@@ -361,11 +361,11 @@ async function loadMatches() {
             block.style.borderBottom = "1px solid #333";
             block.innerHTML = `
                 <div class="doubles-left">
-                    <div class="doubles-row">
+                    <div class="doubles-row" style="align-items:flex-end;">
                         <div class="minute">${minuteHtml}</div>
                         <div class="doubles-name">${m.team1}</div>
                     </div>
-                    <div class="doubles-row">
+                    <div class="doubles-row" style="align-items:flex-start;">
                         <div class="minute"></div>
                         <div class="doubles-name">${m.team2}</div>
                     </div>
