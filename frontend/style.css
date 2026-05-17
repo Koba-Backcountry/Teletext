@@ -566,8 +566,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    padding: 0 10px;
+    align-items: center;
     border-left: 1px solid #333;
     box-sizing: border-box;
 }
@@ -576,5 +575,10 @@ body {
     font-family: 'Grotesk';
     font-size: 42px;
     white-space: nowrap;
+    text-align: center;
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     width: 100%;
 }
