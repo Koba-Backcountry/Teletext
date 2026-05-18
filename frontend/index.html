@@ -234,21 +234,171 @@ function applyStyle(el, sport_icon) {
     }
 }
 
-// score1/score2 — საერთო ანგარიში
-// period — "[2 1 0]" ფორმატი ან ""
-// აბრუნებს HTML სტრიქონს doubles-right-ისთვის ერთი ხაზისთვის
-function buildScoreRow(score, period) {
+/*
+  სპორტის მიხედვით განსაზღვრული layout კონფიგურაცია.
+  cols: სვეტების მასივი — [{w: "9%", label: "score"}, {w: "5%", prefix: "("}, ...]
+  teamWidth: გუნდების სვეტის სიგანე (doubles-left)
+  
+  პირველი სვეტი ყოველთვის საერთო ანგარიშია.
+  prefix/suffix — ( და ) სიმბოლოები space-ის გარეშე.
+*/
+const SPORT_LAYOUT = {
+    // livescore hockey
+    "Hockey.gif_livescore": {
+        teamWidth: "66%",
+        cols: [
+            { w: "9%"  },           // საერთო
+            { w: "5%", prefix: "(" }, // პერ.1
+            { w: "5%"  },             // პერ.2
+            { w: "5%"  },             // პერ.3
+            { w: "5%", suffix: ")" }, // OT
+        ]
+    },
+    // betcity hockey
+    "Hockey.gif_betcity": {
+        teamWidth: "66%",
+        cols: [
+            { w: "9%"  },
+            { w: "5%", prefix: "(" },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%", suffix: ")" },
+        ]
+    },
+    // livescore basketball
+    "Basketball.gif_livescore": {
+        teamWidth: "61%",
+        cols: [
+            { w: "9%"  },
+            { w: "5%", prefix: "(" },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%", suffix: ")" },
+        ]
+    },
+    // betcity basketball
+    "Basketball.gif_betcity": {
+        teamWidth: "61%",
+        cols: [
+            { w: "9%"  },
+            { w: "5%", prefix: "(" },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%", suffix: ")" },
+        ]
+    },
+    // livescore tennis
+    "Tennis.gif_livescore": {
+        teamWidth: "52%",
+        cols: [
+            { w: "9%"  },
+            { w: "8%", prefix: "(" },
+            { w: "6%"  },
+            { w: "6%"  },
+            { w: "6%"  },
+            { w: "8%", suffix: ")" },
+        ]
+    },
+    // betcity tennis
+    "Tennis.gif_betcity": {
+        teamWidth: "52%",
+        cols: [
+            { w: "9%"  },
+            { w: "8%", prefix: "(" },
+            { w: "6%"  },
+            { w: "6%"  },
+            { w: "6%"  },
+            { w: "8%", suffix: ")" },
+        ]
+    },
+    // betcity football (Футбол)
+    "Soccer.gif_betcity": {
+        teamWidth: "46%",
+        cols: [
+            { w: "7%"  },
+            { w: "7%", prefix: "(" },
+            { w: "20%" },
+            { w: "15%", suffix: ")" },
+        ]
+    },
+    // betcity handball
+    "Handball.gif_betcity": {
+        teamWidth: "60%",
+        cols: [
+            { w: "9%"  },
+            { w: "7%", prefix: "(" },
+            { w: "19%", suffix: ")" },
+        ]
+    },
+    // betcity rugby
+    "Rugby.gif_betcity": {
+        teamWidth: "60%",
+        cols: [
+            { w: "9%"  },
+            { w: "7%", prefix: "(" },
+            { w: "19%", suffix: ")" },
+        ]
+    },
+    // betcity volleyball
+    "Volleyball.gif_betcity": {
+        teamWidth: "61%",
+        cols: [
+            { w: "9%"  },
+            { w: "5%", prefix: "(" },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%"  },
+            { w: "5%", suffix: ")" },
+        ]
+    },
+};
+
+/*
+  buildScoreRow — ასაშენებელია ერთი ხაზის ანგარიში sport_icon და source-ის მიხედვით.
+  score: საერთო ანგარიში (სტრინგი)
+  period: "[p1 p2 p3]" ფორმატი ან ""
+  sport_icon, source: layout-ის განსაზღვრისთვის
+*/
+function buildScoreRow(score, period, sport_icon, source) {
+    const key = sport_icon + "_" + source;
+    const layout = SPORT_LAYOUT[key];
+
+    // თუ layout არ არის განსაზღვრული — მარტივი გამოტანა
+    if (!layout) {
+        const parts = period && period.trim() !== ""
+            ? period.replace("[","").replace("]","").trim().split(/\s+/).filter(p => p !== "")
+            : [];
+        const restHtml = parts.length > 0
+            ? `<span style="margin-left:10px;">(${parts.join(" ")})</span>`
+            : "";
+        return `<div class="score-row" style="display:flex;align-items:center;font-family:'Grotesk';font-size:42px;flex:1;min-height:34px;padding:0 10px;">
+            <span>${score}</span>${restHtml}</div>`;
+    }
+
     const parts = period && period.trim() !== ""
-        ? period.replace("[", "").replace("]", "").trim().split(/\s+/).filter(p => p !== "")
+        ? period.replace("[","").replace("]","").trim().split(/\s+/).filter(p => p !== "")
         : [];
 
-    // პირველი ელემენტი (საერთო ანგარიში) — უკიდურეს მარცხნივ
-    // დანარჩენი ელემენტები — space-evenly დარჩენილ სივრცეში
-    const restHtml = parts.length > 0
-        ? `<div class="score-rest">(<span>${parts.join("</span><span>")}</span>)</div>`
-        : "";
+    // cols[0] — საერთო ანგარიში, cols[1..] — პერიოდები
+    let html = `<div class="score-row">`;
 
-    return `<div class="score-row"><span class="score-main">${score}</span>${restHtml}</div>`;
+    layout.cols.forEach((col, i) => {
+        const prefix = col.prefix || "";
+        const suffix = col.suffix || "";
+
+        if (i === 0) {
+            // საერთო ანგარიში
+            html += `<div class="score-cell" style="width:${col.w};">${score}</div>`;
+        } else {
+            const val = parts[i - 1] !== undefined ? parts[i - 1] : "";
+            html += `<div class="score-cell" style="width:${col.w};text-align:center;">${prefix}${val}${suffix}</div>`;
+        }
+    });
+
+    html += `</div>`;
+    return html;
 }
 
 async function loadMatches() {
@@ -287,8 +437,13 @@ async function loadMatches() {
             ? `<img src="SportIcons/flash.gif" style="height:24px;">`
             : m.minute;
 
+        // layout კონფიგი
+        const layoutKey = m.sport_icon + "_" + m.source;
+        const layout = SPORT_LAYOUT[layoutKey];
+        const teamWidth = layout ? layout.teamWidth : "60%";
+
         // ==================
-        // SOCCER — ერთი ხაზი
+        // SOCCER livescore — ერთი ხაზი
         // ==================
         if (isSoccer) {
             const row = document.createElement("div");
@@ -306,18 +461,18 @@ async function loadMatches() {
         // სხვა სპორტი — 2 ან 4 ხაზი
         // ==================
         const isDoubles = m.team1.includes(" / ");
+        const rightWidth = (100 - parseInt(teamWidth) - 5) + "%";
 
         if (isDoubles) {
             const [t1a, t1b] = m.team1.split(" / ");
             const [t2a, t2b] = m.team2.split(" / ");
 
-            // პირველი წყვილი
             const block1 = document.createElement("div");
             block1.className = "doubles-block";
             applyStyle(block1, m.sport_icon);
             block1.style.borderBottom = "1px solid #333";
             block1.innerHTML = `
-                <div class="doubles-left">
+                <div class="doubles-left" style="width:${teamWidth};">
                     <div class="doubles-row">
                         <div class="minute"></div>
                         <div class="doubles-name">${t1a}</div>
@@ -327,18 +482,17 @@ async function loadMatches() {
                         <div class="doubles-name">${t1b}</div>
                     </div>
                 </div>
-                <div class="doubles-right">
-                    ${buildScoreRow(m.score1, m.period1)}
+                <div class="doubles-right" style="width:${rightWidth};">
+                    ${buildScoreRow(m.score1, m.period1, m.sport_icon, m.source)}
                 </div>`;
             container.appendChild(block1);
 
-            // მეორე წყვილი
             const block2 = document.createElement("div");
             block2.className = "doubles-block";
             applyStyle(block2, m.sport_icon);
             block2.style.borderBottom = "1px solid #333";
             block2.innerHTML = `
-                <div class="doubles-left">
+                <div class="doubles-left" style="width:${teamWidth};">
                     <div class="doubles-row">
                         <div class="minute"></div>
                         <div class="doubles-name">${t2a}</div>
@@ -348,19 +502,18 @@ async function loadMatches() {
                         <div class="doubles-name">${t2b}</div>
                     </div>
                 </div>
-                <div class="doubles-right">
-                    ${buildScoreRow(m.score2, m.period2)}
+                <div class="doubles-right" style="width:${rightWidth};">
+                    ${buildScoreRow(m.score2, m.period2, m.sport_icon, m.source)}
                 </div>`;
             container.appendChild(block2);
 
         } else {
-            // ერთი გუნდი — 2 ხაზი
             const block = document.createElement("div");
             block.className = "doubles-block";
             applyStyle(block, m.sport_icon);
             block.style.borderBottom = "1px solid #333";
             block.innerHTML = `
-                <div class="doubles-left">
+                <div class="doubles-left" style="width:${teamWidth};">
                     <div class="doubles-row" style="align-items:flex-end;">
                         <div class="minute">${minuteHtml}</div>
                         <div class="doubles-name">${m.team1}</div>
@@ -370,9 +523,9 @@ async function loadMatches() {
                         <div class="doubles-name">${m.team2}</div>
                     </div>
                 </div>
-                <div class="doubles-right">
-                    ${buildScoreRow(m.score1, m.period1)}
-                    ${buildScoreRow(m.score2, m.period2)}
+                <div class="doubles-right" style="width:${rightWidth};">
+                    ${buildScoreRow(m.score1, m.period1, m.sport_icon, m.source)}
+                    ${buildScoreRow(m.score2, m.period2, m.sport_icon, m.source)}
                 </div>`;
             container.appendChild(block);
         }

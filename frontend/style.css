@@ -157,9 +157,9 @@ body {
 }
 
 .doubles-left {
-    width: 60%;
     display: flex;
     flex-direction: column;
+    flex-shrink: 0;
 }
 
 .doubles-row {
@@ -177,17 +177,16 @@ body {
     text-align: right;
 }
 
-/* doubles-right — 40% სიგანე, ანგარიშები vertically centered */
 .doubles-right {
-    width: 40%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border-left: 1px solid #333;
     box-sizing: border-box;
+    flex-shrink: 0;
 }
 
-/* ერთი ხაზის ანგარიში — score-main მარცხნივ, score-rest დარჩენილ სივრცეში */
+/* ერთი ხაზის ანგარიში */
 .score-row {
     display: flex;
     align-items: center;
@@ -195,29 +194,23 @@ body {
     font-size: 42px;
     flex: 1;
     min-height: 34px;
-    padding: 0 10px;
     white-space: nowrap;
+    overflow: hidden;
 }
 
-/* საერთო ანგარიში — უკიდურეს მარცხნივ */
-.score-main {
-    flex-shrink: 0;
-    margin-right: 10px;
-}
-
-/* პერიოდების კონტეინერი — დარჩენილ სივრცეში თანაბრად */
-.score-rest {
+/* თითოეული სვეტი ანგარიშში */
+.score-cell {
     display: flex;
     align-items: center;
-    font-size: 32px;
+    justify-content: center;
+    flex-shrink: 0;
+    overflow: hidden;
 }
 
-.score-rest span {
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    flex-shrink: 0;
+/* საერთო ანგარიშის სვეტი — მარცხნივ გასწორება */
+.score-row .score-cell:first-child {
+    justify-content: flex-start;
+    padding-left: 10px;
 }
 
 /* ========================
@@ -243,7 +236,6 @@ body {
     box-sizing: border-box;
 }
 
-/* HEADER */
 #admin-header {
     display: flex;
     align-items: center;
@@ -309,7 +301,6 @@ body {
     color: #ff6b6b;
 }
 
-/* GRID */
 #admin-grid {
     display: grid;
     grid-template-columns: 1fr 340px;
@@ -317,7 +308,6 @@ body {
     align-items: start;
 }
 
-/* SECTIONS */
 .admin-section {
     background: rgba(255, 255, 255, 0.03);
     border: 1px solid rgba(0, 255, 255, 0.1);
@@ -344,7 +334,6 @@ body {
     flex-shrink: 0;
 }
 
-/* USER COLUMNS */
 .users-columns {
     display: grid;
     grid-template-columns: 1fr 1px 1fr;
@@ -356,9 +345,7 @@ body {
     margin: 0 20px;
 }
 
-.users-col {
-    min-width: 0;
-}
+.users-col { min-width: 0; }
 
 .col-label {
     display: flex;
@@ -392,7 +379,6 @@ body {
     color: rgba(255,255,255,0.45);
 }
 
-/* USER LIST */
 .user-list {
     display: flex;
     flex-direction: column;
@@ -417,7 +403,6 @@ body {
     font-style: italic;
 }
 
-/* USER CARDS */
 .user-card {
     display: flex;
     align-items: center;
@@ -501,7 +486,6 @@ body {
     border-color: rgba(255, 80, 80, 0.5);
 }
 
-/* SETTINGS */
 .settings-form {
     display: flex;
     flex-direction: column;
