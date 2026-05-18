@@ -208,10 +208,16 @@ body {
 /* პერიოდების კონტეინერი — დარჩენილ სივრცეში თანაბრად */
 .score-rest {
     display: flex;
-    flex: 1;
-    justify-content: space-evenly;
     align-items: center;
     font-size: 32px;
+}
+
+.score-rest span {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 60px;
+    flex-shrink: 0;
 }
 
 /* ========================
