@@ -461,7 +461,7 @@ async function loadMatches() {
         // სხვა სპორტი — 2 ან 4 ხაზი
         // ==================
         const isDoubles = m.team1.includes(" / ");
-        const rightWidth = (100 - parseInt(teamWidth) - 5) + "%";
+        const rightWidth = (100 - parseInt(teamWidth)) + "%";
 
         if (isDoubles) {
             const [t1a, t1b] = m.team1.split(" / ");
