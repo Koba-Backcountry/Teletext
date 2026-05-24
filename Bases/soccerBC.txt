@@ -10550,3 +10550,44 @@ III Керюлети                              III keriuleti
 штурми                                    Sturmi
 эберау                                    eberau
 эпила                                     epila
+аль-насер                                 al-naseri
+атлантида асунсьон                        atlantida asunsioni
+барселона рж                              barselona rJ
+блуменау                                  blumenau
+видад темара                              vidad temara
+гилла                                     gila
+гремиу жувентус                           gremiu Juventusi
+гриньон                                   grinioni
+гуарани баже                              guarani baJe
+жозе бонифасио                            Joze bonifasio
+зумби                                     zumbi
+ивоти                                     ivoti
+интер сан-карлос                          inter san-karlosi
+каак бразилия                             kaak brazilia
+камасари                                  kamasari
+кардосо морейра                           kardoso moreira
+катания                                   katania
+леонес дель норте                         leones del norte
+мажинсе                                   maJinse
+машуджаа                                  maSujaa
+монтилья                                  montilia
+мостолес урхк ii                          mostoles urxk II
+олимпико тотана                           olimpiko totana
+оратория                                  oratoria
+паулиненсе                                paulinense
+паулинья                                  paulinia
+планалтина                                planaltina
+реал бразилия                             real brazilia
+сальто                                    salto
+спортиво лимпеньо                         sportive limpenio
+спортинг теотониу                         sporting teotoniu
+тамойо                                    tamoio
+текнико университарио                     teqniko universitario
+уда                                       uda
+униан сентрал                             unian sentrali
+унион молиненсе                           union molinense
+чапакито насьональ сенак                  Capakito nasional senaki
+чурриана-де-ла-вега                       Curiana-de-la-vega
+шабаб атлас хенифра                       Sabab atlas xenifra
+эгабренсе                                 egabrense
+эскобар                                   eskobari

@@ -2268,3 +2268,6 @@ MISTO                                     misto
 реактор хабаровск                         reaqtor xabarovski
 ребел прага                               rebel praRa
 хбк медведи                               xbk medvedi
+акулы калининград                         akuli kaliningradi
+гоблинс прага                             goblins praGa
+энергия екатеринбург                      energia ekaterinburgi
