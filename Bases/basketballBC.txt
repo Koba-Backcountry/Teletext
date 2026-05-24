@@ -7219,3 +7219,23 @@ Anadolu Efes                              anadolu efesi
 Шабаб Бушра                               Sabab buSra
 Аль-Ашрафия                               al-aSrafia
 Аль-Ахли Доха                             al-ahli doha
+арджеш питешти                            arjeS piteSti
+бернекс                                   berneksi
+бордо спортиф                             bordo sportifi
+калининград pro                           kaliningrad pro
+легион легионово                          legion legionovo
+маккаби петах-тиква                       makabi petah-tikva
+махачкала pro                             maxaCkala pro
+мурино pro                                murino pro
+норильск pro                              norilsk pro
+отеф даром                                otef daromi
+патриоты левице                           patrioti levice
+руво-ди-пулья                             ruvo-di-pulia
+слован братислава                         slovan bratislava
+таганрог pro                              taganrog pro
+тайгерс кигали                            Taigers kigali
+тарновске-гуры                            tarnovske-guri
+хаммам сус                                hamam susi
+хд маринс                                 hd marinsi
+цбат                                      cbati
+цюрих                                     ciurixi

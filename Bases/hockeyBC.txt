@@ -2263,3 +2263,8 @@ MISTO                                     misto
 Звезда Самара                             zvezda samara
 Горняк Челябинск                          gorniak Celiabinski
 Ракета Магнитогорск                       raketa magnitogorski
+динамо омск                               dynamo omski
+медведи москва                            medvedi moskva
+реактор хабаровск                         reaqtor xabarovski
+ребел прага                               rebel praRa
+хбк медведи                               xbk medvedi
