@@ -1,0 +1,57 @@
+---
+- hosts: ec2
+  become: yes
+
+  vars:
+    repo_url: "https://github.com/Koba-Backcountry/Teletext.git"
+    site_dir: "/home/ubuntu/Teletext"
+    ansible_ssh_common_args: '-o ServerAliveInterval=60 -o ServerAliveCountMax=10'
+
+  tasks:
+    - name: Install packages
+      apt:
+        name:
+          - docker.io
+          - docker-compose
+          - git
+        state: present
+        update_cache: yes
+
+    - name: Ensure docker is running
+      systemd:
+        name: docker
+        state: started
+        enabled: yes
+
+    - name: Add ubuntu to docker group
+      user:
+        name: ubuntu
+        groups: docker
+        append: yes
+
+    - name: Reset SSH
+      meta: reset_connection
+
+    - name: Ensure project dir
+      file:
+        path: "{{ site_dir }}"
+        state: directory
+        owner: ubuntu
+        group: ubuntu
+
+    - name: Clone or update repo
+      become_user: ubuntu
+      git:
+        repo: "{{ repo_url }}"
+        dest: "{{ site_dir }}"
+        version: main
+        force: yes
+
+    - name: Run docker compose
+      become_user: ubuntu
+      shell: |
+        cd {{ site_dir }}
+        docker-compose down || true
+        docker-compose up -d --build
+      args:
+        executable: /bin/bash

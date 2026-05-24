@@ -1,0 +1,14 @@
+.git
+.gitignore
+__pycache__
+*.pyc
+venv
+MyKeyPair.pem
+deploy-site.yml
+deploy_to_ec2.sh
+hosts.ini
+main.tf
+*.tfstate
+*.tfstate.backup
+.terraform/
+.terraform.lock.hcl

@@ -1,0 +1,819 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Teletext</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="login-page">
+
+<!-- AUTH -->
+<div id="auth">
+    <div id="title">
+        <h1>Teletext</h1>
+        <h2>Powered by Koba Skhulukhia</h2>
+    </div>
+    <input id="u" placeholder="username">
+    <input id="p" placeholder="password" type="password">
+    <button onclick="login()">Login</button>
+    <button onclick="register()">Register</button>
+    <div id="msg"></div>
+</div>
+
+<!-- SELECTION SCREEN -->
+<div id="selection" style="display:none;">
+    <div id="selection-wrapper">
+
+        <div id="selection-header">
+            <div id="selection-logo">
+                <span class="logo-gt">GT</span>
+                <div>
+                    <div class="logo-title">Georgian Teletext</div>
+                    <div class="logo-sub">Select Data Sources</div>
+                </div>
+            </div>
+            <button id="sel-logout-btn" onclick="logout()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Logout
+            </button>
+        </div>
+
+        <div id="selection-grid">
+
+            <!-- SOURCES -->
+            <div class="sel-section">
+                <div class="sel-section-header">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><ellipse cx="12" cy="5" rx="9" ry="3"/><path d="M21 12c0 1.66-4 3-9 3s-9-1.34-9-3"/><path d="M3 5v14c0 1.66 4 3 9 3s9-1.34 9-3V5"/></svg>
+                    Data Sources
+                </div>
+                <div class="source-cards">
+                    <label class="source-card" id="card-livescore">
+                        <input type="checkbox" id="src-livescore" onchange="onSourceChange()" checked>
+                        <div class="source-card-inner">
+                            <div class="source-icon ls-icon">LS</div>
+                            <div class="source-info">
+                                <div class="source-name">LiveScore</div>
+                                <div class="source-desc">Soccer · Hockey · Basketball · Tennis</div>
+                            </div>
+                            <div class="source-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                        </div>
+                    </label>
+                    <label class="source-card" id="card-betcity">
+                        <input type="checkbox" id="src-betcity" onchange="onSourceChange()" checked>
+                        <div class="source-card-inner">
+                            <div class="source-icon bc-icon">BC</div>
+                            <div class="source-info">
+                                <div class="source-name">BetCity</div>
+                                <div class="source-desc">Soccer · Hockey · Basketball · Tennis · Handball · Rugby · Volleyball</div>
+                            </div>
+                            <div class="source-check">
+                                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"/></svg>
+                            </div>
+                        </div>
+                    </label>
+                </div>
+                <div id="source-warning" class="source-warning" style="display:none;">
+                    ⚠ აირჩიე მინიმუმ ერთი წყარო
+                </div>
+            </div>
+
+            <!-- SPORTS -->
+            <div class="sel-section">
+                <div class="sel-section-header">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 8v4l3 3"/></svg>
+                    Sports
+                </div>
+                <div class="sport-grid">
+                    <label class="sport-chip" id="chip-soccer">
+                        <input type="checkbox" class="sport-cb" data-sport="soccer" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Soccer.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Soccer
+                        </span>
+                    </label>
+                    <label class="sport-chip" id="chip-hockey">
+                        <input type="checkbox" class="sport-cb" data-sport="hockey" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Hockey.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Hockey
+                        </span>
+                    </label>
+                    <label class="sport-chip" id="chip-basketball">
+                        <input type="checkbox" class="sport-cb" data-sport="basketball" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Basketball.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Basketball
+                        </span>
+                    </label>
+                    <label class="sport-chip" id="chip-tennis">
+                        <input type="checkbox" class="sport-cb" data-sport="tennis" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Tennis.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Tennis
+                        </span>
+                    </label>
+                    <label class="sport-chip ls-only" id="chip-handball">
+                        <input type="checkbox" class="sport-cb" data-sport="handball" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Handball.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Handball
+                        </span>
+                    </label>
+                    <label class="sport-chip ls-only" id="chip-rugby">
+                        <input type="checkbox" class="sport-cb" data-sport="rugby" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Rugby.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Rugby
+                        </span>
+                    </label>
+                    <label class="sport-chip ls-only" id="chip-volleyball">
+                        <input type="checkbox" class="sport-cb" data-sport="volleyball" checked onchange="onSportChange()">
+                        <span class="sport-chip-label">
+                            <img src="SportIcons/Volleyball.gif" class="sport-chip-icon" onerror="this.style.display='none'">
+                            Volleyball
+                        </span>
+                    </label>
+                </div>
+                <div id="sport-warning" class="source-warning" style="display:none;">
+                    ⚠ აირჩიე მინიმუმ ერთი სპორტის სახეობა
+                </div>
+            </div>
+
+        </div>
+
+        <button id="start-btn" onclick="startTeletext()">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+            Start Teletext
+        </button>
+
+    </div>
+</div>
+
+<!-- TELETEXT -->
+<div id="container" style="display:none;"></div>
+
+<!-- ADMIN -->
+<div id="admin" style="display:none;">
+    <div id="admin-wrapper">
+
+        <!-- HEADER -->
+        <div id="admin-header">
+            <div id="admin-logo">
+                <span class="logo-gt">GT</span>
+                <div>
+                    <div class="logo-title">Georgian Teletext</div>
+                    <div class="logo-sub">Admin Panel</div>
+                </div>
+            </div>
+            <button id="logout-btn" onclick="logout()">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4"/><polyline points="16 17 21 12 16 7"/><line x1="21" y1="12" x2="9" y2="12"/></svg>
+                Logout
+            </button>
+        </div>
+
+        <!-- MAIN GRID -->
+        <div id="admin-grid">
+
+            <!-- LEFT: USER MANAGEMENT -->
+            <div class="admin-section" id="users-section">
+                <div class="section-header">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
+                    User Management
+                </div>
+
+                <div class="users-columns">
+                    <div class="users-col">
+                        <div class="col-label pending-label">
+                            <span class="dot dot-pending"></span>
+                            Pending
+                            <span class="count-badge" id="pending-count">0</span>
+                        </div>
+                        <div id="pendingList" class="user-list"></div>
+                    </div>
+
+                    <div class="col-divider"></div>
+
+                    <div class="users-col">
+                        <div class="col-label approved-label">
+                            <span class="dot dot-approved"></span>
+                            Approved
+                            <span class="count-badge" id="approved-count">0</span>
+                        </div>
+                        <div id="approvedList" class="user-list"></div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RIGHT: SETTINGS -->
+            <div class="admin-section" id="settings-section">
+                <div class="section-header">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="3"/><path d="M19.07 4.93l-1.41 1.41M4.93 4.93l1.41 1.41M12 2v2m0 16v2m7.07-5.07l-1.41-1.41M5.34 18.66l1.41-1.41M2 12h2m16 0h2"/></svg>
+                    Admin Settings
+                </div>
+
+                <div class="settings-form">
+                    <label class="field-label">New Username</label>
+                    <input id="newUser" placeholder="Enter new username" class="admin-input">
+
+                    <label class="field-label">New Password</label>
+                    <input id="newPass" placeholder="Enter new password" type="password" class="admin-input">
+
+                    <button class="save-btn" onclick="updateAdmin()">
+                        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M19 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11l5 5v11a2 2 0 0 1-2 2z"/><polyline points="17 21 17 13 7 13 7 21"/><polyline points="7 3 7 8 15 8"/></svg>
+                        Save Changes
+                    </button>
+                    <div id="admin-msg"></div>
+
+                    <!-- UNTRANSLATED DOWNLOAD -->
+                    <div style="margin-top: 16px; border-top: 1px solid rgba(0,255,255,0.08); padding-top: 16px;">
+                        <label class="field-label">Untranslated Teams</label>
+                        <button class="save-btn" onclick="downloadUntranslated()" style="background: linear-gradient(135deg, #a855f7, #7c3aed); margin-top: 8px;">
+                            <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+                            Download Untranslated
+                        </button>
+                        <div id="untranslated-msg" style="margin-top:6px; font-size:13px; min-height:18px; text-align:center;"></div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script>
+let direction = 1;
+let position = 0;
+let scrollAnimId = null;
+
+// აქტიური ფილტრები
+let activeFilters = {
+    sources: { livescore: true, betcity: true },
+    sports: { soccer: true, hockey: true, basketball: true, tennis: true, handball: true, rugby: true, volleyball: true }
+};
+
+const API = "http://" + window.location.hostname + ":8000";
+const API_KEY = "gt-secret-2024-xK9mP";
+
+const authHeaders = {
+    "Content-Type": "application/json",
+    "x-api-key": API_KEY
+};
+
+// sport_icon + source კომბინაცია → sport key
+const MATCH_SPORT_MAP = {
+    "Soccer.gif_livescore":     "soccer",
+    "Soccer.gif_betcity":       "soccer",
+    "Hockey.gif_livescore":     "hockey",
+    "Hockey.gif_betcity":       "hockey",
+    "Basketball.gif_livescore": "basketball",
+    "Basketball.gif_betcity":   "basketball",
+    "Tennis.gif_livescore":     "tennis",
+    "Tennis.gif_betcity":       "tennis",
+    "Handball.gif_betcity":     "handball",
+    "Rugby.gif_betcity":        "rugby",
+    "Volleyball.gif_betcity":   "volleyball",
+};
+
+window.onload = function() {
+    document.getElementById("auth").style.display = "block";
+    document.getElementById("selection").style.display = "none";
+    document.getElementById("container").style.display = "none";
+    document.getElementById("admin").style.display = "none";
+    localStorage.removeItem("logged");
+}
+
+// =====================
+// SOURCE / SPORT LOGIC
+// =====================
+
+function onSourceChange() {
+    const lsChecked = document.getElementById("src-livescore").checked;
+    const bcChecked = document.getElementById("src-betcity").checked;
+
+    // warning
+    document.getElementById("source-warning").style.display =
+        (!lsChecked && !bcChecked) ? "block" : "none";
+
+    // betcity-only სახეობები (handball, rugby, volleyball)
+    const bcOnlyChips = document.querySelectorAll(".sport-chip.ls-only");
+    bcOnlyChips.forEach(chip => {
+        const cb = chip.querySelector("input[type=checkbox]");
+        if (!bcChecked && lsChecked) {
+            // მხოლოდ livescore → disable
+            chip.classList.add("chip-disabled");
+            cb.disabled = true;
+            cb.checked = false;
+        } else {
+            // betcity ჩართულია (ან ორივე) → enable
+            chip.classList.remove("chip-disabled");
+            cb.disabled = false;
+            cb.checked = true;
+        }
+    });
+
+    updateStartBtn();
+}
+
+function onSportChange() {
+    const anyChecked = document.querySelectorAll(".sport-cb:checked:not(:disabled)").length > 0;
+    document.getElementById("sport-warning").style.display = anyChecked ? "none" : "block";
+    updateStartBtn();
+}
+
+function updateStartBtn() {
+    const lsChecked = document.getElementById("src-livescore").checked;
+    const bcChecked = document.getElementById("src-betcity").checked;
+    const anySport  = document.querySelectorAll(".sport-cb:checked:not(:disabled)").length > 0;
+    const btn = document.getElementById("start-btn");
+    btn.disabled = (!lsChecked && !bcChecked) || !anySport;
+}
+
+function getSelections() {
+    const sources = {
+        livescore: document.getElementById("src-livescore").checked,
+        betcity:   document.getElementById("src-betcity").checked,
+    };
+    const sports = {};
+    document.querySelectorAll(".sport-cb").forEach(cb => {
+        sports[cb.dataset.sport] = cb.checked && !cb.disabled;
+    });
+    return { sources, sports };
+}
+
+// =====================
+// AUTH
+// =====================
+
+async function login() {
+    const res = await fetch(API + "/login", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ username: u.value, password: p.value })
+    });
+    const data = await res.json();
+
+    if (data.status === "ok") {
+        localStorage.setItem("logged", "1");
+        document.getElementById("auth").style.display = "none";
+
+        if (data.is_admin === 1) {
+            document.body.className = "teletext-page";
+            document.getElementById("admin").style.display = "block";
+            document.getElementById("selection").style.display = "none";
+            document.getElementById("container").style.display = "none";
+            loadPendingUsers();
+        } else {
+            // → selection screen
+            document.body.className = "teletext-page";
+            document.getElementById("selection").style.display = "flex";
+            document.getElementById("container").style.display = "none";
+            document.getElementById("admin").style.display = "none";
+            onSourceChange(); // initial state
+        }
+    } else {
+        msg.innerText = data.status;
+    }
+}
+
+async function register() {
+    const res = await fetch(API + "/register", {
+        method: "POST",
+        headers: {"Content-Type": "application/json"},
+        body: JSON.stringify({ username: u.value, password: p.value })
+    });
+    const data = await res.json();
+    msg.innerText = data.status;
+}
+
+function logout() {
+    localStorage.removeItem("logged");
+    document.body.className = "login-page";
+    document.getElementById("auth").style.display = "block";
+    document.getElementById("selection").style.display = "none";
+    document.getElementById("container").style.display = "none";
+    document.getElementById("admin").style.display = "none";
+    if (scrollAnimId) { cancelAnimationFrame(scrollAnimId); scrollAnimId = null; }
+    position = 0;
+    direction = 1;
+}
+
+// =====================
+// START TELETEXT
+// =====================
+
+function startTeletext() {
+    const sel = getSelections();
+    activeFilters = sel;
+
+    document.getElementById("selection").style.display = "none";
+    document.getElementById("container").style.display = "block";
+    document.getElementById("container").style.top = "0px";
+    position = 0;
+    direction = 1;
+
+    loadMatches();
+    scrollLoop();
+    setInterval(loadMatches, 90000);
+}
+
+// =====================
+// MATCH FILTER
+// =====================
+
+function matchPassesFilter(m) {
+    // source filter
+    if (!activeFilters.sources[m.source]) return false;
+
+    // sport filter
+    const key = m.sport_icon + "_" + m.source;
+    const sport = MATCH_SPORT_MAP[key];
+    if (sport && !activeFilters.sports[sport]) return false;
+
+    return true;
+}
+
+// =====================
+// ADMIN
+// =====================
+
+async function setPending(id) {
+    await fetch(API + "/set-pending/" + id, { method: "POST", headers: authHeaders });
+    loadPendingUsers();
+}
+
+async function loadPendingUsers() {
+    const pendingRes  = await fetch(API + "/pending-users",  { headers: authHeaders });
+    const pendingData = await pendingRes.json();
+    const approvedRes = await fetch(API + "/approved-users", { headers: authHeaders });
+    const approvedData = await approvedRes.json();
+
+    document.getElementById("pending-count").textContent  = pendingData.length;
+    document.getElementById("approved-count").textContent = approvedData.length;
+
+    const pendingList  = document.getElementById("pendingList");
+    const approvedList = document.getElementById("approvedList");
+    pendingList.innerHTML  = "";
+    approvedList.innerHTML = "";
+
+    if (pendingData.length === 0)
+        pendingList.innerHTML = '<div class="empty-state">No pending users</div>';
+    pendingData.forEach(u => {
+        const div = document.createElement("div");
+        div.className = "user-card";
+        div.innerHTML = `
+            <div class="user-avatar">${u.username[0].toUpperCase()}</div>
+            <span class="user-name">${u.username}</span>
+            <button class="action-btn approve-btn" onclick="approveUser(${u.id})">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="20 6 9 17 4 12"/></svg>
+                Approve
+            </button>`;
+        pendingList.appendChild(div);
+    });
+
+    if (approvedData.length === 0)
+        approvedList.innerHTML = '<div class="empty-state">No approved users</div>';
+    approvedData.forEach(u => {
+        const div = document.createElement("div");
+        div.className = "user-card";
+        div.innerHTML = `
+            <div class="user-avatar approved-avatar">${u.username[0].toUpperCase()}</div>
+            <span class="user-name">${u.username}</span>
+            <button class="action-btn revoke-btn" onclick="setPending(${u.id})">
+                <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+                Revoke
+            </button>`;
+        approvedList.appendChild(div);
+    });
+}
+
+async function approveUser(id) {
+    await fetch(API + "/approve/" + id, { method: "POST", headers: authHeaders });
+    loadPendingUsers();
+}
+
+async function updateAdmin() {
+    const res = await fetch(API + "/admin/update", {
+        method: "POST",
+        headers: authHeaders,
+        body: JSON.stringify({ username: newUser.value, password: newPass.value })
+    });
+    const data = await res.json();
+    const msg = document.getElementById("admin-msg");
+    msg.textContent = data.status === "ok" ? "✓ Saved successfully" : "Error: " + data.status;
+    msg.className = data.status === "ok" ? "admin-msg-ok" : "admin-msg-err";
+}
+
+async function downloadUntranslated() {
+    const msg = document.getElementById("untranslated-msg");
+    msg.textContent = "Loading...";
+    msg.style.color = "rgba(255,255,255,0.4)";
+    try {
+        const res = await fetch(API + "/untranslated", { headers: authHeaders });
+        const text = await res.text();
+        const blob = new Blob(["\uFEFF" + text], { type: "text/plain;charset=utf-8" });
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement("a");
+        a.href = url;
+        a.download = "untranslated.txt";
+        a.click();
+        URL.revokeObjectURL(url);
+        msg.textContent = "✓ Downloaded";
+        msg.style.color = "#00c97a";
+    } catch (e) {
+        msg.textContent = "Error";
+        msg.style.color = "#ff6b6b";
+    }
+}
+
+// =====================
+// TELETEXT RENDER
+// =====================
+
+function applyStyle(el, sport_icon) {
+    if (sport_icon === "Hockey.gif") {
+        el.style.background = "#CBEAED";
+        el.style.color = "#0000FF";
+    } else if (sport_icon === "Basketball.gif") {
+        el.style.background = "#AE7C44";
+        el.style.color = "#FFFFFF";
+    } else if (sport_icon === "Tennis.gif") {
+        el.style.background = "#004000";
+        el.style.color = "#FFFFFF";
+    }
+}
+
+/*
+  SPORT_LAYOUT — bracket type:
+  { type: "bracket", w: "3%", char: "(" }  — ფიქსირებული სვეტი ( ან ) სიმბოლოსთვის.
+  ეს სვეტი ყოველთვის ერთ ადგილზე დგას, period-ების მნიშვნელობებისგან დამოუკიდებლად.
+
+  შენიშვნა: Hockey და Basketball-ს livescore/betcity layout იდენტურია,
+  ამიტომ ერთი ობიექტი გამოიყენება ორივესთვის (იხ. ქვემოთ alias-ები).
+*/
+const SPORT_LAYOUT = {
+    "Hockey.gif": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "63%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Basketball.gif": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "57%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Tennis.gif_livescore": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "49%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Tennis.gif_betcity": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "49%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "period",  w: "6%"  },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Soccer.gif_betcity": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "43%" },
+        { type: "score",   w: "7%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "20%" },
+        { type: "period",  w: "19%" },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Handball.gif_betcity": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "57%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "22%" },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Rugby.gif_betcity": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "57%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "22%" },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+    "Volleyball.gif_betcity": [
+        { type: "minute",  w: "5%"  },
+        { type: "name",    w: "57%" },
+        { type: "score",   w: "9%"  },
+        { type: "bracket", w: "3%", char: "(" },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "period",  w: "5%"  },
+        { type: "bracket", w: "3%", char: ")" },
+    ],
+};
+
+// Hockey და Basketball-ს layout იდენტურია ორივე წყაროსთვის
+SPORT_LAYOUT["Hockey.gif_livescore"]     = SPORT_LAYOUT["Hockey.gif"];
+SPORT_LAYOUT["Hockey.gif_betcity"]       = SPORT_LAYOUT["Hockey.gif"];
+SPORT_LAYOUT["Basketball.gif_livescore"] = SPORT_LAYOUT["Basketball.gif"];
+SPORT_LAYOUT["Basketball.gif_betcity"]   = SPORT_LAYOUT["Basketball.gif"];
+
+function buildRow(name, score, period, layout, nameAlign, hideScoreAndPeriods) {
+    const parts = period && period.trim() !== ""
+        ? period.replace("[","").replace("]","").trim().split(/\s+/).filter(p => p !== "")
+        : [];
+
+    let periodIdx = 0;
+    let html = `<div class="sport-row" style="align-items:${nameAlign || "center"};">`;
+
+    layout.forEach(col => {
+        if (col.type === "minute") {
+            html += `<div style="width:${col.w}; flex-shrink:0;"></div>`;
+        } else if (col.type === "name") {
+            html += `<div class="sport-cell sport-cell-name" style="width:${col.w};">${name}</div>`;
+        } else if (col.type === "score") {
+            html += `<div class="sport-cell sport-cell-score" style="width:${col.w};">${hideScoreAndPeriods ? "" : score}</div>`;
+        } else if (col.type === "bracket") {
+            html += `<div class="sport-cell sport-cell-bracket" style="width:${col.w};">${hideScoreAndPeriods ? "" : col.char}</div>`;
+        } else if (col.type === "period") {
+            const val = hideScoreAndPeriods ? "" : (parts[periodIdx] !== undefined ? parts[periodIdx] : "");
+            html += `<div class="sport-cell sport-cell-period" style="width:${col.w};">${val}</div>`;
+            periodIdx++;
+        }
+    });
+
+    html += `</div>`;
+    return html;
+}
+
+/*
+  buildDoublesBlock — doubles (წყვილი) ერთი block:
+  names column: flex-column, ზედა და ქვედა მოთამაშე
+  score/minute/period სვეტები: align-items center — ორი ხაზის სიმაღლეზე ზუსტად შუაში
+*/
+function buildDoublesBlock(nameTop, nameBottom, score, period, layout) {
+    const parts = period && period.trim() !== ""
+        ? period.replace("[","").replace("]","").trim().split(/\s+/).filter(p => p !== "")
+        : [];
+
+    const nameCol = layout.find(c => c.type === "name");
+    const minuteCol = layout.find(c => c.type === "minute");
+    const nameW   = nameCol   ? nameCol.w   : "60%";
+    const minuteW = minuteCol ? minuteCol.w : "5%";
+
+    let html = `<div class="sport-block-doubles">`;
+
+    html += `<div style="width:${minuteW}; flex-shrink:0;"></div>`;
+
+    html += `<div class="doubles-names" style="width:${nameW};">`;
+    html += `<div class="doubles-name">${nameTop}</div>`;
+    html += `<div class="doubles-name">${nameBottom}</div>`;
+    html += `</div>`;
+
+    let periodIdx = 0;
+    layout.forEach(col => {
+        if (col.type === "name" || col.type === "minute") return;
+        if (col.type === "score") {
+            html += `<div class="sport-cell doubles-cell" style="width:${col.w};">${score}</div>`;
+        } else if (col.type === "bracket") {
+            html += `<div class="sport-cell sport-cell-bracket doubles-cell" style="width:${col.w};">${col.char}</div>`;
+        } else if (col.type === "period") {
+            const val = parts[periodIdx] !== undefined ? parts[periodIdx] : "";
+            html += `<div class="sport-cell doubles-cell" style="width:${col.w};">${val}</div>`;
+            periodIdx++;
+        }
+    });
+
+    html += `</div>`;
+    return html;
+}
+
+async function loadMatches() {
+    const res = await fetch(API + "/matches");
+    const allData = await res.json();
+
+    // ფილტრაცია
+    const data = allData.filter(matchPassesFilter);
+
+    const container = document.getElementById("container");
+    container.innerHTML = "";
+
+    let lastLeague = null;
+
+    data.forEach(m => {
+        // "пляжный волейбол" ლიგები საერთოდ გამოტოვება
+        if (m.league.toLowerCase().includes("пляжный волейбол")) return;
+
+        if (m.league !== lastLeague) {
+            lastLeague = m.league;
+            const header = document.createElement("div");
+            header.className = "row";
+            header.style.background = "#000000";
+            header.innerHTML = `
+                <div style="display:flex; align-items:center; gap:10px;">
+                    ${m.flag ? `<img class="flag" src="Flags/${m.flag}">` : ""}
+                    <div class="league">${m.country ? m.country + " - " : ""}${m.league}</div>
+                </div>
+                <div style="margin-left:auto;">
+                    ${m.sport_icon ? `<img class="icon" src="SportIcons/${m.sport_icon}">` : ""}
+                </div>`;
+            container.appendChild(header);
+        }
+
+        const isSoccer = m.sport_icon === "Soccer.gif" && m.source === "livescore";
+        const minuteHtml = m.source === "betcity"
+            ? `<img src="SportIcons/flash.gif" style="height:24px;">`
+            : m.minute;
+
+        if (isSoccer) {
+            const row = document.createElement("div");
+            row.className = "row";
+            row.innerHTML = `
+                <div class="minute">${minuteHtml}</div>
+                <div class="team1">${m.team1}</div>
+                <div class="score">${m.score1} - ${m.score2}</div>
+                <div class="team2">${m.team2}</div>`;
+            container.appendChild(row);
+            return;
+        }
+
+        const layout = SPORT_LAYOUT[m.sport_icon + "_" + m.source];
+        const isDoubles = m.team1.includes(" / ");
+
+        if (isDoubles) {
+            const [t1a, t1b] = m.team1.split(" / ");
+            const [t2a, t2b] = m.team2.split(" / ");
+
+            const wrapper = document.createElement("div");
+            wrapper.style.position = "relative";
+            wrapper.style.borderBottom = "1px solid #333";
+
+            wrapper.innerHTML = `<div class="minute-center">${minuteHtml}</div>`;
+
+            const block1 = document.createElement("div");
+            block1.className = "sport-block-inner";
+            applyStyle(block1, m.sport_icon);
+            block1.innerHTML = buildDoublesBlock(t1a, t1b, m.score1, m.period1, layout);
+            wrapper.appendChild(block1);
+
+            const block2 = document.createElement("div");
+            block2.className = "sport-block-inner";
+            applyStyle(block2, m.sport_icon);
+            block2.innerHTML = buildDoublesBlock(t2a, t2b, m.score2, m.period2, layout);
+            wrapper.appendChild(block2);
+
+            container.appendChild(wrapper);
+
+        } else {
+            const block = document.createElement("div");
+            block.className = "sport-block";
+            block.style.position = "relative";
+            applyStyle(block, m.sport_icon);
+            block.innerHTML =
+                `<div class="minute-center">${minuteHtml}</div>` +
+                buildRow(m.team1, m.score1, m.period1, layout, "flex-end",   false) +
+                buildRow(m.team2, m.score2, m.period2, layout, "flex-start", false);
+            container.appendChild(block);
+        }
+    });
+}
+
+function scrollLoop() {
+    const container = document.getElementById("container");
+    position += direction * 0.5;
+    container.style.top = -position + "px";
+    const maxScroll = container.offsetHeight - window.innerHeight;
+    if (position >= maxScroll) direction = -1;
+    if (position <= 0) direction = 1;
+    scrollAnimId = requestAnimationFrame(scrollLoop);
+}
+</script>
+
+</body>
+</html>

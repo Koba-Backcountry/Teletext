@@ -1,0 +1,27 @@
+version: "3.8"
+
+services:
+  backend:
+    build: ./backend
+    container_name: teletext-backend
+    restart: always
+    ports:
+      - "8000:8000"
+    volumes:
+      - backend_data:/data
+      - ./Bases:/Bases:ro
+      - "./Flags LiveScore.txt:/Flags LiveScore.txt:ro"
+      - "./Flags BetCity.txt:/Flags BetCity.txt:ro"
+
+  frontend:
+    image: nginx:alpine
+    container_name: teletext-frontend
+    volumes:
+      - ./frontend:/usr/share/nginx/html:ro
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+
+volumes:
+  backend_data:
