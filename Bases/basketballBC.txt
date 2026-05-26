@@ -7254,3 +7254,15 @@ Anadolu Efes                              anadolu efesi
 фьюжн абиджан                             fiuJn abijani
 хупс бейрут                               xups beiruTi
 эскильстуна                               eskilstuna
+агрономия                                 agronomia
+ангарск pro                               angarsk pro
+демир амираллер                           demir amiraleri
+догс                                      dogsi
+кировград pro                             kirovgrad pro
+кэмелс                                    kumelsi
+лейи бухарест                             leii buqaresti
+линкс                                     linksi
+маккаби кирьят-моцкин                     makabi kiriaT-mockini
+суадие                                    suadie
+хабаровск pro                             xabarovsk pro
+хапоэль нешер                             hapoel neSeri

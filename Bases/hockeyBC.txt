@@ -2271,3 +2271,5 @@ MISTO                                     misto
 акулы калининград                         akuli kaliningradi
 гоблинс прага                             goblins praGa
 энергия екатеринбург                      energia ekaterinburgi
+львы новосибирск                          lvi novosibirski
+тигры тюмень                              tigri tiumeni
