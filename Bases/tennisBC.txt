@@ -10764,3 +10764,47 @@ Cидане Понтьодикромо                      s. pontodikromo
 эстер киш цако                            e. kiS cako
 эштон маклеод                             e. makleodi
 яна оципка                                i. ocipka
+адам майхшак                              a. maixSaki
+адриен бурде                              a. burde
+александр кудрявцев                       a. kudriavcevi
+алексия лавиния пуяк                      a. Lavinia puiaki
+аяна акли                                 a. akli
+владимир осминкин                         v. osminkini
+габриэла паун                             g. pauni
+генри джефферсон                          h. jefersoni
+даниэль лара сальмерон                    d. lara saleroni
+жеа а.                                    a. Jea
+ива приморац павичич                      i. primorac paviCiCi
+иван билетич                              i. biletiCi
+кацпер книттер                            k. kniteri
+кельвин мюллер                            k. miuleri
+крымкова а.                               a. krimkova
+кун вэйи                                  k. veini
+ли э.                                     e. li
+марианна аргирокастрити                   m. argirokastriti
+мелинда биро                              m. biro
+микаэл аванесян                           m. avanesiani
+микеле мекарелли                          m. makareli
+мирослава медведева                       m. medvedeva
+найвирт коларич м.                        m. naivirt kolariCi
+петар йованович                           p. iovanoviCi
+планиншек ф.дж.                           f. j. planinSeki
+пётр галус                                p. galusi
+радулова й.                               i. radulova
+самуил честовалиев                        s. Castovalievi
+семра аксу                                s. aksu
+сидни цик                                 s. ciki
+таггер л.                                 l. tageri
+таусон к.                                 k. tausoni
+тиаго агустин пернас                      t. Agustin pernasi
+тимо розенкранц кениг                     t. rozenkranc kenigi
+тунхань гу                                tunxan gu
+фанмин мэн                                fanmin meni
+феррейра туркетто м.                      m. fereira turketo
+филиппо маццола                           f. macola
+чаган эфе туфекчи                         C. efe tufekCi
+элизабет прангли                          e. prangli
+эмилиано хоркера                          e. horkera
+эсса кабазард                             e. kabazardi
+янник ниттманн                            i. nitmani
+ястремская д.                             d. iastremskaia

@@ -7280,3 +7280,16 @@ Anadolu Efes                              anadolu efesi
 рэйн пейнтерс                             rein feinTersi
 саут уэст соникс                          sauT uesT soniksi
 симферополь pro                           simferopol pro
+алиенс                                    aliensi
+аполло                                    apolo
+балашиха pro                              balaSixa pro
+беарз                                     bearzi
+биньян татак                              binian tataki
+ижевск pro                                iJevsk pro
+калоокан леди канаклу                     kalookan ledi kanaklu
+куинпин пасиг                             kuinpin pasigi
+магнитогорск pro                          magnitogorsk pro
+паннония                                  panonia
+тюмень pro                                tiumen pro
+фоксес                                    foqsesi
+шахты pro                                 Saxti pro

@@ -2276,3 +2276,6 @@ MISTO                                     misto
 дончанка                                  donCanka
 комета иркутск                            kometa irkutski
 легион барнаул                            legion barnauli
+витязи томск                              vitiazi tomski
+крылья самара                             krilia samara
+рыси казань                               risi kazani
