@@ -2273,3 +2273,6 @@ MISTO                                     misto
 энергия екатеринбург                      energia ekaterinburgi
 львы новосибирск                          lvi novosibirski
 тигры тюмень                              tigri tiumeni
+дончанка                                  donCanka
+комета иркутск                            kometa irkutski
+легион барнаул                            legion barnauli

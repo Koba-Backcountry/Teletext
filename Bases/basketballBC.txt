@@ -7266,3 +7266,17 @@ Anadolu Efes                              anadolu efesi
 суадие                                    suadie
 хабаровск pro                             xabarovsk pro
 хапоэль нешер                             hapoel neSeri
+акари спаркс рисаль                       akari sparks risali
+анакондас                                 anakondasi
+брянск pro                                briansk pro
+инфинити хуп                              infiniti hupi
+кесон сити рк хупс                        keson siti rk hupsi
+набережные челны pro                      nabereJnie Celni pro
+новокузнецк pro                           novokuzneck pro
+октопус                                   oktopusi
+програйнд иа                              prograind ia
+рейвенс                                   reivensi
+риверпорт                                 riverporti
+рэйн пейнтерс                             rein feinTersi
+саут уэст соникс                          sauT uesT soniksi
+симферополь pro                           simferopol pro
