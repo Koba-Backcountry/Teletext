@@ -10808,3 +10808,38 @@ Cидане Понтьодикромо                      s. pontodikromo
 эсса кабазард                             e. kabazardi
 янник ниттманн                            i. nitmani
 ястремская д.                             d. iastremskaia
+алян важны                                a. vaJni
+арина малыгина                            a. maligina
+беляева д.                                d. beliaeva
+бенджамин уилверт                         b. uilverti
+бечирович новак м.                        m. beCiroviC novaki
+валентин гонсалес-галино                  v. gonsales-galino
+генри бест                                h. besti
+гюндаккер й.                              i. giundakeri
+дениз дилек                               d. dileki
+егор плешивцев                            e. pleSivcevi
+зелинская д.                              d. zelinskaia
+ирем курт                                 i. kurti
+йошка сборовски                           i. sborovski
+карла бартель                             k. barteli
+карла попович                             k. popoviCi
+корешкова д.                              d. koreSkova
+луизина джованнини                        l. jovanini
+лёрнер тьен                               l. tieni
+мак микович                               m. mikoviCi
+марко миладинович                         m. miladinoviCi
+мишкович д.                               d. miSkoviCi
+мойзе куаме                               m. kuame
+наталия соуса саласар                     n. sousa salasari
+нико хипфль                               n. hipfli
+пернас т.а.                               t. a. pernasi
+роман карпей                              r. karpei
+сагандикова а.                            a. sagandikova
+синди лангле                              s. langle
+столлекер м.                              m. stolekari
+тжен дж.                                  j. tJeni
+чандрасекар а.                            a. Candrasekari
+шиманович и.                              i. SimanoviCi
+эмили сарц-лунде                          e. sarc-lunde
+юлдашева с.                               s. iuldaSeva
+юрий федотов                              i. fedotovi

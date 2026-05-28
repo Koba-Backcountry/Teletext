@@ -6257,3 +6257,13 @@ Monza United                              monza iunaitedi
 сэлфмэйд воллей                           selfmeid volei
 фридль ф./шнетцер                         fridl f/Snetceri
 шахтер/пикетт                             Saxtior/piketi
+аксенов/костров                           aksenov/kostrovi
+андре/ренато                              andre/renato
+брыль/лосяк                               bril/losiaki
+казьмин/васильев                          kazmin/vasilievi
+маркетто/иерволино                        marketo/iervolino
+милани/маркезан                           milani/markezani
+нанкин унив.                              nankin univ.
+сент-винсент феррер                       sent-vinsent fereri
+удиа                                      udia
+центр. чайна нормал унив.                 centr. Caina normal univ.
