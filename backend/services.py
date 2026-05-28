@@ -176,7 +176,6 @@ BETCITY_SUFFIX_MAPS = {
         "(шк)": " (sk)", "(сурд)": " (surd)", "(унив)": " (univ)",
         " (мол)": " (ax)", " (мол.)": " (ax)",
         " (Рез)": " (rez)", " (макк)": " (mak)",
-        " (мф)": " (mf)",
     },
     "tennisBC": {
         " (геймы)": " (geim.)", " (пары)": " (wyv.)",
@@ -436,7 +435,7 @@ def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=Non
     return matches
 
 
-def fetch_betcity():            return fetch_betcity_sport("футбол",    "betcity",      "Soccer.gif",     ["киберфутбол", "статистика", "австралийский футбол", "пляжный футбол"])
+def fetch_betcity():            return fetch_betcity_sport("футбол",    "betcity",      "Soccer.gif",     ["киберфутбол", "статистика", "австралийский футбол", "пляжный футбол", "мини-футбол"])
 def fetch_betcity_hockey():     return fetch_betcity_sport("хоккей",    "hockeyBC",     "Hockey.gif",     ["статистика", "киберхоккей"])
 def fetch_betcity_basketball(): return fetch_betcity_sport("баскетбол", "basketballBC", "Basketball.gif", ["статистика", "кибербаскетбол"])
 def fetch_betcity_tennis():     return fetch_betcity_sport("теннис",    "tennisBC",     "Tennis.gif",     ["статистика", "настольный теннис", "падел-теннис"])

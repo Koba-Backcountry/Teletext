@@ -2280,3 +2280,5 @@ MISTO                                     misto
 крылья самара                             krilia samara
 рыси казань                               risi kazani
 спарта красноярск                         sparta krasnoiarski
+беркут волгоград                          berkut volgogradi
+феникс тула                               feniqs tula
