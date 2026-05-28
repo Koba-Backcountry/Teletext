@@ -10707,7 +10707,6 @@ Cидане Понтьодикромо                      s. pontodikromo
 аналу фрейташ                             a. freitaSi
 андреа дзанини                            a. Zanini
 анна баздерова                            a. bezderova
-антон анисимов                            a. anisimovi
 армине есаян                              a. esaiani
 артём алексейчук                          a. alekseiCuki
 астрид бруне ольсен                       a. brune alseni
@@ -10833,7 +10832,6 @@ Cидане Понтьодикромо                      s. pontodikromo
 наталия соуса саласар                     n. sousa salasari
 нико хипфль                               n. hipfli
 пернас т.а.                               t. a. pernasi
-роман карпей                              r. karpei
 сагандикова а.                            a. sagandikova
 синди лангле                              s. langle
 столлекер м.                              m. stolekari
@@ -10842,4 +10840,3 @@ Cидане Понтьодикромо                      s. pontodikromo
 шиманович и.                              i. SimanoviCi
 эмили сарц-лунде                          e. sarc-lunde
 юлдашева с.                               s. iuldaSeva
-юрий федотов                              i. fedotovi
