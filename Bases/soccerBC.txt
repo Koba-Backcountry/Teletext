@@ -10620,3 +10620,5 @@ III Керюлети                              III keriuleti
 бельгия (мф)                              belgia (mf)
 украина (мф)                              ukraina (mf)
 фу донг ii                                fu dongi II
+австрия (мф)                              avstria (mf)
+азербайджан (мф)                          azerbaijani (mf)

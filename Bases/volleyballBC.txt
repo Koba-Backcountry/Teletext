@@ -285,7 +285,6 @@
 Пиатра Неамт                              piatra neamti
 Сет                                       seti
 Монпелье                                  monpelie
-Полиурс/Озолниеки                         poliurs/ozolnieki
 ТТУ                                       ttu
 Быдгощ Делекта                            bidgoSC deleqta
 Нова КБМ Браник                           nova kbm braniki
@@ -1524,7 +1523,6 @@
 Вальфер                                   valferi
 Алтерно                                   alterno
 Осефия 05                                 osefia 05
-Флоревер/Рефлекс                          florever/refleqsi
 Риво Рейссен                              rivo reiseni
 Панвита                                   panvita
 Равне                                     ravne
@@ -4786,7 +4784,6 @@
 БВСК Зугло                                bvsk zuglo
 ТФШЕ-Будапешт                             tfSe-budabeSti
 Сент Бенедек Балатонфюред 2               sent benedek balatonfiured 2
-Даугавпилс Унив./Эзерземе                 daugavpils univ./ezerzeme
 Фиайнш                                    fiainSi
 Думьенсе ФК                               dumiense fk
 Сталь-Ульвюр                              stal-ulviuri
@@ -4927,7 +4924,6 @@
 Касерес                                   kaseresi
 Утрера                                    utrera
 ВЛИ                                       vli
-ЛУ/РВС                                    lu/rvs
 НТНУИ Волей                               ntnui volei
 Стерия Белград                            steria belgradi
 Црнянский                                 crnianski
@@ -5548,7 +5544,6 @@ Monza United                              monza iunaitedi
 Беллуно Воллей                            beluno volei
 Эяс Эвосмос                               eias evosmosi
 ХАНТ                                      hant
-Авенше АА/78                              avenSe aa/78
 Колехио Педро Аррупе                      kolexio pedro arupe
 Каламата                                  kalamata
 Атлос Орестиадас                          atlos orestiadasi
@@ -6237,33 +6232,19 @@ Monza United                              monza iunaitedi
 аксиома                                   aqkioma
 альянс рту мирэа                          alians rtu mirea
 буаа                                      buaa
-исускиса/таня                             isuksisa/tania
 кус бари                                  kus bari
 кус генуя                                 kus genua
 кус модена и реджио эмилья                kus modena i rejio emilia
 кус павия                                 kus pavia
-нюшаферова/майкснерова                    niuSaferova/maiksneova
 тяньцзинь унив.                           tianczin univ.
 ухань спорт унив.                         uhan sport univ.
 ухань унив.                               uhan univ.
-флинт/деберг                              flint/debergi
-холлас/реммельг                           holas/remelgi
 чунцин тех и бизнеса унив.                Cuncin tex i biznesa univ.
 автоботы                                  avtoboti
-курка/олива                               kurka/oliva
-лёйни/иммерс                              lioini/imersi
-перусич/седлак                            perusiC/sedlaki
-сейдл/сейсер                              seidl/seiseri
 сэлфмэйд воллей                           selfmeid volei
-фридль ф./шнетцер                         fridl f/Snetceri
-шахтер/пикетт                             Saxtior/piketi
-аксенов/костров                           aksenov/kostrovi
-андре/ренато                              andre/renato
-брыль/лосяк                               bril/losiaki
-казьмин/васильев                          kazmin/vasilievi
-маркетто/иерволино                        marketo/iervolino
-милани/маркезан                           milani/markezani
 нанкин унив.                              nankin univ.
 сент-винсент феррер                       sent-vinsent fereri
 удиа                                      udia
 центр. чайна нормал унив.                 centr. Caina normal univ.
+салитран 1                                salitrani 1
+сан матео                                 san mateo
