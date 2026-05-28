@@ -438,7 +438,7 @@ def fetch_betcity_sport(sport_keyword, source_key, sport_icon, skip_keywords=Non
 def fetch_betcity():            return fetch_betcity_sport("футбол",    "betcity",      "Soccer.gif",     ["киберфутбол", "статистика", "австралийский футбол", "пляжный футбол"])
 def fetch_betcity_hockey():     return fetch_betcity_sport("хоккей",    "hockeyBC",     "Hockey.gif",     ["статистика", "киберхоккей"])
 def fetch_betcity_basketball(): return fetch_betcity_sport("баскетбол", "basketballBC", "Basketball.gif", ["статистика", "кибербаскетбол"])
-def fetch_betcity_tennis():     return fetch_betcity_sport("теннис",    "tennisBC",     "Tennis.gif",     ["статистика", "настольный теннис"])
+def fetch_betcity_tennis():     return fetch_betcity_sport("теннис",    "tennisBC",     "Tennis.gif",     ["статистика", "настольный теннис", "Падел-теннис"])
 def fetch_betcity_handball():   return fetch_betcity_sport("гандбол",   "handballBC",   "Handball.gif",   ["статистика"])
 def fetch_betcity_rugby():      return fetch_betcity_sport("регби",     "rugbyBC",      "Rugby.gif",      ["статистика"])
 def fetch_betcity_volleyball(): return fetch_betcity_sport("волейбол",  "volleyballBC", "Volleyball.gif", ["статистика"])
