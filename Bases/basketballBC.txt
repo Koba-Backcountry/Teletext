@@ -7306,3 +7306,6 @@ Anadolu Efes                              anadolu efesi
 нс буллс                                  ns bulsi
 нс рокетс                                 ns roketsi
 мунболлерс                                munbolersi
+аулз                                      aulzi
+кэтс                                      ketsi
+саранск pro                               Saransk pro

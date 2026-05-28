@@ -10862,3 +10862,32 @@ Cидане Понтьодикромо                      s. pontodikromo
 матис доменк                              m. domenki
 росеано т.                                t. roseano
 франке дж.                                j. franke
+ада кумру                                 a. kumru
+азиз уакаа                                a. uakaa
+бак сабо н.                               n. bak sabo
+беннеманн е.                              e. benemani
+валетов р.                                r. valetovi
+валлега монтебруно дж.                    j. valega montebruno
+вишенчук-вишенко д.                       d. viSenCuk-viSenko
+горская д.                                d. gorskaia
+дзанада э.                                e. Zanada
+диното фернандес л.                       l. dinoto fernandesi
+дмитрий бурцев                            d. burcevi
+искиэрдо луке р.                          r. iskierdo luke
+каллерио ф.                               f. kalerio
+калман л.                                 l. kalmani
+ковачевич т.                              t. kovaCeviCi
+ларс горан ферверфт                       l. goran ferverfti
+макэ м.                                   m. make
+мария лазаренко                           m. lazarenko
+мартин ландалусе                          m. landaluse
+маттео шабази                             m. Sabazi
+михаилова м.                              m. mixailova
+михалка а.                                a. mixalka
+паун г.                                   g. pauni
+плешивцев е.                              e. pleSivcevi
+сана гаракани                             s. garakani
+сафи м.                                   m. safi
+сиерра с.                                 s. siera
+форкано и.                                i. forkano
+эденгрен к.                               k. edengreni

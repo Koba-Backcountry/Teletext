@@ -2282,3 +2282,4 @@ MISTO                                     misto
 спарта красноярск                         sparta krasnoiarski
 беркут волгоград                          berkut volgogradi
 феникс тула                               feniqs tula
+титан брянск                              titan brianski
