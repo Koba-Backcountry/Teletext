@@ -10904,3 +10904,31 @@ Cидане Понтьодикромо                      s. pontodikromo
 фао п.а.                                  p. a. fao
 цик с.                                    s. ciki
 цойх т.                                   t. coixi
+армира коккинис                           a. kokinisi
+артемьева в.                              v. artemieva
+гобби монльяу а.                          a. gobi monliau
+джейдан браун                             j. brauni
+джокич ф.                                 f. jokiCi
+ева альварес санде                        e. alvares sande
+игита барраса м.                          m. igita barasa
+кайли эванс                               k. evansi
+каллиста лю                               k. liu
+кензи нгуен                               k. ngueni
+коко гауфф                                k. gaufi
+копривова н.                              n. koprivova
+костович т.                               t. kostoviCi
+майдандцик м.                             m. maidandciki
+маю кроссли                               m. krosli
+миланович д.                              d. milanoviCi
+мойяно л.                                 l. moiano
+оливия сентер                             o. senteri
+оципка я.                                 i. ocipka
+родеро контрерас к.                       k. rodero kontrerasi
+рюль т.                                   t. riuli
+срутва м.                                 m. srutva
+тахири м.                                 m. tahiri
+херальд гонсалес х.                       x. herald gonsalesi
+херя к.                                   k. xeria
+штайнер в.                                v. Staineri
+эльза жакмо                               e. Jakmo
+энн кристин луткемейер обрегон            e. Kristin lutkemeier obregoni
