@@ -403,6 +403,9 @@ body {
     padding-right: 10px;
     font-family: 'Grotesk';
     font-size: 42px;
+    white-space: normal;
+    overflow: visible;
+    word-break: break-word;
 }
 
 .score {
@@ -418,6 +421,9 @@ body {
     padding-left: 10px;
     font-family: 'Grotesk';
     font-size: 42px;
+    white-space: normal;
+    overflow: visible;
+    word-break: break-word;
 }
 
 .league {
@@ -436,8 +442,6 @@ body {
     border-bottom: 1px solid #333;
 }
 
-/* წყვილების შიდა ბლოკები — wrapper-ში, border გარეშე.
-   ორ წყვილს შორის გამყოფი ხაზი */
 .sport-block-inner {
     width: 100%;
 }
@@ -457,8 +461,7 @@ body {
     align-items: center;
     justify-content: center;
     flex-shrink: 0;
-    overflow: hidden;
-    white-space: nowrap;
+    /* overflow და white-space ამოღებულია სახელის სელებიდან — იხ. sport-cell-name */
     font-family: 'Grotesk';
     font-size: 42px;
     box-sizing: border-box;
@@ -485,15 +488,24 @@ body {
     z-index: 1;
 }
 
+/* სახელის სვეტი — გადატანა ნებადართულია */
 .sport-cell-name {
     justify-content: flex-end;
     padding-right: 10px;
+    white-space: normal;
+    overflow: visible;
+    word-break: break-word;
+    align-items: flex-end;
 }
 
-/* sport-cell-score და sport-cell-period არ საჭიროებს ცალკე კლასს —
-   .sport-cell უკვე განსაზღვრავს justify-content: center */
+/* score/period სვეტები — nowrap რჩება, რიცხვები არ იტეხება */
+.sport-cell-score,
+.sport-cell-period,
+.sport-cell-bracket {
+    white-space: nowrap;
+    overflow: hidden;
+}
 
-/* bracket სვეტი — ( და ) სიმბოლოებისთვის, ყოველთვის ფიქსირებულ პოზიციაზე */
 .sport-cell-bracket {
     justify-content: center;
 }
@@ -502,10 +514,9 @@ body {
    DOUBLES (წყვილები)
 ======================== */
 
-/* doubles block — flex row: names column + score/period სვეტები */
 .sport-block-doubles {
     display: flex;
-    align-items: stretch;  /* ყველა child სრულ სიმაღლეზე, doubles-cell ცენტრავს შიგნით */
+    align-items: stretch;
     width: 100%;
     border-bottom: 1px solid #333;
     font-family: 'Grotesk';
@@ -514,7 +525,6 @@ body {
     box-sizing: border-box;
 }
 
-/* სახელების სვეტი — flex column */
 .doubles-names {
     display: flex;
     flex-direction: column;
@@ -522,30 +532,31 @@ body {
     box-sizing: border-box;
 }
 
-/* ცალკეული სახელი */
 .doubles-name {
     display: flex;
     align-items: center;
-    justify-content: flex-end;   /* მარჯვნივ გასწორება, soccer team1-ის მსგავსად */
+    justify-content: flex-end;
     padding-right: 10px;
     min-height: 34px;
     font-family: 'Grotesk';
     font-size: 42px;
+    /* გადატანა ნებადართულია */
+    white-space: normal;
+    overflow: visible;
+    word-break: break-word;
+}
+
+.doubles-cell {
+    flex-shrink: 0;
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
     white-space: nowrap;
     overflow: hidden;
 }
 
-/* score/period სვეტები doubles-ში — align-items center მემკვიდრეობით sport-block-doubles-იდან */
-.doubles-cell {
-    flex-shrink: 0;
-    align-self: stretch;   /* სრული სიმაღლე */
-    display: flex;
-    align-items: center;   /* ვერტიკალურად ცენტრში */
-    justify-content: center;
-    box-sizing: border-box;
-}
-
-/* minute doubles-ში — justify-content: flex-start override, gif ცენტრში */
 .doubles-cell.sport-cell-minute {
     justify-content: flex-start;
     align-items: center;
