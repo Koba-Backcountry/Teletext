@@ -10735,7 +10735,7 @@ Cидане Понтьодикромо                      s. pontodikromo
 матисс мартен                             m. marteni
 матиц хрибар                              m. xribari
 мачей д.                                  d. maCei
-мерт начи тюркер                          m. Naci tiurkeri
+мерт начи тюркер                          m. naCi tiurkeri
 мика петкович                             m. petkoviCi
 микаэль каук                              m. kauki
 мпетши перрикар дж.                       j. mpetSi perikari
@@ -10933,3 +10933,18 @@ Cидане Понтьодикромо                      s. pontodikromo
 эльза жакмо                               e. Jakmo
 энн кристин луткемейер обрегон            e. Kristin lutkemeier obregoni
 дуйе марковина                            d. markovina
+баздерова а.                              a. bezderova
+бер р.                                    r. beri
+бозио г.                                  g. bozio
+бокки л.                                  l. boki
+корпанец дэвис а.                         a. korpanec devisi
+кроитор к.                                k. kroitori
+кузнецова д.                              d. kuznecova
+попа дж.с.                                j. s. popa
+поульсен о.б.                             o. b. poulseni
+селезнёв б.                               b. selezniovi
+симунович д.                              d. simunoviCi
+славич н.                                 n. slaviCi
+филлипс д.                                d. filipsi
+фрадкин дж.                               j. fradkini
+хомицкая а.                               a. xomickaia
