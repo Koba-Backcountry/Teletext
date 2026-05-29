@@ -259,36 +259,52 @@ def _db_lookup(name, source):
 
 def translate_betcity_name(name, source):
     lower = name.strip().lower()
-    suffix = ""
-
-    for ps in BETCITY_PERIOD_SUFFIXES.get(source, []):
-        if lower.endswith(ps.lower()):
-            suffix = ps
-            lower = lower[:-len(ps)].strip()
-            break
-
-    if not suffix:
-        m = re.search(r"\((1[2-9]|2[0-3])\)$", lower)
-        if m:
-            suffix = " " + m.group(0)
-            lower = lower[:m.start()].strip()
+    collected_suffixes = []
 
     combined_map = {**COMMON_BETCITY_SUFFIX_MAP, **BETCITY_SUFFIX_MAPS.get(source, {})}
 
-    if not suffix:
-        for k, v in combined_map.items():
-            if lower.endswith(k.lower()):
-                suffix = v
-                lower = lower[:-len(k)].strip()
+    # ვიწყებთ loop-ს: ვაგრძელებთ suffix-ების ამოღებას სანამ ახალი მოიძებნება
+    while True:
+        found = False
+
+        # 1. BETCITY_PERIOD_SUFFIXES (მაგ: " (20)", " (45)")
+        for ps in BETCITY_PERIOD_SUFFIXES.get(source, []):
+            if lower.endswith(ps.lower()):
+                collected_suffixes.insert(0, ps)
+                lower = lower[:-len(ps)].strip()
+                found = True
                 break
 
+        if not found:
+            # 2. რეგექსი — (12)-(23) ტიპის period suffix
+            m = re.search(r"\((1[2-9]|2[0-3])\)$", lower)
+            if m:
+                collected_suffixes.insert(0, " " + m.group(0))
+                lower = lower[:m.start()].strip()
+                found = True
+
+        if not found:
+            # 3. combined_map suffix-ები
+            for k, v in combined_map.items():
+                if lower.endswith(k.lower()):
+                    collected_suffixes.insert(0, v)
+                    lower = lower[:-len(k)].strip()
+                    found = True
+                    break
+
+        # თუ ამ იტერაციაში ვერაფერი ამოვიღეთ — ვჩერდებით
+        if not found:
+            break
+
+    # ФК / фк prefix ამოღება
     if lower.startswith("фк "):
         lower = lower[3:].strip()
     if lower.endswith(" фк"):
         lower = lower[:-3].strip()
 
     translated = _db_lookup(lower, source)
-    return (translated + suffix).strip()
+    suffix_str = "".join(collected_suffixes).strip()
+    return (translated + (" " + suffix_str if suffix_str else "")).strip()
 
 
 def _translate_pair(name, source, single_fn):
