@@ -2283,3 +2283,5 @@ MISTO                                     misto
 беркут волгоград                          berkut volgogradi
 феникс тула                               feniqs tula
 титан брянск                              titan brianski
+вакатипу уайлд                            vakatipu uaildi
+кентербери инферно                        kenterberi inferno
