@@ -1669,3 +1669,5 @@
 будучност подгорица                       buduCnost podgorica
 алмейда гаррет                            almeida gareti
 майнц-05                                  mainc-05
+оппенвайлер/бакнанг                       openvailer /baknangi
+сканнерборг орхус                         skanerborg orhusi

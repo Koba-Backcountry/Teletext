@@ -2292,3 +2292,5 @@ MISTO                                     misto
 поможанин торунь                          pomoJanin toruni
 санс комплютенс                           sans kompliutensi
 электроник ярославль                      eleqtronik iaroslavli
+пост                                      posti
+хк вена                                   hk vena

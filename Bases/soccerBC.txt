@@ -10693,3 +10693,65 @@ III Керюлети                              III keriuleti
 чимбаронго                                Cimbarongo
 ширвена                                   Sirvena
 элана торунь                              elana toruni
+агариста анений-ной                       agarista anenii-noi
+академия кальвайрате                      academia kalvairate
+апиче                                     apiCe
+балтика ii                                baltika II
+баник краловске поржичи                   banik kralovske porJiCi
+бачевац                                   baCevaci
+бежания                                   beJania
+белина                                    belina
+бина                                      bina
+вертикаль                                 vertikali
+виареджо                                  viarejo
+вилтис вильнюс                            viltis vilniusi
+вильнюс фа                                vilnius fa
+влазними                                  vlaznimi
+газовик витебск                           gazovik vitebski
+грассина                                  grasina
+гурник сосновец                           gurnik sosnoveci
+друть ii                                  druti II
+импакто депортиво сопачуй                 impakto deportivo sopaCui
+камарат 1972                              kamarat 1972
+карлслундс                                karlslundsi
+кьельсос                                  kielsosi
+лайонс томина                             laions tomina
+лакташи                                   laktaSi
+левико                                    leviko
+легион несвиж                             legion nesviJi
+либерте                                   liberte
+орлич сухеднюв                            orliC suxedniuvi
+остров ii                                 ostrovi II
+пелистер                                  pelisteri
+повисле дзежгонь                          povisle dzeJgoni
+поланка                                   polanka
+полиспортива монти пренестини             polisportiva monti prenestini
+полиспортива пьетралунгезе                polisportiva pietralungeze
+релинген                                  relingeni
+республика фа                             respublika fa
+речица                                    reCica
+сан-маркос арика                          san-markos arika
+свитави                                   svitavi
+солигорск                                 soligorski
+сольбьятезе                               solbiateze
+спартак шклов                             spartak Sklovi
+спекс                                     speksi
+страни                                    strani
+тагур пк                                  tagur pk
+требисакке                                trebisake
+уд сан-мауро                              ud san-mauro
+умка                                      umka
+фиоренцуола                               fiorencuola
+фёуске/спринт                             fiouske/sprinti
+хайленд плейерс                           hailend fleiersi
+хетман влощова                            xetman vloSCova
+хик академия                              hik akademia
+хёттюр                                    hiotiuri
+череповец                                 Cerepoveci
+чертоза                                   Certoza
+шкендия арачиново                         Skendia araCinovo
+эгль рояль менуа                          egl roial menua
+юнкерен                                   iunkereni
+яйпан                                     iaipani
+ястшомб бельшовице                        iastSomb belSovice
+яфк даугава/унион                         iafk Daugava/unioni
