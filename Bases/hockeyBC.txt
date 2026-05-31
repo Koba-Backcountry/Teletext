@@ -2294,3 +2294,6 @@ MISTO                                     misto
 электроник ярославль                      eleqtronik iaroslavli
 пост                                      posti
 хк вена                                   hk vena
+градец кралове                            gradec kralove
+локомотив оренбург                        lokomotiv orenburgi
+мниховице                                 mnixovice

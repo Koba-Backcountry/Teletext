@@ -10755,3 +10755,15 @@ III Керюлети                              III keriuleti
 яйпан                                     iaipani
 ястшомб бельшовице                        iastSomb belSovice
 яфк даугава/унион                         iafk Daugava/unioni
+аль-меррейх                               al-mereixi
+антела                                    antela
+бетансос                                  betansosi
+бугуни                                    buguni
+гажон                                     gaJoni
+дерби академи                             derbi akademi
+диси дефендерс                            disi defendersi
+лду портовьехо                            ldu portoviexo
+орландо сторм                             orlando stormi
+проховичанка проховице                    proxoviCanka proxovice
+пяст нова руда                            piast nova ruda
+универсидад католика                      universidad katolika
