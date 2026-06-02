@@ -10975,3 +10975,52 @@ Cидане Понтьодикромо                      s. pontodikromo
 косуке наканиси                           kosuke nakanisi
 юко вададзуми                             iuko vadaZumi
 хибино н.                                 n. xibino
+адам соукуп                               a. soukupi
+айсулу жолболат                           a. Jolbolati
+александру хебханг балан                  a. xebxang balani
+алексия бастос-соуса бетансос             a. bastos-sousa betansosi
+алис баттести                             a. batesti
+андреас мессис                            a. mesisi
+бенедикт серенчич                         b. serenCiCi
+берта пассола                             b. pasola
+валентина варгас                          v. vargasi
+габриэла кавано чо                        g. kavano Co
+глория поп                                g. popi
+грета немчек                              g. nemCeki
+дана чаринцева                            d. Carinceva
+даниэл блазка                             d. blazka
+дарвин масиас элисальде                   d. masias elisalde
+джеффри фрадкин                           j. fradkini
+жюстин бретнахер                          J. bretnaheri
+леон перанович                            l. peranoviCi
+леонардо каттанео                         l. kataneo
+леонардо примуччи                         l. primuCi
+луис халл                                 l. hali
+лусия рос паррес                          l. ros paresi
+майкл райт                                m. raiti
+макар кривощёков                          m. krivoSCiokovi
+мартин соукал                             m. soukali
+мацей флорин брязу                        m. florin briazu
+милана деянович                           m. deianoviCi
+милана рашан-буха                         m. raSan-buxa
+михаэла лес                               m.lesi
+мутху аадхития сентилкумар                m. aadxitia sentilkumari
+мэттью рэнкин                             m. renkini
+ника бумбак                               n. bumbaki
+николь мирхева                            n. mirxeva
+патрик йоцвицкий                          p. iocvicki
+реа годинич                               r. godiniCi
+роман санчилио                            r. sanCilio
+сатима тореген                            s. toregeni
+серхио планелья эрнандес                  s. planelia ernandesi
+сильвия калиман                           s. kalimani
+тарун карра                               t. kara
+тасним ахамут                             t. axamuti
+тесса брокман                             t. brokmani
+фабио варсалона                           f. versalona
+филипп поклемба                           f. poklemba
+фредди ридаут                             f. ridauti
+хуан мартин мансано                       x. martin mansano
+энрике бого                               e. bogo
+ян выгона                                 i. vigona
+яник шнайдер                              i. Snaideri

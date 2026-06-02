@@ -2297,3 +2297,4 @@ MISTO                                     misto
 градец кралове                            gradec kralove
 локомотив оренбург                        lokomotiv orenburgi
 мниховице                                 mnixovice
+нефтяник в.новгород                       neftianik v.novgorodi
