@@ -11067,3 +11067,36 @@ Cидане Понтьодикромо                      s. pontodikromo
 андреа де марки                           a. de marki
 кларисса гаи                              k. gai
 мелих анаватан                            m. anavatani
+александер блусь                          a. blusi
+александр верлаге                         a. verlage
+ариан барбик                              a. barbiki
+артур бележи                              a. beleJi
+батист герра                              b. gera
+вильям мирарки                            v. mirarki
+делия гайар                               d. gaiari
+дженис тьен                               j. tieni
+дин турнер                                d. turneri
+жюль фабр                                 J. fabri
+ива иванкович                             i. ivankoviCi
+иван дрейкопп                             i. dreikopi
+илейми лугиана муэль вальдес              i. l. m. valdesi
+кецманович м.                             m. kecmanoviCi
+ким йоханнес нитхаммер                    k. i. nithameri
+луиз фелипе силва                         l. f. silva
+максимилиан релик                         m. reliki
+маллори нико                              m. niko
+марио арсе фернандес                      m. a. fernandesi
+маттиас каск                              m. kaski
+матьё шамбонье                            m. Sambonie
+мигел семеду                              m. semedu
+оливер тарвет                             o. tarveti
+полин доре                                p. dore
+риккардо ди вита                          r. di vita
+роман гларнер                             r. glarneri
+себастьян харрисон                        s. harisoni
+софия монтесинос                          s. montesinosi
+танги женье                               t. Jenie
+эзерайя рашер                             e. raSeri
+эма лина пикорусевич                      e. l. pikoruseviCi
+этчеверри т.                              t. etCeveri
+юлиус хакер                               i. hakeri
