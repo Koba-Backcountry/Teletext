@@ -10789,3 +10789,52 @@ III Керюлети                              III keriuleti
 днепр могилев ii                          dnepr mogiliovi II
 нэгэле арси                               negele arsi
 торпедо-белаз ii                          torpedo-belazi II
+авынтул пиелешти                          avintul pieleSti
+акс вииторул хорезу                       aks viitorul xorezu
+акс омега                                 aks omega
+амал тизнит                               amal tizniti
+арланда                                   arlanda
+астра плоска                              astra ploska
+бруски                                    bruski
+гала                                      gala
+голице                                    golice
+жёнесс эль мазира                         Jiones el mazira
+заря луганск                              zaria luganski
+иберия 1999                               iberia 1999
+ибу уппсвейтир                            ibu upsveitiri
+интер де лимейра                          inter de limeira
+иф карлстад ii                            if karlstad II
+карпати ковасна                           karpati kovasna
+кенитра                                   kenitra
+кройцлинген                               kroiclingeni
+кск сынсимьон                             ksk sinsimioni
+кызылташ                                  kiziltaSi
+любань                                    liubani
+маринга                                   maringa
+мулудия уджда                             muludia udJda
+нарт черкесск                             nart Cerkeski
+негомир                                   negomiri
+нера богодинти                            nera bogodinti
+нса софия                                 nsa sofia
+петролул хыртиешти                        petrolul xirtieSti
+политехника кишинёв                       politexnika kiSiniovi
+раджа бени меллал                         radJa beni melali
+резекне фа                                rezekne fa
+рубин ялта                                rubin ialta
+спикул вылчелеле                          spikul vilCelele
+стаффансторп юнайтед                      stafanstorp iunaitedi
+тальвиль                                  talvili
+усм уджда                                 usm udjda
+фадеп мендоса                             fadep mendosa
+херкулес оулу юниорит                     herkules oulu iunioriti
+хестрафорс                                hestraforsi
+хяс                                       hiasi
+чайка песчанокопское ii                   Caika pesCanokopskoe II
+чиментул биказ                            Cimentul bikazi
+чорснес иф                                Corsnes if
+шире инда-селассие                        Sire inda-selasie
+шумбрат                                   Sumbrati
+эстерлен                                  esterleni
+эфиопиан иншурэнс                         efiopian inSurensi
+юдфш альберт                              udfS alberti
+юнион спортив буажад                      iunion sportiv buaJadi
